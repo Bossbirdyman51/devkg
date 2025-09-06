@@ -31,7 +31,7 @@ items:
       - 16
       - 23
   60:
-    material: "ch
+    material: "chain"
     display_name: "."
     slots:
       - 0
