@@ -1,0 +1,99 @@
+menu_title: '&6&lParamètres' #':offset_-16::blank_menu:'
+open_command: "parametre"
+size: 18
+items:
+  #0:
+  #  material: "BLACK_STAINED_GLASS_PANE"
+  #  display_name: "."
+  #  slots:
+  #    - 2
+  #    - 1
+  #    - 10
+  #    - 3
+  #    - 11
+  #    - 12
+  #    - 14
+  #    - 21
+  #    - 25
+  #    - 26
+  #    - 6
+  #    - 8
+  #    - 7
+  #    - 6
+  #    - 15
+  #    - 16
+  #    - 23
+  #60:
+  #  material: "chain"
+  #  display_name: "."
+  #  slots:
+  #    - 0
+  #    - 8
+  #    - 9
+  #    - 18
+  #    - 26
+  #    - 17
+  1:
+    material: "hdb-60066"
+    slot: 4
+    display_name: '&5Paramètres'
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: false
+    #left_click_commands:
+    #  - '[player] workbench'
+  hud_off:
+    material: "RED_WOOL"
+    slot: 10
+    priority: 5
+    display_name: 'Désactiver le HUD'
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: false
+    left_click_commands:
+      - '[refresh] <delay=5>'
+      - '[console] happyhud layout %player_name% remove kginfoservs-layout'
+      - '[console] betonquest point %player_name% del Divers.hud *0'
+    view_requirement:
+      requirements:
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_Divers:point.hud.amount%'
+          output: '1'
+  hud_on:
+    material: "GREEN_WOOL"
+    slot: 10
+    priority: 10
+    display_name: 'Activer le HUD'
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: false
+    left_click_commands:
+      - '[refresh] <delay=5>'
+      - '[console] happyhud layout %player_name% add kginfoservs-layout'
+      - '[console] betonquest point %player_name% add Divers.hud 1'
+      
+    view_requirement:
+      requirements:
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_Divers:point.hud.amount%'
+          output: '0'
+  11:
+    material: "hdb-39727"
+    slot: 16
+    display_name: '&5Activer / Désactiver Menu à Droite'
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: false
+    left_click_commands:
+      - '[close]'
+      - '[message] Ecrit /sb dans le tchat !'

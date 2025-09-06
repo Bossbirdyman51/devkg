@@ -1,0 +1,343 @@
+menu_title: ':offset_-8::rtp_menu_overworld:'
+open_command: rtp
+register_command: true
+size: 54
+items:
+  overworld_icon:
+    priority: 0
+    slot: 19    
+    amount: 1
+    material: itemsadder-teleportation_hub:overworld_icon
+
+  overworld_icon2:
+    priority: 0
+    slot: 9
+    amount: 1
+    material: AIR
+  overworld_icon3:
+    priority: 0
+    slot: 10
+    amount: 1
+    material: AIR
+  overworld_icon4:
+    priority: 0
+    slot: 11
+    amount: 1
+    material: AIR
+
+  nether_icon:
+    priority: 0
+    slot: 11
+    amount: 1
+    name: '&#58A527→Nether'
+    mmaterial: AIR
+    left_click_commands:
+      - '[console] dm open rtp_nether %player_name%'
+  nether_icon2:
+    priority: 0
+    slot: 12
+    amount: 1
+    material: AIR
+    left_click_commands:
+      - '[console] dm open rtp_nether %player_name%'
+  nether_icon3:
+    priority: 0
+    slot: 13
+    amount: 1
+    material: AIR
+    left_click_commands:
+      - '[console] dm open rtp_nether %player_name%'
+  nether_icon4:
+    priority: 0
+    slot: 22
+    amount: 1
+    material: AIR
+    left_click_commands:
+      - '[console] dm open rtp_nether %player_name%'
+  nether_icon5:
+    priority: 0
+    slot: 23
+    amount: 1
+    material: itemsadder-teleportation_hub:nether_icon
+
+  end_icon:
+    priority: 0
+    slot: 26
+    amount: 1
+    material: itemsadder-teleportation_hub:end_icon
+  end_icon2:
+    priority: 0
+    slot: 25
+    amount: 1
+    material: AIR
+    left_click_commands:
+      - '[console] dm open rtp_end %player_name%'
+  end_icon3:
+    priority: 0
+    slot: 15
+    amount: 1
+    material: AIR
+    left_click_commands:
+      - '[console] dm open rtp_end %player_name%'
+  end_icon4:
+    priority: 0
+    slot: 16
+    amount: 1
+    material: AIR
+    left_click_commands:
+      - '[console] dm open rtp_end %player_name%'
+  end_icon5:
+    priority: 0
+    slot: 17
+    amount: 1
+    material: AIR
+    left_click_commands:
+      - '[console] dm open rtp_end %player_name%'
+  
+  
+
+  item-2:
+    priority: 0
+    slot: 47
+    amount: 1
+    material: itemsadder-teleportation_hub:waterfall_animation
+
+  item-3:
+    priority: 0
+    slot: 45
+    amount: 1
+    material: itemsadder-teleportation_hub:cloud_animation
+
+  cloud_animation_right:
+    priority: 0
+    slot: 53
+    amount: 1
+    material: itemsadder-teleportation_hub:cloud_animation_right
+
+  location_1:
+    priority: 0
+    slot: 28
+    amount: 1
+    material: itemsadder-teleportation_hub:rtp_pin
+    display_name: "&fTéléporter"
+    lore:
+      - ''
+      - '&#A5ACB8ᴅɪѕᴛᴀɴᴄᴇ: 5000 x 5000'
+      - '&#A5ACB8ʀᴇᴄʜᴀʀɢᴇ: 7 min'
+      - '&#A5ACB8ᴊᴏᴜᴇᴜʀѕ: %server_online_world%'
+      - ''
+      - ' &#58A527→ ᴄʟɪᴄ ᴘᴏᴜʀ ᴛéʟéᴘᴏʀᴛᴇʀ'
+    left_click_commands:
+      - '[message] &#cf3932Téléportation en cours.'
+      - '[refresh]'
+      - '[player] betterrtp <delay=40>'
+      - '[close]'
+
+  location_2:
+    priority: 0
+    slot: 30
+    amount: 1
+    material: itemsadder-teleportation_hub:rtp_pin
+    display_name: "&fTéléporter"
+    lore:
+      - ''
+      - '&#A5ACB8ᴅɪѕᴛᴀɴᴄᴇ: 10000 x 10000'
+      - '&#A5ACB8ʀᴇᴄʜᴀʀɢᴇ: 5 min'
+      - '&#A5ACB8ᴊᴏᴜᴇᴜʀѕ: %server_online_world%'
+      - ''
+      - ' &#58A527→ ᴄʟɪᴄ ᴘᴏᴜʀ ᴛéʟéᴘᴏʀᴛᴇʀ'
+    view_requirement:
+      requirements:
+        ulocked:
+          type: has permission
+          permission: rtp.distance.max.10000
+    left_click_commands:
+      - '[console] lp user %player_name% permission settemp betterrtp.group.overworld_distance_10000 true 6s'
+      - '[message] &#cf3932Teleportation Starting'
+      - '[refresh]'
+      - '[player] betterrtp <delay=40>'
+      - '[close]'
+
+  unlockable_location_2:
+    priority: 10
+    slot: 30
+    amount: 1
+    material: itemsadder-teleportation_hub:rtp_lock
+    display_name: "&fDéverrouiller"
+    lore:
+      - ''
+      - " &#A5ACB8ʙᴇѕᴏɪɴ:"
+      - '  &#A5ACB8• ᴀʀɢᴇɴᴛ:&#58A527 $500,000'
+      - ''
+      - ' &#A5ACB8ᴅéᴠᴇʀʀᴏᴜɪʟʟᴇ:'
+      - '  &#A5ACB8• ᴅɪѕᴛᴀɴᴄᴇ:&#58A527 10k x 10k'
+      - '  &#A5ACB8• ʀᴇᴄʜᴀʀɢᴇ:&#58A527 5 min'
+      - ''
+      - ' &#58A527→ ᴄʟɪᴄ ᴘᴏᴜʀ ᴅéᴠᴇʀʀᴏᴜɪʟʟᴇʀ'
+    view_requirement:
+      requirements:
+        eco:
+          type: has money
+          amount: 500000
+    left_click_commands:
+      - '[givepermission] rtp.distance.max.10000'
+      - '[takemoney] 500000'
+      - '[message] &#cf3932Vous pouvez maintenant téléporter jusqu''à 10,000 blocks'
+      - '[refresh]'
+
+  locked_location_2:
+    priority: 15
+    slot: 30
+    amount: 1
+    material: itemsadder-teleportation_hub:rtp_lock
+    display_name: "&#cf3932Verrouillé"
+    lore:
+      - ''
+      - "&#A5ACB8ʙᴇѕᴏɪɴ:"
+      - ''
+      - '&#A5ACB8• ᴀʀɢᴇɴᴛ:&#cf3932 $500,000'
+      - '&#A5ACB8• ᴅɪѕᴛᴀɴᴄᴇ:&#cf3932 10k x 10k'
+    left_click_commands:
+      - '[message] &#cf3932vous avez besoin de $500,000 pour acheter ce niveau.'
+
+
+  location_3:
+    priority: 0
+    slot: 32
+    amount: 1
+    material: itemsadder-teleportation_hub:rtp_pin
+    display_name: "&fTéléporter"
+    lore:
+      - ''
+      - '&#A5ACB8ᴅɪѕᴛᴀɴᴄᴇ: 15000 x 15000'
+      - '&#A5ACB8ʀᴇᴄʜᴀʀɢᴇ: 4 min'
+      - '&#A5ACB8ᴊᴏᴜᴇᴜʀѕ: %server_online_world%'
+      - ''
+      - ' &#58A527→ ᴄʟɪᴄ ᴘᴏᴜʀ ᴛéʟéᴘᴏʀᴛᴇʀ'
+    view_requirement:
+      requirements:
+        ulocked:
+          type: has permission
+          permission: rtp.distance.max.15000
+    left_click_commands:
+      - '[console] lp user %player_name% permission settemp betterrtp.group.overworld_distance_15000 true 6s'
+      - '[message] &#cf3932Teleportation Starting'
+      - '[refresh]'
+      - '[player] betterrtp <delay=40>'
+      - '[close]'
+
+  unlockable_location_3:
+    priority: 10
+    slot: 32
+    amount: 1
+    material: itemsadder-teleportation_hub:rtp_lock
+    display_name: "&fDéverrouiller"
+    lore:
+      - ''
+      - " &#A5ACB8ʙᴇѕᴏɪɴ:"
+      - '  &#A5ACB8• ᴀʀɢᴇɴᴛ:&#58A527 $1,000,000'
+      - ''
+      - ' &#A5ACB8ᴅéᴠᴇʀʀᴏᴜɪʟʟᴇ:'
+      - '  &#A5ACB8• ᴅɪѕᴛᴀɴᴄᴇ:&#58A527 15k x 15k'
+      - '  &#A5ACB8• ʀᴇᴄʜᴀʀɢᴇ:&#58A527 4 min'
+      - ''
+      - ' &#58A527→ ᴄʟɪᴄ ᴘᴏᴜʀ ᴅéᴠᴇʀʀᴏᴜɪʟʟᴇʀ'
+    view_requirement:
+      requirements:
+        eco:
+          type: has money
+          amount: 1000000
+    left_click_commands:
+      - '[givepermission] rtp.distance.max.15000'
+      - '[takemoney] 1000000'
+      - '[message] &#cf3932Vous pouvez maintenant téléporter jusqu''à 15,000 blocks'
+      - '[refresh]'
+
+
+
+  locked_location_3:
+    priority: 15
+    slot: 32
+    amount: 1
+    material: itemsadder-teleportation_hub:rtp_lock
+    display_name: "&#cf3932Verrouillé"
+    lore:
+      - ''
+      - "&#A5ACB8ʙᴇѕᴏɪɴ:"
+      - ''
+      - '&#A5ACB8• ᴀʀɢᴇɴᴛ:&#cf3932 $1,000,000'
+      - '&#A5ACB8• ᴅɪѕᴛᴀɴᴄᴇ:&#cf3932 15k x 15k'
+    left_click_commands:
+      - '[message] &#cf3932vous avez besoin de $1,000,000 pour acheter ce niveau.'
+
+  location_4:
+    priority: 0
+    slot: 34
+    amount: 1
+    material: itemsadder-teleportation_hub:rtp_pin
+    display_name: "&fTéléporter"
+    lore:
+      - ''
+      - '&#A5ACB8ᴅɪѕᴛᴀɴᴄᴇ: 25000 x 25000'
+      - '&#A5ACB8ʀᴇᴄʜᴀʀɢᴇ: 2 min'
+      - '&#A5ACB8ᴊᴏᴜᴇᴜʀѕ: %server_online_world%'
+      - ''
+      - ' &#58A527→ ᴄʟɪᴄ ᴘᴏᴜʀ ᴛéʟéᴘᴏʀᴛᴇʀ'
+    view_requirement:
+      requirements:
+        ulocked:
+          type: has permission
+          permission: rtp.distance.max.25000
+    left_click_commands:
+      - '[console] lp user %player_name% permission settemp betterrtp.group.overworld_distance_25000 true 6s'
+      - '[message] &#cf3932Teleportation Starting'
+      - '[refresh]'
+      - '[player] betterrtp <delay=40>'
+      - '[close]'
+
+  unlockable_location_4:
+    priority: 10
+    slot: 34
+    amount: 1
+    material: itemsadder-teleportation_hub:rtp_lock
+    display_name: "&fDéverrouiller"
+    lore:
+      - ''
+      - " &#A5ACB8ʙᴇѕᴏɪɴ:"
+      - '  &#A5ACB8• ᴀʀɢᴇɴᴛ:&#58A527 $2,000,000'
+      - ''
+      - ' &#A5ACB8ᴅéᴠᴇʀʀᴏᴜɪʟʟᴇ:'
+      - '  &#A5ACB8• ᴅɪѕᴛᴀɴᴄᴇ:&#58A527 25k x 25k'
+      - '  &#A5ACB8• ʀᴇᴄʜᴀʀɢᴇ:&#58A527 2 min'
+      - ''
+      - ' &#58A527→ ᴄʟɪᴄ ᴘᴏᴜʀ ᴅéᴠᴇʀʀᴏᴜɪʟʟᴇʀ'
+    view_requirement:
+      requirements:
+        eco:
+          type: has money
+          amount: 2000000
+    left_click_commands:
+      - '[givepermission] rtp.distance.max.25000'
+      - '[takemoney] 2000000'
+      - '[message] &#cf3932Vous pouvez maintenant téléporter jusqu''à 25,000 blocks'
+      - '[refresh]'
+
+
+  locked_location_4:
+    priority: 15
+    slot: 34
+    amount: 1
+    material: itemsadder-teleportation_hub:rtp_lock
+    display_name: "&#cf3932Verrouillé"
+    lore:
+      - ''
+      - "&#A5ACB8ʙᴇѕᴏɪɴ:"
+      - ''
+      - '&#A5ACB8• ᴀʀɢᴇɴᴛ:&#cf3932 $2,000,000'
+      - '&#A5ACB8• ᴅɪѕᴛᴀɴᴄᴇ:&#cf3932 25k x 25k'
+    left_click_commands:
+      - '[message] &#cf3932vous avez besoin de $2,000,000 pour acheter ce niveau.'
+
+  
+    
+  

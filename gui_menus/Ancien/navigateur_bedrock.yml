@@ -1,0 +1,207 @@
+menu_title: "&2&l&2Embarquement"
+open_command: "nav2"
+size: 54
+items:
+  0:
+    material: "AIR"
+    display_name: "."
+    slots:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 17
+      - 26
+      - 35
+      - 44
+      - 18
+      - 27
+      - 36
+      - 45
+      - 46
+      - 47
+      - 48
+      - 50
+      - 51
+      - 52
+      - 53
+  1:
+    material: "AIR"
+    display_name: "."
+    slots:
+      - 10
+      - 11
+      - 12
+      - 13
+      - 14
+      - 15
+      - 16
+      - 19
+      - 21
+      - 23
+      - 25
+      - 28
+      - 37
+      - 38
+      - 39
+      - 40
+      - 41
+      - 42
+      - 43
+      - 34
+  20:
+    material: "CHEST_MINECART"
+    slot: 20
+    display_name: '&3&lMonde Ressource'
+    lore:
+      - '&6Besoin de Bois ?'
+      - '&6Besoin de Minerais ?'
+    left_click_commands:
+      - '[connect] minage_survie_001'
+      - '[close]'
+  #22:
+  #  material: "ANVIl"
+  #  slot: 22
+  #  display_name: '&3&lChanger de Serveur'
+  #  lore:
+  #    - '&2Monde Mini-Jeux'
+  #    - '-------> &bClic Gauche'
+  #    - ''
+  #  left_click_commands:
+  #    - '[console] send %player_name% minijeux'
+  #    - '[close]'
+  24:
+    material: "NETHERITE_BLOCK"
+    slot: 24
+    display_name: '&3&lEnfer (Nether)'
+    lore:
+      - '&4Prêt ?!'
+      - '&4'
+    left_click_commands:
+      - '[console] mw tp survie_nether %player_name%'
+      - '[close]'
+  29:
+    material: "DIAMOND_HOE"
+    slot: 29
+    display_name: '&2&lVendeur Fermier'
+    lore:
+      - '&6Besoin de graines ?'
+      - '&6Besoin de vendre des cultures ?'
+      - ''
+      - '&2Coûts : &65Kgolds'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: has money
+          amount: 5
+      deny_commands:
+        - '[message] &cPas assez d''argent &2Montant requis: &65Kgolds !'
+        - '[close]'
+        - '[sound] entity_villager_no 1 1'
+    left_click_commands:
+      - '[console] warp fermier %player_name%'
+      - '[console] eco take %player_name% 5'
+      - '[close]'
+  30:
+    material: "COOKED_BEEF"
+    slot: 30
+    display_name: '&2&lVendeur Nourriture'
+    lore:
+      - '&6Besoin de nourriture ?'
+      - '&6Besoin de vendre de la nourriture ?'
+      - ''
+      - '&2Coûts : &65Kgolds'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: has money
+          amount: 5
+      deny_commands:
+        - '[message] &cPas assez d''argent &2Montant requis: &65Kgolds !'
+        - '[close]'
+        - '[sound] entity_villager_no 1 1'
+    left_click_commands:
+      - '[console] warp nourriture %player_name%'
+      - '[console] eco take %player_name% 5'
+      - '[close]'
+#  31:
+#    material: "ANVIL"
+#    slot: 31
+#    display_name: '&2&lVendeur Armures / Outils / Armes'
+#    lore:
+#      - '&6Besoin d''armure, d''outils ou d''arme ?'
+#      - ''
+#      - '&2Coûts : &65Kgolds'
+#    left_click_requirement:
+#      requirements:
+#        has_money:
+#          type: has money
+#          amount: 5
+#      deny_commands:
+#        - '[message] &cPas assez d''argent &2Montant requis: &65Kgolds !'
+#        - '[close]'
+#        - '[sound] entity_villager_no 1 1'
+#    left_click_commands:
+#      - '[console] warp r_forgeron %player_name%'
+#      - '[console] eco take %player_name% 5'
+#      - '[close]'
+  32:
+    material: "DIAMOND_AXE"
+    slot: 32
+    display_name: '&2&lVendeur de Bois / Meubles'
+    lore:
+      - '&6Besoin d''acheter ou de vendre son bois ?'
+      - '&6Besoin d''acheter de nouveau meuble ?'
+      - ''
+      - '&2Coûts : &65Kgolds'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: has money
+          amount: 5
+      deny_commands:
+        - '[message] &cPas assez d''argent &2Montant requis: &65Kgolds !'
+        - '[close]'
+        - '[sound] entity_villager_no 1 1'
+    left_click_commands:
+      - '[console] warp bois %player_name%'
+      - '[console] eco take %player_name% 5'
+      - '[close]'
+  33:
+    material: "DIAMOND_PICKAXE"
+    slot: 33
+    display_name: '&2&lVendeur de Pierres / Meubles'
+    lore:
+      - '&6Besoin d''acheter ou de vendre ses minerais ?'
+      - '&6Besoin d''acheter de nouveau meuble ?'
+      - ''
+      - '&2Coûts : &65Kgolds'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: has money
+          amount: 5
+      deny_commands:
+        - '[message] &cPas assez d''argent &2Montant requis: &65Kgolds !'
+        - '[close]'
+        - '[sound] entity_villager_no 1 1'
+    left_click_commands:
+      - '[console] warp mineur %player_name%'
+      - '[console] eco take %player_name% 5'
+      - '[close]'
+  40:
+    material: "CHEST_MINECART"
+    slot: 49
+    display_name: '&3&lSortir de la ville'
+    lore:
+      - '&6Débuter votre survie ici !'
+      - '&6'
+    left_click_commands:
+      - '[player] ville wild'
+      - '[close]'

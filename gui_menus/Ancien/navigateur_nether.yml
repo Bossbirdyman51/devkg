@@ -1,0 +1,28 @@
+menu_title: "&2&l&2Embarquement :offset_-88: :navigateur_nether:"
+size: 54
+items:
+  0:
+    material: "PAPER"
+    model_data: 10199
+    display_name: "Ressources <- Monde Précédent"
+    slot: 47
+    left_click_commands:
+      - '[openguimenu] navigateur_minage'
+  1:
+    material: "PAPER"
+    model_data: 10199
+    display_name: "Se téléporter dans le Nether"
+    slots:
+      - 21-23
+      - 30-32
+      - 39-41
+    left_click_commands:
+      - '[console] mw tp survie_nether %player_name%'
+      - '[close]'
+  24:
+    material: "PAPER"
+    model_data: 10199
+    display_name: 'Monde Suivant -> Sortie de Ville'
+    slot: 51
+    left_click_commands:
+      - '[openguimenu] navigateur'

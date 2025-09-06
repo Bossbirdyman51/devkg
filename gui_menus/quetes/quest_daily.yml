@@ -1,0 +1,1330 @@
+size: 54
+menu_title: ':offset_-15::journal_quete:'
+items:
+  "main_quest":
+    material: "PAPER"
+    model_data: "10199"
+    display_name: "Quête Principal"
+    slots:
+      - 17
+    left_click_commands:
+      - '[openguimenu] quest_main'
+      #- '[console] execute at %player_name% run playsound item.book.page_turn master %player_name%'
+  "secondary_quest":
+    material: "PAPER"
+    model_data: "10199"
+    display_name: "Quêtes Secondaire"
+    slots:
+      - 35
+    left_click_commands:
+      - '[openguimenu] quest_secondary'
+      #- '[console] execute at %player_name% run playsound item.book.page_turn master %player_name%'
+  "retour":
+    material: "PAPER"
+    model_data: "10199"
+    display_name: "Retour au menu"
+    slots:
+      - 53
+    left_click_commands:
+      - '[openguimenu] main_menu'
+      #- '[console] execute at %player_name% run playsound item.book.page_turn master %player_name%'
+  "main":
+    material: "PAPER"
+    model_data: "10199"
+    display_name: "Accueil"
+    slots:
+      - 8
+    left_click_commands:
+      - '[openguimenu] quest_main_menu'
+      #- '[console] execute at %player_name% run playsound item.book.page_turn master %player_name%'
+  "daily":
+    material: "PAPER"
+    model_data: "10199"
+    display_name: "Quête Journalière"
+    slots:
+      - 26
+    left_click_commands:
+      - '[openguimenu] quest_daily'
+      #- '[console] execute at %player_name% run playsound item.book.page_turn master %player_name%'
+
+  m_q_available:
+    material: "ZOMBIE_HEAD"
+    slot: 12
+    priority: 60
+    display_name: '&6[Quête] Journalière Aléatoire'
+    lore:
+    - "&6Objectifs"
+    - ""
+    - "&2- Aléatoire"
+    - "&2----------------------"
+    - "&6Récompense"
+    - ""
+    - "&2+ Aléatoire"
+    - "&2----------------------"
+    - ""
+    - "&c&l- Clic pour commencer"
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: true
+    left_click_requirement:
+      requirements:
+        condition_bq2:
+          type: "string contains"
+          input: '%betonquest_dailyquest:condition.farm_in_progress%'
+          output: 'false'
+      deny_commands:
+        - '[message] &cTermine la quête journalière précédente avant !  %betonquest_tracking:objective.jtrackedObjective.obj1%'
+        - '[close]'
+        - '[sound] entity_villager_no 1 1'
+    left_click_commands:
+      - '[console] bq event %player_name% dailyquest.random_pick_monster'
+      - '[refresh]'
+    view_requirement:
+      requirements:
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:condition.farm_in_progress%'
+          output: 'false'
+        condition_bq2:
+          type: "string contains"
+          input: '%betonquest_dailyquest:condition.monster_in_progress%'
+          output: 'false'
+
+
+#Si quête en cours Q1 jusqu'a Q10 en cours reprendre le suivis
+
+  m_q1_take_item:
+    material: "ZOMBIE_HEAD"
+    slot: 12
+    priority: 50
+    display_name: '&6[En Cours] Journalière'
+    lore:
+    - "&6Objectifs"
+    - ""
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj4%"
+    - "&2----------------------"
+    - ""
+    - ""
+    - "&c&l- Clic pour donner les pommes"
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: true
+    view_requirement:
+      requirements:
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-monster-Q1:condition.in_progress%'
+          output: 'true'
+        item_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.m_item%'
+          output: 'false'
+        start_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.in_progress%'
+          output: 'true'
+    left_click_requirement:
+      requirements:
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-monster-Q1:condition.has_item%'
+          output: 'true'
+      deny_commands:
+        - '[message] &cBesoin de plus de pomme  %betonquest_tracking:objective.jtrackedObjective.obj4%'
+        - '[close]'
+        - '[sound] entity_villager_no 1 1'
+    left_click_commands:
+      - '[console] bq event %player_name% dailyquest-monster-Q1.take_item'
+      - '[console] bq event %player_name% dailyquest-monster-Q1.m_end'
+      - '[refresh]'
+  m_q2_take_item:
+    material: "ZOMBIE_HEAD"
+    slot: 12
+    priority: 49
+    display_name: '&6[En cours] Journalière'
+    lore:
+    - "&6Objectifs"
+    - ""
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj4%"
+    - "&2----------------------"
+    - ""
+    - ""
+    - "&c&l- Clic pour donner les pommes"
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: true
+    view_requirement:
+      requirements:
+        start_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.in_progress%'
+          output: 'true'
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-monster-Q2:condition.in_progress%'
+          output: 'true'
+        item_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.m_item%'
+          output: 'false'
+    left_click_requirement:
+      requirements:
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-monster-Q2:condition.has_item%'
+          output: 'true'
+      deny_commands:
+        - '[message] &cBesoin de plus de pomme  %betonquest_tracking:objective.jtrackedObjective.obj4%'
+        - '[close]'
+        - '[sound] entity_villager_no 1 1'
+    left_click_commands:
+      - '[console] bq event %player_name% dailyquest-monster-Q2.take_item'
+      - '[console] bq event %player_name% dailyquest-monster-Q2.m_end'
+      - '[refresh]'
+  m_q3_take_item:
+    material: "ZOMBIE_HEAD"
+    slot: 12
+    priority: 48
+    display_name: '&6[En cours] Journalière'
+    lore:
+    - "&6Objectifs"
+    - ""
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj4%"
+    - "&2----------------------"
+    - ""
+    - ""
+    - "&c&l- Clic pour donner les pommes"
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: true
+    view_requirement:
+      requirements:
+        start_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.in_progress%'
+          output: 'true'
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-monster-Q3:condition.in_progress%'
+          output: 'true'
+        item_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.m_item%'
+          output: 'false'
+    left_click_requirement:
+      requirements:
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-monster-Q3:condition.has_item%'
+          output: 'true'
+      deny_commands:
+        - '[message] &cBesoin de plus de pomme  %betonquest_tracking:objective.jtrackedObjective.obj4%'
+        - '[close]'
+        - '[sound] entity_villager_no 1 1'
+    left_click_commands:
+      - '[console] bq event %player_name% dailyquest-monster-Q3.take_item'
+      - '[console] bq event %player_name% dailyquest-monster-Q3.m_end'
+      - '[refresh]'
+  # Quest 4
+  m_q4_take_item:
+    material: "ZOMBIE_HEAD"
+    slot: 12
+    priority: 47
+    display_name: '&6[En cours] Journalière'
+    lore:
+    - "&6Objectifs"
+    - ""
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj1%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj2%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj3%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj4%"
+    - "&2----------------------"
+    - "&6Récompense"
+    - ""
+    - "&2+ %betonquest_tracking:objective.jtrackedObjective.reward%"
+    - "&2----------------------"
+    - ""
+    - ""
+    - "&c&l- Clic pour donner les pommes"
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: true
+    view_requirement:
+      requirements:
+        start_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.in_progress%'
+          output: 'true'
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-monster-Q4:condition.in_progress%'
+          output: 'true'
+        item_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.m_item%'
+          output: 'false'
+    left_click_requirement:
+      requirements:
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-monster-Q4:condition.has_item%'
+          output: 'true'
+      deny_commands:
+        - '[message] &cBesoin de plus de pomme  %betonquest_tracking:objective.jtrackedObjective.obj4%'
+        - '[close]'
+        - '[sound] entity_villager_no 1 1'
+    left_click_commands:
+      - '[console] bq event %player_name% dailyquest-monster-Q4.take_item'
+      - '[console] bq event %player_name% dailyquest-monster-Q4.m_end'
+      - '[refresh]'
+
+  # Quest 5
+  m_q5_take_item:
+    material: "ZOMBIE_HEAD"
+    slot: 12
+    priority: 46
+    display_name: '&6[En cours] Journalière'
+    lore:
+    - "&6Objectifs"
+    - ""
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj1%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj2%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj3%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj4%"
+    - "&2----------------------"
+    - "&6Récompense"
+    - ""
+    - "&2+ %betonquest_tracking:objective.jtrackedObjective.reward%"
+    - "&2----------------------"
+    - ""
+    - ""
+    - "&c&l- Clic pour donner les pommes"
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: true
+    view_requirement:
+      requirements:
+        start_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.in_progress%'
+          output: 'true'
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-monster-Q5:condition.in_progress%'
+          output: 'true'
+        item_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.m_item%'
+          output: 'false'
+    left_click_requirement:
+      requirements:
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-monster-Q5:condition.has_item%'
+          output: 'true'
+      deny_commands:
+        - '[message] &cBesoin de plus de pomme  %betonquest_tracking:objective.jtrackedObjective.obj4%'
+        - '[close]'
+        - '[sound] entity_villager_no 1 1'
+    left_click_commands:
+      - '[console] bq event %player_name% dailyquest-monster-Q5.take_item'
+      - '[console] bq event %player_name% dailyquest-monster-Q5.m_end'
+      - '[refresh]'
+
+  # Quest 6
+  m_q6_take_item:
+    material: "ZOMBIE_HEAD"
+    slot: 12
+    priority: 45
+    display_name: '&6[En cours] Journalière'
+    lore:
+    - "&6Objectifs"
+    - ""
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj1%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj2%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj3%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj4%"
+    - "&2----------------------"
+    - "&6Récompense"
+    - ""
+    - "&2+ %betonquest_tracking:objective.jtrackedObjective.reward%"
+    - "&2----------------------"
+    - ""
+    - ""
+    - "&c&l- Clic pour donner les pommes"
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: true
+    view_requirement:
+      requirements:
+        start_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.in_progress%'
+          output: 'true'
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-monster-Q6:condition.in_progress%'
+          output: 'true'
+        item_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.m_item%'
+          output: 'false'
+    left_click_requirement:
+      requirements:
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-monster-Q6:condition.has_item%'
+          output: 'true'
+      deny_commands:
+        - '[message] &cBesoin de plus de pomme  %betonquest_tracking:objective.jtrackedObjective.obj4%'
+        - '[close]'
+        - '[sound] entity_villager_no 1 1'
+    left_click_commands:
+      - '[console] bq event %player_name% dailyquest-monster-Q6.take_item'
+      - '[console] bq event %player_name% dailyquest-monster-Q6.m_end'
+      - '[refresh]'
+
+  # Quest 7
+  m_q7_take_item:
+    material: "ZOMBIE_HEAD"
+    slot: 12
+    priority: 44
+    display_name: '&6[En cours] Journalière'
+    lore:
+    - "&6Objectifs"
+    - ""
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj1%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj2%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj3%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj4%"
+    - "&2----------------------"
+    - "&6Récompense"
+    - ""
+    - "&2+ %betonquest_tracking:objective.jtrackedObjective.reward%"
+    - "&2----------------------"
+    - ""
+    - ""
+    - "&c&l- Clic pour donner les pommes"
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: true
+    view_requirement:
+      requirements:
+        start_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.in_progress%'
+          output: 'true'
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-monster-Q7:condition.in_progress%'
+          output: 'true'
+        item_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.m_item%'
+          output: 'false'
+    left_click_requirement:
+      requirements:
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-monster-Q7:condition.has_item%'
+          output: 'true'
+      deny_commands:
+        - '[message] &cBesoin de plus de pomme  %betonquest_tracking:objective.jtrackedObjective.obj4%'
+        - '[close]'
+        - '[sound] entity_villager_no 1 1'
+    left_click_commands:
+      - '[console] bq event %player_name% dailyquest-monster-Q7.take_item'
+      - '[console] bq event %player_name% dailyquest-monster-Q7.m_end'
+      - '[refresh]'
+
+  # Quest 8
+  m_q8_take_item:
+    material: "ZOMBIE_HEAD"
+    slot: 12
+    priority: 43
+    display_name: '&6[En cours] Journalière'
+    lore:
+    - "&6Objectifs"
+    - ""
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj1%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj2%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj3%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj4%"
+    - "&2----------------------"
+    - "&6Récompense"
+    - ""
+    - "&2+ %betonquest_tracking:objective.jtrackedObjective.reward%"
+    - "&2----------------------"
+    - ""
+    - ""
+    - "&c&l- Clic pour donner les pommes"
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: true
+    view_requirement:
+      requirements:
+        start_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.in_progress%'
+          output: 'true'
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-monster-Q8:condition.in_progress%'
+          output: 'true'
+        item_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.m_item%'
+          output: 'false'
+    left_click_requirement:
+      requirements:
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-monster-Q8:condition.has_item%'
+          output: 'true'
+      deny_commands:
+        - '[message] &cBesoin de plus de pomme  %betonquest_tracking:objective.jtrackedObjective.obj4%'
+        - '[close]'
+        - '[sound] entity_villager_no 1 1'
+    left_click_commands:
+      - '[console] bq event %player_name% dailyquest-monster-Q8.take_item'
+      - '[console] bq event %player_name% dailyquest-monster-Q8.m_end'
+      - '[refresh]'
+
+  # Quest 9
+  m_q9_take_item:
+    material: "ZOMBIE_HEAD"
+    slot: 12
+    priority: 42
+    display_name: '&6[En cours] Journalière'
+    lore:
+    - "&6Objectifs"
+    - ""
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj1%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj2%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj3%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj4%"
+    - "&2----------------------"
+    - "&6Récompense"
+    - ""
+    - "&2+ %betonquest_tracking:objective.jtrackedObjective.reward%"
+    - "&2----------------------"
+    - ""
+    - ""
+    - "&c&l- Clic pour donner les pommes"
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: true
+    view_requirement:
+      requirements:
+        start_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.in_progress%'
+          output: 'true'
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-monster-Q9:condition.in_progress%'
+          output: 'true'
+        item_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.m_item%'
+          output: 'false'
+    left_click_requirement:
+      requirements:
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-monster-Q9:condition.has_item%'
+          output: 'true'
+      deny_commands:
+        - '[message] &cBesoin de plus de pomme  %betonquest_tracking:objective.jtrackedObjective.obj4%'
+        - '[close]'
+        - '[sound] entity_villager_no 1 1'
+    left_click_commands:
+      - '[console] bq event %player_name% dailyquest-monster-Q9.take_item'
+      - '[console] bq event %player_name% dailyquest-monster-Q9.m_end'
+      - '[refresh]'
+
+  # Quest 10
+  m_q10_take_item:
+    material: "ZOMBIE_HEAD"
+    slot: 12
+    priority: 41
+    display_name: '&6[En cours] Journalière'
+    lore:
+    - "&6Objectifs"
+    - ""
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj1%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj2%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj3%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj4%"
+    - "&2----------------------"
+    - "&6Récompense"
+    - ""
+    - "&2+ %betonquest_tracking:objective.jtrackedObjective.reward%"
+    - "&2----------------------"
+    - ""
+    - ""
+    - "&c&l- Clic pour donner les pommes"
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: true
+    view_requirement:
+      requirements:
+        start_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.in_progress%'
+          output: 'true'
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-monster-Q10:condition.in_progress%'
+          output: 'true'
+        item_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.m_item%'
+          output: 'false'
+    left_click_requirement:
+      requirements:
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-monster-Q10:condition.has_item%'
+          output: 'true'
+      deny_commands:
+        - '[message] &cBesoin de plus de pomme  %betonquest_tracking:objective.jtrackedObjective.obj4%'
+        - '[close]'
+        - '[sound] entity_villager_no 1 1'
+    left_click_commands:
+      - '[console] bq event %player_name% dailyquest-monster-Q10.take_item'
+      - '[console] bq event %player_name% dailyquest-monster-Q10.m_end'
+      - '[refresh]'
+  m_q_in_progress:
+    material: "ZOMBIE_HEAD"
+    slot: 12
+    priority: 55
+    display_name: '&6[En cours] %betonquest_tracking:objective.jtrackedObjective.title%'
+    lore:
+    - "&6Objectifs"
+    - ""
+    - "&2-  %betonquest_tracking:objective.jtrackedObjective.obj1%"
+    - "&2-  %betonquest_tracking:objective.jtrackedObjective.obj2%"
+    - "&2-  %betonquest_tracking:objective.jtrackedObjective.obj3%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj4%"
+    - "&2----------------------"
+    - "&6Récompense"
+    - "&2+ %betonquest_tracking:objective.jtrackedObjective.reward%"
+    - "&c&l- Démarrer"
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: true
+    view_requirement:
+      requirements:
+        condition_bq2:
+          type: "string contains"
+          input: '%betonquest_dailyquest:condition.monster_in_progress%'
+          output: 'true'
+  m_q1_end:
+    material: "BOOK"
+    slot: 12
+    priority: 10
+    display_name: '&6&f[End] Journalière'
+    lore:
+    - "&2----------------------"
+    - "&2Come back tomorrow for new quest !"
+    - "&2----------------------"
+    - ""
+    - "&c&l- Ended"
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: true
+    view_requirement:
+      requirements:
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.m_done%'
+          output: 'true'
+  f_q_not_available:
+    material: "DIAMOND_PICKAXE"
+    slot: 14
+    priority: 65
+    display_name: '&6[Quête] Journalière Aléatoire'
+    lore:
+    - "&6Objectifs"
+    - ""
+    - "&2- Aléatoire"
+    - "&2----------------------"
+    - "&6Récompense"
+    - ""
+    - "&2+ Aléatoire"
+    - "&2----------------------"
+    - ""
+    - "&c&l- Clic pour commencer"
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: true
+    left_click_requirement:
+      requirements:
+        condition_bq2:
+          type: "string contains"
+          input: '%betonquest_dailyquest:condition.farm_in_progress%'
+          output: 'false'
+      deny_commands:
+        - '[message] &cTermine la quête journalière précédente avant !  %betonquest_tracking:objective.jtrackedObjective.obj1%'
+        - '[close]'
+        - '[sound] entity_villager_no 1 1'
+    left_click_commands:
+      - '[console] bq event %player_name% dailyquest.random_pick_farm'
+      - '[refresh]'
+    view_requirement:
+      requirements:
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:condition.farm_in_progress%'
+          output: 'false'
+        condition_bq2:
+          type: "string contains"
+          input: '%betonquest_dailyquest:condition.monster_in_progress%'
+          output: 'false'
+  f_q_available:
+    material: "DIAMOND_PICKAXE"
+    slot: 14
+    priority: 60
+    display_name: '&6[Quête] Journalière Aléatoire'
+    lore:
+    - "&6Objectifs"
+    - ""
+    - "&2- Aléatoire"
+    - "&2----------------------"
+    - "&6Récompense"
+    - ""
+    - "&2+ Aléatoire"
+    - "&2----------------------"
+    - ""
+    - "&c&l- Clic pour commencer"
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: true
+    left_click_requirement:
+      requirements:
+        condition_bq2:
+          type: "string contains"
+          input: '%betonquest_dailyquest:condition.farm_in_progress%'
+          output: 'false'
+      deny_commands:
+        - '[message] &cTermine la quête journalière précédente avant !  %betonquest_tracking:objective.jtrackedObjective.obj1%'
+        - '[close]'
+        - '[sound] entity_villager_no 1 1'
+    left_click_commands:
+      - '[console] bq event %player_name% dailyquest.random_pick_farm'
+      - '[refresh]'
+    view_requirement:
+      requirements:
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:condition.farm_in_progress%'
+          output: 'false'
+        condition_bq2:
+          type: "string contains"
+          input: '%betonquest_dailyquest:condition.monster_in_progress%'
+          output: 'false'
+
+#Si quête en cours Q1 jusqu'a Q10 en cours reprendre le suivis
+
+  f_q1_take_item:
+    material: "DIAMOND_PICKAXE"
+    slot: 14
+    priority: 50
+    display_name: '&6[En Cours] Journalière'
+    lore:
+    - "&6Objectifs"
+    - ""
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj4%"
+    - "&2----------------------"
+    - ""
+    - ""
+    - "&c&l- Clic pour donner les pommes"
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: true
+    view_requirement:
+      requirements:
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-farm-Q1:condition.in_progress%'
+          output: 'true'
+        item_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.f_item%'
+          output: 'false'
+        start_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.in_progress%'
+          output: 'true'
+    left_click_requirement:
+      requirements:
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-farm-Q1:condition.has_item%'
+          output: 'true'
+      deny_commands:
+        - '[message] &cBesoin de plus de pomme  %betonquest_tracking:objective.jtrackedObjective.obj4%'
+        - '[close]'
+        - '[sound] entity_villager_no 1 1'
+    left_click_commands:
+      - '[console] bq event %player_name% dailyquest-farm-Q1.take_item'
+      - '[console] bq event %player_name% dailyquest-farm-Q1.f_end'
+      - '[refresh]'
+  f_q2_take_item:
+    material: "DIAMOND_PICKAXE"
+    slot: 14
+    priority: 49
+    display_name: '&6[En cours] Journalière'
+    lore:
+    - "&6Objectifs"
+    - ""
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj4%"
+    - "&2----------------------"
+    - ""
+    - ""
+    - "&c&l- Clic pour donner les pommes"
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: true
+    view_requirement:
+      requirements:
+        start_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.in_progress%'
+          output: 'true'
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-farm-Q2:condition.in_progress%'
+          output: 'true'
+        item_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.f_item%'
+          output: 'false'
+    left_click_requirement:
+      requirements:
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-farm-Q2:condition.has_item%'
+          output: 'true'
+      deny_commands:
+        - '[message] &cBesoin de plus de pomme  %betonquest_tracking:objective.jtrackedObjective.obj4%'
+        - '[close]'
+        - '[sound] entity_villager_no 1 1'
+    left_click_commands:
+      - '[console] bq event %player_name% dailyquest-farm-Q2.take_item'
+      - '[console] bq event %player_name% dailyquest-farm-Q2.f_end'
+      - '[refresh]'
+  f_q3_take_item:
+    material: "DIAMOND_PICKAXE"
+    slot: 14
+    priority: 48
+    display_name: '&6[En cours] Journalière'
+    lore:
+    - "&6Objectifs"
+    - ""
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj4%"
+    - "&2----------------------"
+    - ""
+    - ""
+    - "&c&l- Clic pour donner les pommes"
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: true
+    view_requirement:
+      requirements:
+        start_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.in_progress%'
+          output: 'true'
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-farm-Q3:condition.in_progress%'
+          output: 'true'
+        item_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.f_item%'
+          output: 'false'
+    left_click_requirement:
+      requirements:
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-farm-Q3:condition.has_item%'
+          output: 'true'
+      deny_commands:
+        - '[message] &cBesoin de plus de pomme  %betonquest_tracking:objective.jtrackedObjective.obj4%'
+        - '[close]'
+        - '[sound] entity_villager_no 1 1'
+    left_click_commands:
+      - '[console] bq event %player_name% dailyquest-farm-Q3.take_item'
+      - '[console] bq event %player_name% dailyquest-farm-Q3.f_end'
+      - '[refresh]'
+  # Quest 4
+  f_q4_take_item:
+    material: "DIAMOND_PICKAXE"
+    slot: 14
+    priority: 47
+    display_name: '&6[En cours] Journalière'
+    lore:
+    - "&6Objectifs"
+    - ""
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj1%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj2%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj3%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj4%"
+    - "&2----------------------"
+    - "&6Récompense"
+    - ""
+    - "&2+ %betonquest_tracking:objective.jtrackedObjective.reward%"
+    - "&2----------------------"
+    - ""
+    - ""
+    - "&c&l- Clic pour donner les pommes"
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: true
+    view_requirement:
+      requirements:
+        start_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.in_progress%'
+          output: 'true'
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-farm-Q4:condition.in_progress%'
+          output: 'true'
+        item_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.f_item%'
+          output: 'false'
+    left_click_requirement:
+      requirements:
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-farm-Q4:condition.has_item%'
+          output: 'true'
+      deny_commands:
+        - '[message] &cBesoin de plus de pomme  %betonquest_tracking:objective.jtrackedObjective.obj4%'
+        - '[close]'
+        - '[sound] entity_villager_no 1 1'
+    left_click_commands:
+      - '[console] bq event %player_name% dailyquest-farm-Q4.take_item'
+      - '[console] bq event %player_name% dailyquest-farm-Q4.f_end'
+      - '[refresh]'
+
+  # Quest 5
+  f_q5_take_item:
+    material: "DIAMOND_PICKAXE"
+    slot: 14
+    priority: 46
+    display_name: '&6[En cours] Journalière'
+    lore:
+    - "&6Objectifs"
+    - ""
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj1%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj2%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj3%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj4%"
+    - "&2----------------------"
+    - "&6Récompense"
+    - ""
+    - "&2+ %betonquest_tracking:objective.jtrackedObjective.reward%"
+    - "&2----------------------"
+    - ""
+    - ""
+    - "&c&l- Clic pour donner les pommes"
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: true
+    view_requirement:
+      requirements:
+        start_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.in_progress%'
+          output: 'true'
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-farm-Q5:condition.in_progress%'
+          output: 'true'
+        item_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.f_item%'
+          output: 'false'
+    left_click_requirement:
+      requirements:
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-farm-Q5:condition.has_item%'
+          output: 'true'
+      deny_commands:
+        - '[message] &cBesoin de plus de pomme  %betonquest_tracking:objective.jtrackedObjective.obj4%'
+        - '[close]'
+        - '[sound] entity_villager_no 1 1'
+    left_click_commands:
+      - '[console] bq event %player_name% dailyquest-farm-Q5.take_item'
+      - '[console] bq event %player_name% dailyquest-farm-Q5.f_end'
+      - '[refresh]'
+
+  # Quest 6
+  f_q6_take_item:
+    material: "DIAMOND_PICKAXE"
+    slot: 14
+    priority: 45
+    display_name: '&6[En cours] Journalière'
+    lore:
+    - "&6Objectifs"
+    - ""
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj1%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj2%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj3%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj4%"
+    - "&2----------------------"
+    - "&6Récompense"
+    - ""
+    - "&2+ %betonquest_tracking:objective.jtrackedObjective.reward%"
+    - "&2----------------------"
+    - ""
+    - ""
+    - "&c&l- Clic pour donner les pommes"
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: true
+    view_requirement:
+      requirements:
+        start_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.in_progress%'
+          output: 'true'
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-farm-Q6:condition.in_progress%'
+          output: 'true'
+        item_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.f_item%'
+          output: 'false'
+    left_click_requirement:
+      requirements:
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-farm-Q6:condition.has_item%'
+          output: 'true'
+      deny_commands:
+        - '[message] &cBesoin de plus de pomme  %betonquest_tracking:objective.jtrackedObjective.obj4%'
+        - '[close]'
+        - '[sound] entity_villager_no 1 1'
+    left_click_commands:
+      - '[console] bq event %player_name% dailyquest-farm-Q6.take_item'
+      - '[console] bq event %player_name% dailyquest-farm-Q6.f_end'
+      - '[refresh]'
+
+  # Quest 7
+  f_q7_take_item:
+    material: "DIAMOND_PICKAXE"
+    slot: 14
+    priority: 44
+    display_name: '&6[En cours] Journalière'
+    lore:
+    - "&6Objectifs"
+    - ""
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj1%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj2%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj3%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj4%"
+    - "&2----------------------"
+    - "&6Récompense"
+    - ""
+    - "&2+ %betonquest_tracking:objective.jtrackedObjective.reward%"
+    - "&2----------------------"
+    - ""
+    - ""
+    - "&c&l- Clic pour donner les pommes"
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: true
+    view_requirement:
+      requirements:
+        start_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.in_progress%'
+          output: 'true'
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-farm-Q7:condition.in_progress%'
+          output: 'true'
+        item_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.f_item%'
+          output: 'false'
+    left_click_requirement:
+      requirements:
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-farm-Q7:condition.has_item%'
+          output: 'true'
+      deny_commands:
+        - '[message] &cBesoin de plus de pomme  %betonquest_tracking:objective.jtrackedObjective.obj4%'
+        - '[close]'
+        - '[sound] entity_villager_no 1 1'
+    left_click_commands:
+      - '[console] bq event %player_name% dailyquest-farm-Q7.take_item'
+      - '[console] bq event %player_name% dailyquest-farm-Q7.f_end'
+      - '[refresh]'
+
+  # Quest 8
+  f_q8_take_item:
+    material: "DIAMOND_PICKAXE"
+    slot: 14
+    priority: 43
+    display_name: '&6[En cours] Journalière'
+    lore:
+    - "&6Objectifs"
+    - ""
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj1%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj2%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj3%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj4%"
+    - "&2----------------------"
+    - "&6Récompense"
+    - ""
+    - "&2+ %betonquest_tracking:objective.jtrackedObjective.reward%"
+    - "&2----------------------"
+    - ""
+    - ""
+    - "&c&l- Clic pour donner les pommes"
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: true
+    view_requirement:
+      requirements:
+        start_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.in_progress%'
+          output: 'true'
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-farm-Q8:condition.in_progress%'
+          output: 'true'
+        item_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.f_item%'
+          output: 'false'
+    left_click_requirement:
+      requirements:
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-farm-Q8:condition.has_item%'
+          output: 'true'
+      deny_commands:
+        - '[message] &cBesoin de plus de pomme  %betonquest_tracking:objective.jtrackedObjective.obj4%'
+        - '[close]'
+        - '[sound] entity_villager_no 1 1'
+    left_click_commands:
+      - '[console] bq event %player_name% dailyquest-farm-Q8.take_item'
+      - '[console] bq event %player_name% dailyquest-farm-Q8.f_end'
+      - '[refresh]'
+
+  # Quest 9
+  f_q9_take_item:
+    material: "DIAMOND_PICKAXE"
+    slot: 14
+    priority: 42
+    display_name: '&6[En cours] Journalière'
+    lore:
+    - "&6Objectifs"
+    - ""
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj1%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj2%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj3%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj4%"
+    - "&2----------------------"
+    - "&6Récompense"
+    - ""
+    - "&2+ %betonquest_tracking:objective.jtrackedObjective.reward%"
+    - "&2----------------------"
+    - ""
+    - ""
+    - "&c&l- Clic pour donner les pommes"
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: true
+    view_requirement:
+      requirements:
+        start_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.in_progress%'
+          output: 'true'
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-farm-Q9:condition.in_progress%'
+          output: 'true'
+        item_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.f_item%'
+          output: 'false'
+    left_click_requirement:
+      requirements:
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-farm-Q9:condition.has_item%'
+          output: 'true'
+      deny_commands:
+        - '[message] &cBesoin de plus de pomme  %betonquest_tracking:objective.jtrackedObjective.obj4%'
+        - '[close]'
+        - '[sound] entity_villager_no 1 1'
+    left_click_commands:
+      - '[console] bq event %player_name% dailyquest-farm-Q9.take_item'
+      - '[console] bq event %player_name% dailyquest-farm-Q9.f_end'
+      - '[refresh]'
+
+  # Quest 10
+  f_q10_take_item:
+    material: "DIAMOND_PICKAXE"
+    slot: 14
+    priority: 41
+    display_name: '&6[En cours] Journalière'
+    lore:
+    - "&6Objectifs"
+    - ""
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj1%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj2%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj3%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj4%"
+    - "&2----------------------"
+    - "&6Récompense"
+    - ""
+    - "&2+ %betonquest_tracking:objective.jtrackedObjective.reward%"
+    - "&2----------------------"
+    - ""
+    - ""
+    - "&c&l- Clic pour donner les pommes"
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: true
+    view_requirement:
+      requirements:
+        start_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.in_progress%'
+          output: 'true'
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-farm-Q10:condition.in_progress%'
+          output: 'true'
+        item_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.f_item%'
+          output: 'false'
+    left_click_requirement:
+      requirements:
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest-farm-Q10:condition.has_item%'
+          output: 'true'
+      deny_commands:
+        - '[message] &cBesoin de plus de pomme  %betonquest_tracking:objective.jtrackedObjective.obj4%'
+        - '[close]'
+        - '[sound] entity_villager_no 1 1'
+    left_click_commands:
+      - '[console] bq event %player_name% dailyquest-farm-Q10.take_item'
+      - '[console] bq event %player_name% dailyquest-farm-Q10.f_end'
+      - '[refresh]'
+  f_q_in_progress:
+    material: "DIAMOND_PICKAXE"
+    slot: 14
+    priority: 55
+    display_name: '&6[En cours] %betonquest_tracking:objective.jtrackedObjective.title%'
+    lore:
+    - "&6Objectifs"
+    - ""
+    - "&2-  %betonquest_tracking:objective.jtrackedObjective.obj1%"
+    - "&2-  %betonquest_tracking:objective.jtrackedObjective.obj2%"
+    - "&2-  %betonquest_tracking:objective.jtrackedObjective.obj3%"
+    - "&2- %betonquest_tracking:objective.jtrackedObjective.obj4%"
+    - "&2----------------------"
+    - "&6Récompense"
+    - "&2+ %betonquest_tracking:objective.jtrackedObjective.reward%"
+    - "&c&l- Démarrer"
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: true
+    view_requirement:
+      requirements:
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:condition.farm_in_progress%'
+          output: 'true'
+  f_q1_end:
+    material: "BOOK"
+    slot: 14
+    priority: 10
+    display_name: '&6&f[End] Journalière'
+    lore:
+    - "&2----------------------"
+    - "&2Come back tomorrow for new quest !"
+    - "&2----------------------"
+    - ""
+    - "&c&l- Ended"
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: true
+    view_requirement:
+      requirements:
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_dailyquest:tag.f_done%'
+          output: 'true'

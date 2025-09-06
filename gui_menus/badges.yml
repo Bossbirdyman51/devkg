@@ -1,0 +1,96 @@
+menu_title: '&6&lBadges' #':offset_-16::blank_menu:'
+open_command: "badge"
+size: 28
+items:
+  #0:
+  #  material: "BLACK_STAINED_GLASS_PANE"
+  #  display_name: "."
+  #  slots:
+  #    - 2
+  #    - 1
+  #    - 10
+  #    - 11
+  #    - 12
+  #    - 13
+  #    - 14
+  #    - 19
+  #    - 21
+  #    - 25
+  #    - 26
+  #    - 6
+  #    - 8
+  #    - 7
+  #    - 6
+  #    - 15
+  #    - 16
+  #    - 23
+  60:
+    material: "chain"
+    display_name: "."
+    slots:
+      - 0
+      - 8
+      - 9
+      - 18
+      - 26
+      - 17
+  01:
+    material: "PAPER"
+    model_data: "10319"
+    slot: 4
+    display_name: ''
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: false
+  02:
+    material: "PAPER"
+    model_data: "10320"
+    slot: 5
+    display_name: ''
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: false
+  03:
+    material: "PAPER"
+    model_data: "10321"
+    slot: 6
+    display_name: ''
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: false
+  04:
+    material: "PAPER"
+    model_data: "10322"
+    slot: 6
+    display_name: ''
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: false
+  05:
+    material: "PAPER"
+    model_data: "10323"
+    slot: 7
+    display_name: ''
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: false
+  06:
+    material: "PAPER"
+    model_data: "10324"
+    slot: 8
+    display_name: ''
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: false

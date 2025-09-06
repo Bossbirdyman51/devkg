@@ -1,0 +1,29 @@
+menu_title: '&8 &e&lScenes'
+open_command:
+  - scenes
+size: 54
+open_requirement:
+  requirements:
+    mythic_permission:
+      type: has permission
+      permission: scenes.use
+      deny_commands:
+        - '[message] &cYou do not have permission to open this menu!'
+        - '[sound] BLOCK_ANVIL_LAND'
+items:
+  pigeons_fly:
+    material: texture-b7ea4c017e3456cf09a5c263f34d3cc5f41577b74d60f6f8196c60e07f8c5a96
+    slot: 0
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Flying pigeons'
+    lore:
+      - '&7Click to place the flying pigeons'
+    left_click_commands:
+      - '[player] mm mobs spawn scenes_pigeons_fly'
+      - '[message] &awar sirens'
+      - '[close]'
+

@@ -1,0 +1,96 @@
+menu_title: '&8 &e&lScenes NPC Edit'
+open_command:
+  - scenesedit
+size: 9
+open_requirement:
+  requirements:
+    mythic_permission:
+      type: has permission
+      permission: scenes.use
+      deny_commands:
+items:
+  skins:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 0
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skins NPC 1'
+    lore:
+      - '&7Click to browse your NPC 1 skins'
+    left_click_commands:
+      - '[openguimenu] scene_skins'
+      - '[close]'
+  skins2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 1
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skins NPC 2'
+    lore:
+      - '&7Click to browse your NPC 2 skins'
+    left_click_commands:
+      - '[openguimenu] scene_skins_2_2'
+      - '[close]'
+  cosmetics:
+    material: texture-ada65c25b15b2d0e581631368fa5556759cdfc43723127cbb10bad6af24df713
+    slot: 2
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Cosmetics'
+    lore:
+      - '&7Click to browse your cosmetics'
+    left_click_commands:
+      - '[openguimenu] scene_cosmetics'
+      - '[close]'
+  bring:
+    material: texture-1cb8be16d40c25ace64e09f6086d408ebc3d545cfb2990c5b6c25dabcedeacc
+    slot: 7
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Teleport here'
+    lore:
+      - '&7Click to teleport the scene to your location'
+    left_click_commands:
+      - '[player] mm test cast movescene'
+      - '[close]'
+  rotate:
+    material: texture-d761ea71913137eb986ed861d1a9da1c70022ab5acd57b88499ab80cc4e0bd24
+    slot: 6
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Rotate'
+    lore:
+      - '&7Click to rotate the scene to where you are looking'
+    left_click_commands:
+      - '[player] mm test cast rotatescene'
+      - '[close]'
+  remove:
+    material: texture-441f4edbc68c9061355242bd73effc9299a3252b9f11e82b5f1ec7b3b6ac0
+    slot: 8
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Delete'
+    lore:
+      - '&7Click to Delete this Scene'
+    left_click_commands:
+      - '[player] mm test cast deletenpc'
+      - '[close]'
+#06d54b3fffc32b7e2281000f77268b91

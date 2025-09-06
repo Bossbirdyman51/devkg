@@ -1,0 +1,29 @@
+menu_title: "&2&l&2Embarquement :offset_-88: :navigateur:"
+open_command: "nav"
+size: 54
+items:
+  0:
+    material: "PAPER"
+    model_data: 10199
+    display_name: "Monde Nether <- Monde Précédent"
+    slot: 47
+    left_click_commands:
+      - '[openguimenu] navigateur_nether'
+  1:
+    material: "PAPER"
+    model_data: 10199
+    display_name: "Sortir de la Ville"
+    slots:
+      - 21-23
+      - 30-32
+      - 39-41
+    left_click_commands:
+      - '[player] ville wild'
+      - '[close]'
+  24:
+    material: "PAPER"
+    model_data: 10199
+    display_name: 'Monde Suivant -> Monde Ressources'
+    slot: 51
+    left_click_commands:
+      - '[openguimenu] navigateur_minage'

@@ -1,0 +1,47 @@
+menu_title: '&6&lChoissiez votre nation !' #':offset_-16::blank_menu:'
+size: 27
+items:
+  0:
+    material: "BLACK_STAINED_GLASS_PANE"
+    display_name: "."
+    slots:
+      - 2
+      - 1
+      - 6
+      - 8
+      - 7
+      - 6
+  60:
+    material: "chain"
+    display_name: "."
+    slots:
+      - 0
+      - 8
+  1:
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDY5NTM5NDI0NTk5ZDk0ODdlZDEwMzFmYTZhYWNmY2YxOTczNThiOGYxODhkNjJmN2ExODU1ZWZhZmQyNGYxOSJ9fX0="
+    slot: 3
+    display_name: '&5Rejoindre RudeVal '
+    lore:
+      - "Membre présent : %betonquest_main:globalpoint.membre_rudeval.amount%"
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: false
+    left_click_commands:
+      - '[console] bq event %player_name% tuto-tutoriel_1_decouverte.join_rudeval'
+      - '[close]'
+  5:
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTQ0OGZiNzBlNGJkMGQ5YmE3ZDk5YWEwMzAxOTVkNGVhY2NjZDE1MDZjYzc1M2QzYWJkMmI3ZjI2Y2FkYzcwMyJ9fX0="
+    slot: 5
+    display_name: '&3Rejoindre Aexelion'
+    lore:
+      - "Membre présent : %betonquest_main:globalpoint.membre_aexelion.amount%"
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: false
+    left_click_commands:
+      - '[console] bq event %player_name% tuto-tutoriel_1_decouverte.join_aexelion'
+      - '[close]'

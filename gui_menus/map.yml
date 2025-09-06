@@ -1,0 +1,20 @@
+menu_title: "&2&l&2Carte en ligne !"
+open_command: "map"
+size: 9
+open_requirement:
+  requirements:
+    permission:
+      type: has permission
+      permission: testmap
+      deny_commands:
+        - '[message] &2http://play.kginfoservs.com:8123'
+items:
+  0:
+    material: "BLACK_STAINED_GLASS_PANE"
+    display_name: "."
+    slots:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 5

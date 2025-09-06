@@ -1,0 +1,43 @@
+menu_title: '&8 &e&lScenes'
+open_command:
+  - scenes
+size: 9
+open_requirement:
+  requirements:
+    mythic_permission:
+      type: has permission
+      permission: scenes.use
+      deny_commands:
+        - '[message] &cYou do not have permission to open this menu!'
+        - '[sound] BLOCK_ANVIL_LAND'
+items:
+  npcs:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 0
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'NPCs'
+    lore:
+      - '&7Browse your NPCs'
+    left_click_commands:
+      - '[openguimenu] scenes_npcs'
+      - '[close]'
+  environment:
+    material: texture-b7ea4c017e3456cf09a5c263f34d3cc5f41577b74d60f6f8196c60e07f8c5a96
+    slot: 1
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Environment'
+    lore:
+      - '&7Browse your environment scenes'
+    left_click_commands:
+      - '[openguimenu] scenes_environment'
+      - '[close]'
+  
+#06d54b3fffc32b7e2281000f77268b91

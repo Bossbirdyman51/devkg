@@ -1,0 +1,81 @@
+menu_title: '&6&lChoissiez votre Classe !' #':offset_-16::blank_menu:'
+open_command: "mzabi2"
+open_requirement:
+  requirements:
+    permission:
+      type: "!has permission"
+      permission: classe
+      deny_commands:
+        - "[message] &8[&bKGInfoServs&8] &cTu as déjà une classe !"
+size: 27
+items:
+  0:
+    material: "BLACK_STAINED_GLASS_PANE"
+    display_name: "."
+    slots:
+      - 2
+      - 1
+      - 6
+      - 8
+      - 7
+      - 6
+  60:
+    material: "chain"
+    display_name: "."
+    slots:
+      - 0
+      - 8
+  1:
+    material: "NETHERITE_SWORD"
+    slot: 3
+    display_name: '&6Devenir &5Guerrier '
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: false
+    view_requirement:
+      requirements:
+        permission:
+          type: "!has permission"
+          permission: classe
+    left_click_commands:
+      - '[console] bq event %player_name% tuto-qcm.give_objective_quete_guerrier'
+      - '[console] bq event %player_name% tuto-qcm.perm_classe'
+      - '[close]'
+  5:
+    material: "BOW"
+    slot: 5
+    display_name: '&6Devenir &2Archer'
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: false
+    view_requirement:
+      requirements:
+        permission:
+          type: "!has permission"
+          permission: classe
+    left_click_commands:
+      - '[console] bq event %player_name% tuto-qcm.give_objective_quete_archer'
+      - '[console] bq event %player_name% tuto-qcm.perm_classe'
+      - '[close]'
+  4:
+    material: "STICK"
+    slot: 4
+    display_name: '&6Devenir &2Mage'
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: false
+    view_requirement:
+      requirements:
+        permission:
+          type: "!has permission"
+          permission: classe
+    left_click_commands:
+      - '[console] bq event %player_name% tuto-qcm.give_objective_quete_mage'
+      - '[console] bq event %player_name% tuto-qcm.perm_classe'
+      - '[close]'

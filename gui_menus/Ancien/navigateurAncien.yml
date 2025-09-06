@@ -1,0 +1,55 @@
+menu_title: "&2&l&2Embarquement :offset_-88: :navigateur:"
+open_command: "nav"
+size: 54
+items:
+  0:
+    material: "PAPER"
+    model_data: 10007
+    display_name: "Monde Ressource"
+    lore:
+      - '&6Besoin de Bois ?'
+      - '&6Besoin de Minerais ?'
+      - '&f-----------------'
+      - '&6Clic pour se TP'
+    slots:
+      - 0-2
+      - 9-11
+      - 18-20
+      - 27-29
+      - 36-38
+      - 45-47
+    left_click_commands:
+      - '[console] mv tp %player_name% minage '
+      - '[close]'
+  1:
+    material: "PAPER"
+    model_data: 10007
+    display_name: "Inconnu"
+    lore:
+      - '&cIndisponible'
+    slots:
+      - 3-5
+      - 12-14
+      - 21-23
+      - 30-32
+      - 39-41
+      - 48-50
+  24:
+    material: "PAPER"
+    model_data: 10007
+    display_name: '&3&lEnfer (Nether)'
+    lore:
+      - '&4Prêt ?!'
+      - '&4'
+      - '&f-----------------'
+      - '&6Clic pour se TP'
+    slots:
+      - 6-8
+      - 15-17
+      - 24-26
+      - 33-35
+      - 42-44
+      - 51-53
+    left_click_commands:
+      - '[console] mv tp %player_name% world_nether'
+      - '[close]'

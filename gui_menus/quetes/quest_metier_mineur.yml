@@ -1,0 +1,134 @@
+size: 54
+menu_title: ':offset_-15::journal_quete:'
+
+items:
+  "separation":
+    material: "BLACK_STAINED_GLASS_PANE"
+    display_name: "."
+    slots:
+      - 1
+      - 10
+      - 19
+      - 37
+      - 46
+  "main_quest":
+    material: "BOOK"
+    display_name: "Quête Principal"
+    slots:
+      - 9
+    left_click_commands:
+      - '[openguimenu] quest_main'
+  "secondary_quest":
+    material: "BOOK"
+    display_name: "Quêtes Secondaire"
+    slots:
+      - 18
+    left_click_commands:
+      - '[openguimenu] quest_secondary'
+  "metier_quest":
+    material: "BOOK"
+    display_name: "Quêtes de Métier"
+    slots:
+      - 27
+    left_click_commands:
+      - '[openguimenu] quest_metier_menu'
+  "main":
+    material: "BOOK"
+    display_name: "Accueil"
+    slots:
+      - 0
+    left_click_commands:
+      - '[openguimenu] quest_main_menu'
+  "daily":
+    material: "BOOK"
+    display_name: "Quête Journalière"
+    slots:
+      - 36
+    left_click_commands:
+      - '[openguimenu] quest_daily'
+  q1_s1:
+    material: "WRITABLE_BOOK"
+    slot: 12
+    priority: 10
+    display_name: '&6[Quête] De la pierre pour le mineur'
+    lore:
+    - "&6Objectif"
+    - ""
+    - "&2- Livrer &664&2 pierre au mineur"
+    - "&2----------------------"
+    - "&6Récompenses"
+    - ""
+    - "&2+ &650 &7KGolds"
+    - "&2+ &61 &7Pioche en Pierre"
+    - "&2----------------------"
+    - ""
+    - "&c&l- Parle au Pnj mineur pour démarrer la quête"
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: true
+    #left_click_commands:
+    #  - '[console] bq event %player_name% Magasin-mineur-Q1.give_obj_quest'
+    #  - '[refresh] <delay=20>'
+    view_requirement:
+      requirements:
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_Magasin-mineur-Q1:tag.en_cours%'
+          output: 'false'
+  q1_s2:
+    material: "WRITABLE_BOOK"
+    slot: 12
+    priority: 8
+    display_name: '&6[En Cours] De la pierre pour le mineur'
+    lore:
+    - "&6Objectif"
+    - ""
+    - "&2- Livrer &664&2 pierre au mineur"
+    - "&2----------------------"
+    - "&6Récompenses"
+    - ""
+    - "&2+ &650 &7KGolds"
+    - "&2+ &61 &7Pioche en Pierre"
+    - "&2----------------------"
+    - ""
+    - "&6Objectif"
+    - "&6%betonquest_Tracking:objective.trackedObjective.obj1%"
+    - "&c&l- Clic pour Suivre"
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: true
+    view_requirement:
+      requirements:
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_Magasin-mineur-Q1:tag.en_cours%'
+          output: 'true'
+    left_click_commands:
+      - '[console] bq event %player_name% tracking.track_mineur_1'
+      - '[close]'
+  q1_end:
+    material: "BOOK"
+    slot: 12
+    priority: 6
+    display_name: '&6&f[Terminé] De la pierre pour le mineur'
+    lore:
+    - "&2----------------------"
+    - ""
+    - "&2----------------------"
+    - ""
+    - "&c&l- Terminé"
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: true
+    view_requirement:
+      requirements:
+        condition_bq:
+          type: "string contains"
+          input: '%betonquest_Magasin-mineur-Q1:tag.done%'
+          output: 'true'

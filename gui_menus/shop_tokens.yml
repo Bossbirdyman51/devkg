@@ -1,0 +1,218 @@
+menu_title: '&6&lBoutique de Tokens' #':offset_-16::blank_menu:'
+open_command: "boutique"
+#open_requirement:
+#  requirements:
+#    permission:
+#      type: has permission
+#      permission: essentials.keepexp
+#      deny_commands:
+#        - '[message] &cTu n''est pas VIP !'
+size: 35
+items:
+  0:
+    material: "BLACK_STAINED_GLASS_PANE"
+    display_name: "."
+    slots:
+      - 2
+      - 1
+      - 10
+      - 4
+      - 11
+      - 12
+      - 14
+      - 21
+      - 25
+      - 26
+      - 6
+      - 8
+      - 7
+      - 6
+      - 15
+      - 16
+      - 23
+  60:
+    material: "chain"
+    display_name: "."
+    slots:
+      - 0
+      - 8
+      - 9
+      - 18
+      - 26
+      - 17
+  1:
+    material: "STICK"
+    nbt_int: CustomModelData:10059
+    slot: 3
+    display_name: '&5Clé de Vote'
+    lore:
+     - "Acheter &a1 x Clé de vote &fpour &a5 Tokens"
+     - "Tokens Dispo : &7%betonquest_Automatique:point.vote.amount%"
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: false
+    left_click_requirement:
+      requirements:
+        anything_here:
+          type: ">="
+          input: "%betonquest_Automatique:point.vote.amount%"
+          output: "5"
+      deny_commands:
+      - '[message] &6KGInfoServs &8> &7Vous avez besoin de &c5 Tokens                     &2Voter pour obtenir des tokens ! &6https://kginfoservs.com/vote.'
+    left_click_commands:
+    - '[console] points take %player_name% 5'
+    - '[console] kgcoffre key give %player_name% vote 1'
+    - '[message] &6KGInfoServs &8> &fVous avez acheté &a1 x Clé de vote.'
+    - '[refresh]'
+  #2:
+  #  material: NETHERITE_PICKAXE
+  #  slot: 19
+  #  lore:
+  #   - "Ouvrir le Magasin de Minerais"
+  #  display_name: 'Magasin Mineur'
+  #  hide_enchantments: false
+  #  unbreakable: false
+  #  hide_effects: false
+  #  hide_attributes: false
+  #  update: false
+  #  left_click_commands:
+  #    - '[console] shop %player_name% m_minerais'
+  #3:
+  #  material: NETHERITE_AXE
+  #  slot: 20
+  #  lore:
+  #   - "Ouvrir le Magasin de Bois"
+  #  display_name: 'Magasin Bois'
+  #  hide_enchantments: false
+  #  unbreakable: false
+  #  hide_effects: false
+  #  hide_attributes: false
+  #  update: false
+  #  left_click_commands:
+  #    - '[console] shop %player_name% b_buche'
+  #4:
+  #  material: NETHERITE_HOE
+  #  slot: 21
+  #  lore:
+  #   - "Ouvrir le Magasin du Fermier"
+  #  display_name: 'Graines, Cultures'
+  #  hide_enchantments: false
+  #  unbreakable: false
+  #  hide_effects: false
+  #  hide_attributes: false
+  #  update: false
+  #  left_click_commands:
+  #    - '[console] shop %player_name% f_fermier'
+  #5:
+  #  material: "COOKED_BEEF"
+  #  slot: 22
+  #  lore:
+  #   - "Ouvrir le Magasin de Nourriture"
+  #  display_name: 'Nourriture Cuite / Cru'
+  #  hide_enchantments: false
+  #  unbreakable: false
+  #  hide_effects: false
+  #  hide_attributes: false
+  #  update: false
+  #  left_click_commands:
+  #    - '[console] shop %player_name% food'
+  #6:
+  #  material: "OAK_STAIRS"
+  #  slot: 23
+  #  lore:
+  #   - "Escalier, trappes etc..."
+  #  display_name: 'Magasin de Meuble Bois'
+  #  hide_enchantments: false
+  #  unbreakable: false
+  #  hide_effects: false
+  #  hide_attributes: false
+  #  update: false
+  #  left_click_commands:
+  #    - '[console] shop %player_name% b_meuble'
+  #7:
+  #  material: "STONE_STAIRS"
+  #  slot: 24
+  #  lore:
+  #   - "Escalier, trappes etc..."
+  #  display_name: 'Magasin de Meuble Pierre'
+  #  hide_enchantments: false
+  #  unbreakable: false
+  #  hide_effects: false
+  #  hide_attributes: false
+  #  update: false
+  #  left_click_commands:
+  #    - '[console] shop %player_name% m_meuble'
+  #8:
+  #  material: "TERRACOTTA"
+  #  slot: 25
+  #  lore:
+  #   - "Terre Cuite"
+  #  display_name: 'Magasin de Terre Cuite'
+  #  hide_enchantments: false
+  #  unbreakable: false
+  #  hide_effects: false
+  #  hide_attributes: false
+  #  update: false
+  #  left_click_commands:
+  #    - '[console] shop %player_name% f_terra'
+  #8:
+  #  material: "BOW"
+  #  nbt_int: CustomModelData:1
+  #  slot: 31
+  #  lore:
+  #   - "Archerie"
+  #  display_name: 'Magasin d''archerie'
+  #  hide_enchantments: false
+  #  unbreakable: false
+  #  hide_effects: false
+  #  hide_attributes: false
+  #  update: false
+  #  left_click_commands:
+  #    - '[console] shop %player_name% a_archerie'
+  #9:
+  #  material: "WOODEN_HOE"
+  #  nbt_int: CustomModelData:2
+  #  slot: 28
+  #  lore:
+  #   - "&4Potion Soin / Mana"
+  #   - "&6Baton de Mage"
+  #  display_name: 'Magasin d''alchimie'
+  #  hide_enchantments: false
+  #  unbreakable: false
+  #  hide_effects: false
+  #  hide_attributes: false
+  #  update: false
+  #  left_click_commands:
+  #    - '[console] shop %player_name% a_alchimie'
+  #10:
+  #  material: "NETHERITE_CHESTPLATE"
+  #  slot: 34
+  #  lore:
+  #   - "&4Outils"
+  #   - "&6Equipement"
+  #   - "Armes Guerrier"
+  #  display_name: 'Magasin du Guerrier'
+  #  hide_enchantments: false
+  #  unbreakable: false
+  #  hide_effects: false
+  #  hide_attributes: false
+  #  update: false
+  #  left_click_commands:
+  #    - '[console] shop %player_name% f_armor'
+  #13:
+  #  material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGY0ZmNkOTU5OGExZmQzOWMyOGY1MDgwOWU0Y2U4YTEzMjJhZDQ4YTlhYmQ4YzIzZjIxMTg4Y2UwYTgyODhlNCJ9fX0="
+  #  slot: 13
+  #  display_name: 'Magasin'
+  #14:
+  #  material: "ENDER_CHEST"
+  #  slot: 5
+  #  display_name: '&5EnderChest'
+  #  hide_enchantments: false
+  #  unbreakable: false
+  #  hide_effects: false
+  #  hide_attributes: false
+  #  update: false
+  #  left_click_commands:
+  #    - '[player] ec'

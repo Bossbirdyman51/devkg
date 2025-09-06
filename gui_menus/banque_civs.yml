@@ -1,0 +1,126 @@
+menu_title: ':offset_-8:&fṎ' #':offset_-16::blank_menu:'
+open_command: "banque"
+register_command: true
+size: 54
+items:
+  30:
+    material: "PAPER"
+    model_data: "10199"
+    display_name: '&#FF9800Solde Perso : &b%vault_eco_balance% '
+    slots: 
+      - 40
+      - 49
+    lore: 
+      - '&2Solde Bancaire : &b%lands_land_balance%'
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: true
+  1:
+    material: "PAPER"
+    model_data: "10199"
+    slot: 19
+    display_name: '&2Déposer &6100&2 Kgolds '
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: false
+    left_click_commands:
+      - '[player] ville deposit 100'
+      - '[refresh]'
+  2:
+    material: "PAPER"
+    model_data: "10199"
+    slot: 20
+    display_name: '&2Déposer &61000&2 Kgolds '
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: false
+    left_click_commands:
+      - '[player] ville deposit 1000'
+      - '[refresh]'
+  3:
+    material: "PAPER"
+    model_data: "10199"
+    slot: 21
+    display_name: '&2Déposer &610.000&2 Kgolds '
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: false
+    left_click_commands:
+      - '[player] ville deposit 10000'
+      - '[refresh]'
+  d_all:
+    material: "PAPER"
+    model_data: "10199"
+    slots:
+      - 29
+      - 38 
+    display_name: '&2Déposer TOUT &6%vault_eco_balance% '
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: false
+    left_click_commands:
+      - '[player] ville deposit all'
+      - '[refresh]'
+  5:
+    material: "PAPER"
+    model_data: "10199"
+    slot: 23
+    display_name: '&2Retirer &6100&2 Kgolds '
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: false
+    left_click_commands:
+      - '[player] ville withdraw 100'
+      - '[refresh]'
+  6:
+    material: "PAPER"
+    model_data: "10199"
+    slot: 24
+    display_name: '&2Retirer &61000&2 Kgolds '
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: false
+    left_click_commands:
+      - '[player] ville withdraw 1000'
+  7:
+    material: "PAPER"
+    model_data: "10199"
+    slot: 25
+    display_name: '&2Retirer &610.000&2 Kgolds '
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: false
+    left_click_commands:
+      - '[player] ville withdraw 10000'
+      - '[refresh]'
+  8:
+    material: "PAPER"
+    model_data: "10199"
+    slots:
+      - 42
+      - 33
+    display_name: '&2Retirer TOUT &6%lands_land_balance%'
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: false
+    left_click_commands:
+      - '[player] ville withdraw all'
+      - '[refresh]'

@@ -1,0 +1,261 @@
+menu_title: '&fLe Tavernier'
+open_command:
+- alcool
+- bar
+size: 54
+items:
+  'wheatbeer':
+    material: potion
+    rgb: 255, 184, 77
+    slot: 10
+    display_name: "&fBière de blé fine"
+    left_click_requirement:
+      requirements:
+        money:
+          type: ">="
+          input: "%vault_eco_balance%"
+          output: "20"
+      deny_commands:
+      - '[message] &cVous n''avez pas assez d''argent pour acheter ceci.'
+    lore:
+    - "&7Une bière légère et rafraîchissante."
+    - ''
+    - '&fPrix: &c20'
+    left_click_commands:
+    - '[console] eco take %player_name% 20'
+    - '[console] brew give wheatbeer 10 %player_name%'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'beer':
+    material: potion
+    rgb: 255, 211, 51
+    slot: 11
+    display_name: "&fBière fine"
+    lore:
+    - "&7Une bière classique au goût vif."
+    - ''
+    - '&fPrix: &c35'
+    left_click_commands:
+    - '[console] eco take %player_name% 35'
+    - '[console] brew give beer 10 %player_name%'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'darkbeer':
+    material: potion
+    rgb: 101, 0, 19
+    slot: 12
+    display_name: "&fBière brune fine"
+    lore:
+    - "&7Une bière riche au goût torréfié."
+    - ''
+    - '&fPrix: &c40'
+    left_click_commands:
+    - '[console] eco take %player_name% 40'
+    - '[console] brew give darkbeer 10 %player_name%'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'wine':
+    material: potion
+    rgb: 255, 0, 0
+    slot: 13
+    display_name: "&fVin rouge"
+    lore:
+    - "&7Un vin rouge corsé et moelleux."
+    - ''
+    - '&fPrix: &c45'
+    left_click_commands:
+    - '[console] eco take %player_name% 45'
+    - '[console] brew give wine 10 %player_name%'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'mead':
+    material: potion
+    rgb: 255, 165, 0
+    slot: 14
+    display_name: "&6Hydromel doré"
+    lore:
+    - "&7Une boisson sucrée à base de miel."
+    - ''
+    - '&fPrix: &c50'
+    left_click_commands:
+    - '[console] eco take %player_name% 50'
+    - '[console] brew give mead 10 %player_name%'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'cidre':
+    material: potion
+    rgb: 248, 104, 32
+    slot: 15
+    display_name: "&fGrand cidre de pomme"
+    lore:
+    - "&7Un cidre pétillant et fruité."
+    - ''
+    - '&fPrix: &c120'
+    left_click_commands:
+    - '[console] eco take %player_name% 120'
+    - '[console] brew give cidre 10 %player_name%'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'apple_liquor':
+    material: potion
+    rgb: 255, 69, 0
+    slot: 16
+    display_name: "&fCalvados"
+    lore:
+    - "&7Une liqueur de pomme forte et parfumée."
+    - ''
+    - '&fPrix: &c150'
+    left_click_commands:
+    - '[console] eco take %player_name% 150'
+    - '[console] brew give apple_liquor 10 %player_name%'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'whiskey':
+    material: potion
+    rgb: 255, 165, 0
+    slot: 19
+    display_name: "&fWhisky écossais"
+    lore:
+    - "&7Un whisky single malt, vieilli à la perfection."
+    - ''
+    - '&fPrix: &c80'
+    left_click_commands:
+    - '[console] eco take %player_name% 80'
+    - '[console] brew give whiskey 10 %player_name%'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'rum':
+    material: potion
+    rgb: 139, 0, 0
+    slot: 20
+    display_name: "&6Rhum doré"
+    lore:
+    - "&7Un rhum épicé, idéal pour les pirates."
+    - ''
+    - '&fPrix: &c100'
+    left_click_commands:
+    - '[console] eco take %player_name% 100'
+    - '[console] brew give rum 10 %player_name%'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'vodka':
+    material: potion
+    rgb: 255, 255, 255
+    slot: 21
+    display_name: "&fVodka russe"
+    lore:
+    - "&7Une vodka pure et forte."
+    - ''
+    - '&fPrix: &c75'
+    left_click_commands:
+    - '[console] eco take %player_name% 75'
+    - '[console] brew give vodka 10 %player_name%'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'gin':
+    material: potion
+    rgb: 153, 221, 255
+    slot: 22
+    display_name: "&fOld Tom Gin"
+    lore:
+    - "&7Un gin aromatisé au genièvre."
+    - ''
+    - '&fPrix: &c90'
+    left_click_commands:
+    - '[console] eco take %player_name% 90'
+    - '[console] brew give gin 10 %player_name%'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'tequila':
+    material: potion
+    rgb: 245, 240, 126
+    slot: 23
+    display_name: "&fTequila anejo"
+    lore:
+    - "&7L'esprit du désert, à consommer avec modération."
+    - ''
+    - '&fPrix: &c110'
+    left_click_commands:
+    - '[console] eco take %player_name% 110'
+    - '[console] brew give tequila 10 %player_name%'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'absinthe':
+    material: potion
+    rgb: 0, 255, 0
+    slot: 24
+    display_name: "&fAbsinthe forte"
+    lore:
+    - "&7La fée verte, une liqueur puissante et anisée."
+    - ''
+    - '&fPrix: &c130'
+    left_click_commands:
+    - '[console] eco take %player_name% 130'
+    - '[console] brew give absinthe 10 %player_name%'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'coffee':
+    material: potion
+    rgb: 0, 0, 0
+    slot: 25
+    display_name: "&fCafé fort"
+    lore:
+    - "&7Pour rester éveillé toute la nuit."
+    - ''
+    - '&fPrix: &c150'
+    left_click_commands:
+    - '[console] eco take %player_name% 150'
+    - '[console] brew give coffee 10 %player_name%'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'sake':
+    material: potion
+    rgb: 255, 255, 255
+    slot: 28
+    display_name: "&fSaké fin"
+    lore:
+    - "&7Un alcool de riz japonais, doux et délicat."
+    - ''
+    - '&fPrix: &c100'
+    left_click_commands:
+    - '[console] eco take %player_name% 100'
+    - '[console] brew give sake 10 %player_name%'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'cognac':
+    material: potion
+    rgb: 152, 118, 84
+    slot: 29
+    display_name: "&fCognac XO"
+    lore:
+    - "&7Vieilli à la perfection, un goût inoubliable."
+    - ''
+    - '&fPrix: &c200'
+    left_click_commands:
+    - '[console] eco take %player_name% 200'
+    - '[console] brew give cognac 10 %player_name%'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'moonshine':
+    material: potion
+    rgb: 255, 255, 255
+    slot: 30
+    display_name: "&fAlcool de contrebande"
+    lore:
+    - "&7Aussi illégal que puissant."
+    - ''
+    - '&fPrix: &c180'
+    left_click_commands:
+    - '[console] eco take %player_name% 180'
+    - '[console] brew give moonshine 10 %player_name%'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'pumpkin_spice_beer':
+    material: potion
+    rgb: 255, 153, 51
+    slot: 31
+    display_name: "&fExcellente bière à la citrouille"
+    lore:
+    - "&7Parfait pour l'automne."
+    - ''
+    - '&fPrix: &c60'
+    left_click_commands:
+    - '[console] eco take %player_name% 60'
+    - '[console] brew give pumpkin_spice_beer 10 %player_name%'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+  'melon_vodka':
+    material: potion
+    rgb: 255, 102, 102
+    slot: 32
+    display_name: "&fVodka au melon rafraîchissante"
+    lore:
+    - "&7Une touche estivale rafraîchissante."
+    - ''
+    - '&fPrix: &c85'
+    left_click_commands:
+    - '[console] eco take %player_name% 85'
+    - '[console] brew give melon_vodka 10 %player_name%'
+    - '[sound] ENTITY_PLAYER_LEVELUP'

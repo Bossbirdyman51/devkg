@@ -1,0 +1,746 @@
+menu_title: '&8⚒ &3Générateur de Pierre'
+size: 54
+
+items:
+  border:
+    material: BLACK_STAINED_GLASS_PANE
+    display_name: "&7•"
+    slots:
+      - 0-3
+      - 5-8
+      - 9
+      - 13
+      - 17
+      - 18
+      - 22
+      - 26
+      - 27
+      - 31
+      - 35
+      - 36
+      - 40
+      - 44
+      - 45-53
+
+  points_display:
+    material: EXPERIENCE_BOTTLE
+    slot: 4
+    display_name: '&bPoints'
+    lore:
+      - '&7Points de Ville: &f%kg_ville_point%'
+      - '&7Points Personnels: &f%kg_ville_point_perso%'
+    update: true
+
+  # COBBLESTONE SECTION - LEFT SIDE (VILLE)
+  cobble_ville_1:
+    material: COBBLESTONE
+    slot: 10
+    amount: 1
+    display_name: '&f1 Stack &7de Pierre Taillée (Points de Ville)'
+    lore:
+      - "&7Coût: &b50 &7points de ville"
+      - "&7Quantité: &f64 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "50"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "1"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% cobblestone 64'
+      - '[console] bq gp add ville.%kg_ville_id% -50'
+      - '[refresh]'
+
+  cobble_ville_2:
+    material: COBBLESTONE
+    slot: 11
+    amount: 5
+    display_name: '&f5 Stacks &7de Pierre Taillée (Points de Ville)'
+    lore:
+      - "&7Coût: &b250 &7points de ville"
+      - "&7Quantité: &f320 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "250"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "5"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% cobblestone 320'
+      - '[console] bq gp add ville.%kg_ville_id% -250'
+      - '[refresh]'
+
+  cobble_ville_3:
+    material: COBBLESTONE
+    slot: 12
+    amount: 10
+    display_name: '&f10 Stacks &7de Pierre Taillée (Points de Ville)'
+    lore:
+      - "&7Coût: &b500 &7points de ville"
+      - "&7Quantité: &f640 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "500"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "10"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% cobblestone 640'
+      - '[console] bq gp add ville.%kg_ville_id% -500'
+      - '[refresh]'
+
+  # COBBLESTONE SECTION - RIGHT SIDE (PERSO)
+  cobble_perso_1:
+    material: COBBLESTONE
+    slot: 14
+    amount: 1
+    display_name: '&f1 Stack &7de Pierre Taillée (Points Personnels)'
+    lore:
+      - "&7Coût: &b50 &7points personnels"
+      - "&7Quantité: &f64 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "50"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "1"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% cobblestone 64'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -50'
+      - '[refresh]'
+
+  cobble_perso_2:
+    material: COBBLESTONE
+    slot: 15
+    amount: 5
+    display_name: '&f5 Stacks &7de Pierre Taillée (Points Personnels)'
+    lore:
+      - "&7Coût: &b250 &7points personnels"
+      - "&7Quantité: &f320 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "250"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "5"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% cobblestone 320'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -250'
+      - '[refresh]'
+
+  cobble_perso_3:
+    material: COBBLESTONE
+    slot: 16
+    amount: 10
+    display_name: '&f10 Stacks &7de Pierre Taillée (Points Personnels)'
+    lore:
+      - "&7Coût: &b500 &7points personnels"
+      - "&7Quantité: &f640 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "500"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "10"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% cobblestone 640'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -500'
+      - '[refresh]'
+
+  # STONE SECTION - LEFT SIDE (VILLE)
+  stone_ville_1:
+    material: STONE
+    slot: 19
+    amount: 1
+    display_name: '&f1 Stack &7de Pierre (Points de Ville)'
+    lore:
+      - "&7Coût: &b75 &7points de ville"
+      - "&7Quantité: &f64 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "75"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "1"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% stone 64'
+      - '[console] bq gp add ville.%kg_ville_id% -75'
+      - '[refresh]'
+
+  stone_ville_2:
+    material: STONE
+    slot: 20
+    amount: 5
+    display_name: '&f5 Stacks &7de Pierre (Points de Ville)'
+    lore:
+      - "&7Coût: &b375 &7points de ville"
+      - "&7Quantité: &f320 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "375"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "5"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% stone 320'
+      - '[console] bq gp add ville.%kg_ville_id% -375'
+      - '[refresh]'
+
+  stone_ville_3:
+    material: STONE
+    slot: 21
+    amount: 10
+    display_name: '&f10 Stacks &7de Pierre (Points de Ville)'
+    lore:
+      - "&7Coût: &b750 &7points de ville"
+      - "&7Quantité: &f640 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "750"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "10"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% stone 640'
+      - '[console] bq gp add ville.%kg_ville_id% -750'
+      - '[refresh]'
+
+  # STONE SECTION - RIGHT SIDE (PERSO)
+  stone_perso_1:
+    material: STONE
+    slot: 23
+    amount: 1
+    display_name: '&f1 Stack &7de Pierre (Points Personnels)'
+    lore:
+      - "&7Coût: &b75 &7points personnels"
+      - "&7Quantité: &f64 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "75"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "1"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% stone 64'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -75'
+      - '[refresh]'
+
+  stone_perso_2:
+    material: STONE
+    slot: 24
+    amount: 5
+    display_name: '&f5 Stacks &7de Pierre (Points Personnels)'
+    lore:
+      - "&7Coût: &b375 &7points personnels"
+      - "&7Quantité: &f320 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "375"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "5"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% stone 320'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -375'
+      - '[refresh]'
+
+  stone_perso_3:
+    material: STONE
+    slot: 25
+    amount: 10
+    display_name: '&f10 Stacks &7de Pierre (Points Personnels)'
+    lore:
+      - "&7Coût: &b750 &7points personnels"
+      - "&7Quantité: &f640 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "750"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "10"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% stone 640'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -750'
+      - '[refresh]'
+
+  # ANDESITE SECTION - LEFT SIDE (VILLE)
+  andesite_ville_1:
+    material: ANDESITE
+    slot: 28
+    amount: 1
+    display_name: '&f1 Stack &7d''Andésite (Points de Ville)'
+    lore:
+      - "&7Coût: &b90 &7points de ville"
+      - "&7Quantité: &f64 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "90"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "1"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% andesite 64'
+      - '[console] bq gp add ville.%kg_ville_id% -90'
+      - '[refresh]'
+
+  andesite_ville_2:
+    material: ANDESITE
+    slot: 29
+    amount: 5
+    display_name: '&f5 Stacks &7d''Andésite (Points de Ville)'
+    lore:
+      - "&7Coût: &b450 &7points de ville"
+      - "&7Quantité: &f320 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "450"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "5"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% andesite 320'
+      - '[console] bq gp add ville.%kg_ville_id% -450'
+      - '[refresh]'
+
+  andesite_ville_3:
+    material: ANDESITE
+    slot: 30
+    amount: 10
+    display_name: '&f10 Stacks &7d''Andésite (Points de Ville)'
+    lore:
+      - "&7Coût: &b900 &7points de ville"
+      - "&7Quantité: &f640 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "900"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "10"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% andesite 640'
+      - '[console] bq gp add ville.%kg_ville_id% -900'
+      - '[refresh]'
+
+  # ANDESITE SECTION - RIGHT SIDE (PERSO)
+  andesite_perso_1:
+    material: ANDESITE
+    slot: 32
+    amount: 1
+    display_name: '&f1 Stack &7d''Andésite (Points Personnels)'
+    lore:
+      - "&7Coût: &b90 &7points personnels"
+      - "&7Quantité: &f64 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "90"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "1"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% andesite 64'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -90'
+      - '[refresh]'
+
+  andesite_perso_2:
+    material: ANDESITE
+    slot: 33
+    amount: 5
+    display_name: '&f5 Stacks &7d''Andésite (Points Personnels)'
+    lore:
+      - "&7Coût: &b450 &7points personnels"
+      - "&7Quantité: &f320 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "450"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "5"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% andesite 320'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -450'
+      - '[refresh]'
+
+  andesite_perso_3:
+    material: ANDESITE
+    slot: 34
+    amount: 10
+    display_name: '&f10 Stacks &7d''Andésite (Points Personnels)'
+    lore:
+      - "&7Coût: &b900 &7points personnels"
+      - "&7Quantité: &f640 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "900"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "10"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% andesite 640'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -900'
+      - '[refresh]'
+
+  # GRANITE SECTION - LEFT SIDE (VILLE)
+  granite_ville_1:
+    material: GRANITE
+    slot: 37
+    amount: 1
+    display_name: '&f1 Stack &7de Granite (Points de Ville)'
+    lore:
+      - "&7Coût: &b90 &7points de ville"
+      - "&7Quantité: &f64 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "90"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "1"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% granite 64'
+      - '[console] bq gp add ville.%kg_ville_id% -90'
+      - '[refresh]'
+
+  granite_ville_2:
+    material: GRANITE
+    slot: 38
+    amount: 5
+    display_name: '&f5 Stacks &7de Granite (Points de Ville)'
+    lore:
+      - "&7Coût: &b450 &7points de ville"
+      - "&7Quantité: &f320 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "450"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "5"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% granite 320'
+      - '[console] bq gp add ville.%kg_ville_id% -450'
+      - '[refresh]'
+
+  granite_ville_3:
+    material: GRANITE
+    slot: 39
+    amount: 10
+    display_name: '&f10 Stacks &7de Granite (Points de Ville)'
+    lore:
+      - "&7Coût: &b900 &7points de ville"
+      - "&7Quantité: &f640 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "900"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "10"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% granite 640'
+      - '[console] bq gp add ville.%kg_ville_id% -900'
+      - '[refresh]'
+
+  # GRANITE SECTION - RIGHT SIDE (PERSO)
+  granite_perso_1:
+    material: GRANITE
+    slot: 41
+    amount: 1
+    display_name: '&f1 Stack &7de Granite (Points Personnels)'
+    lore:
+      - "&7Coût: &b90 &7points personnels"
+      - "&7Quantité: &f64 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "90"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "1"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% granite 64'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -90'
+      - '[refresh]'
+
+  granite_perso_2:
+    material: GRANITE
+    slot: 42
+    amount: 5
+    display_name: '&f5 Stacks &7de Granite (Points Personnels)'
+    lore:
+      - "&7Coût: &b450 &7points personnels"
+      - "&7Quantité: &f320 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "450"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "5"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% granite 320'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -450'
+      - '[refresh]'
+
+  granite_perso_3:
+    material: GRANITE
+    slot: 43
+    amount: 10
+    display_name: '&f10 Stacks &7de Granite (Points Personnels)'
+    lore:
+      - "&7Coût: &b900 &7points personnels"
+      - "&7Quantité: &f640 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "900"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "10"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% granite 640'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -900'
+      - '[refresh]'
+
+  next_page:
+    material: ARROW
+    slot: 50
+    display_name: '&fPage suivante &7»'
+    lore:
+      - "&7Cliquez pour voir"
+      - "&7la page suivante"
+    left_click_commands:
+      - '[openguimenu] generateur_pierre2'

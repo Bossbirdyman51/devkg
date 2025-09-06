@@ -1,0 +1,94 @@
+menu_title: "&2&l&2Tu es un(e) &#1CC108%mmocore_class%  !"
+open_command: "mzabi"
+size: 45
+items:
+  0:
+    material: "BLACK_STAINED_GLASS_PANE"
+    display_name: "."
+    slots:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 11
+      - 20
+      - 9
+      - 18
+      - 26
+      - 17
+      - 8
+      - 7
+      - 6
+      - 15
+      - 16
+      - 27
+      - 45
+      - 44
+      - 43
+      - 42
+      - 41
+      - 40
+      - 39
+      - 38
+      - 37
+      - 36
+      - 35
+  1:
+    material: "BLUE_STAINED_GLASS_PANE"
+    display_name: "."
+    slots:
+      - 10
+      - 11
+      - 12
+      - 13
+      - 14
+      - 15
+      - 16
+      - 19
+      - 21
+      - 23
+      - 25
+      - 28
+      - 29
+      - 30
+      - 31
+      - 32
+      - 33
+      - 34
+  20:
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWZmMzE0MzFkNjQ1ODdmZjZlZjk4YzA2NzU4MTA2ODFmOGMxM2JmOTZmNTFkOWNiMDdlZDc4NTJiMmZmZDEifX19"
+    slot: 20
+    display_name: '&3&lAugmenter ses Attributs'
+    lore:
+      - '&6Point d''atributs disponible : &5%mmocore_attribute_points%'
+      - '&6Point de réinitialisation disponible : &5%mmocore_attribute_reallocation_points%'
+      - ''
+      - '&bVous gagnez des points en montant de niveau.'
+      - '&7Les points de réinitialisation ne seront'
+      - '&7disponible que via une quête.'
+    left_click_commands:
+      - '[player] attributes'
+      - '[close]'
+  22:
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGQxNzRmNTliY2FhNjE0OWFlNWVjNGY0MTQxYzRlNTczZTkzYTQzMjdjMjY0Mjc5YmUzZTg3ZWE3NTIxZjQ2NCJ9fX0="
+    slot: 22
+    display_name: '&2&lChoisir sa classe '
+    lore:
+      - '&6Point de Classe disponible : &5%mmocore_class_points%'
+      - ''
+      - '&6Les points sont disponible grâce au quête.'
+      - '&21 point = 1 classe'
+      - ''
+    left_click_commands:
+      - '[player] classe'
+    right_click_commands:
+      - '[player] server minijeux'
+  24:
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGEyZmRlMzRkMzRjODU4OGU1OGJmZDc5MGNlMTgwMjVmNzg0MzM5OWRlZTJhYjRjZWRjMmMwYjQ2M2ZkMWUifX19"
+    slot: 24
+    display_name: 'Compétence'
+    lore:
+    left_click_commands:
+      - '[player] skills'

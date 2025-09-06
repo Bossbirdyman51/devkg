@@ -1,0 +1,115 @@
+menu_title: '&8 &e&lScenes NPC Cosmetics'
+open_command:
+  - scenescosmetics
+size: 9
+open_requirement:
+  requirements:
+    mythic_permission:
+      type: has permission
+      permission: scenes.use
+      deny_commands:
+        - '[message] &cYou do not have permission to open this menu!'
+        - '[sound] BLOCK_ANVIL_LAND'
+items:
+  hats:
+    material: texture-ada65c25b15b2d0e581631368fa5556759cdfc43723127cbb10bad6af24df713
+    slot: 0
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Hats'
+    lore:
+      - '&7Click to browse your Hats'
+    left_click_commands:
+      - '[openguimenu] scene_hats'
+      - '[close]'
+  backpacks:
+    material: texture-8351e505989838e27287e7afbc7f97e796cab5f3598a76160c131c940d0c5
+    slot: 1
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Backpacks'
+    lore:
+      - '&7Click to browse your backpacks'
+    left_click_commands:
+      - '[openguimenu] scene_backpacks'
+      - '[close]'
+  lefthand:
+    material: texture-b172377ff203b783e7896b215119be705373e702f466b715bfe7ab50ef425614
+    slot: 2
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Left Arm'
+    lore:
+      - '&7Click to browse your Left Arm cosmetics'
+    left_click_commands:
+      - '[openguimenu] scene_leftarm'
+      - '[message] &aEmpty'
+      - '[close]'
+  rightarm:
+    material: texture-b172377ff203b783e7896b215119be705373e702f466b715bfe7ab50ef425614
+    slot: 3
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Right Arm'
+    lore:
+      - '&7Click to browse your Right Arm cosmetics'
+    left_click_commands:
+      - '[openguimenu] scene_rightarm'
+      - '[close]'
+  remove:
+    material: texture-441f4edbc68c9061355242bd73effc9299a3252b9f11e82b5f1ec7b3b6ac0
+    slot: 8
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Delete'
+    lore:
+      - '&7Click to Delete this Scene'
+    left_click_commands:
+      - '[player] mm test cast deletenpc'
+      - '[message] &aScene Deleted!'
+      - '[close]'
+  goback:
+    material: texture-76ebaa41d1d405eb6b60845bb9ac724af70e85eac8a96a5544b9e23ad6c96c62
+    slot: 7
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Go back'
+    lore:
+      - '&7Click to go back'
+    left_click_commands:
+      - '[openguimenu] scene_edit'
+      - '[close]'
+  resetcosmetics:
+    material: texture-94c28ffb9063e63037c7c9c3a99975333254946ddfa0018996151740a5c66842
+    slot: 6
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Reset Cosmetics'
+    lore:
+      - '&7Click to Remove the cosmetics'
+    left_click_commands:
+      - '[player] mm test cast reset_cosmetics'
+      - '[message] &aScene Deleted!'
+      - '[close]'
+# 360915CDT7MOZIC0XVG8C2J159LO

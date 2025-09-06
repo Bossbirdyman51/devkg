@@ -1,0 +1,366 @@
+menu_title: '&6&lTaverne'
+size: 54
+items:
+  'solde_display':
+    material: EMERALD
+    slot: 4
+    display_name: '&a&lSolde'
+    lore:
+      - '&7Vous avez actuellement :'
+      - '&e%azlink_money% &9KGolds+'
+  'tavern_bar_counter':
+    material: itemsadder-workshop_six:tavern_bar_counter
+    slot: 11
+    display_name: '&eComptoir de bar'
+    lore:
+      - '&7Un comptoir pour votre taverne.'
+      - ''
+      - '&7Prix: &a18 &9KGolds+'
+      - '&eClic-gauche pour acheter.'
+    left_click_requirement:
+      requirements:
+        money:
+          type: ">="
+          input: "%azlink_money%"
+          output: "18"
+      deny_commands:
+        - '[message] &cVous n''avez pas assez d''argent.'
+        - '[message] &eVous pouvez créditer votre compte sur le site: &b&nhttps://kginfoservs.com/shop/offers/stripe'
+    left_click_commands:
+    - '[console] azlink money remove %player_name% 18'
+    - '[console] iagive %player_name% workshop_six:tavern_bar_counter 1'
+    - '[message] &aVous avez acheté un Comptoir de bar.'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+    - '[refresh]'
+
+  'tavern_bar_counter_empty':
+    material: itemsadder-workshop_six:tavern_bar_counter_empty
+    slot: 12
+    display_name: '&eComptoir de bar (Vide)'
+    lore:
+      - '&7Un comptoir vide pour votre taverne.'
+      - ''
+      - '&7Prix: &a14 &9KGolds+'
+      - '&eClic-gauche pour acheter.'
+    left_click_requirement:
+      requirements:
+        money:
+          type: ">="
+          input: "%azlink_money%"
+          output: "14"
+      deny_commands:
+        - '[message] &cVous n''avez pas assez d''argent.'
+        - '[message] &eVous pouvez créditer votre compte sur le site: &b&nhttps://kginfoservs.com/shop/offers/stripe'
+    left_click_commands:
+    - '[console] azlink money remove %player_name% 14'
+    - '[console] iagive %player_name% workshop_six:tavern_bar_counter_empty 1'
+    - '[message] &aVous avez acheté un Comptoir de bar (Vide).'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+    - '[refresh]'
+
+  'tavern_bar_counter_low':
+    material: itemsadder-workshop_six:tavern_bar_counter_low
+    slot: 13
+    display_name: '&eComptoir de bar (Bas)'
+    lore:
+      - '&7Un comptoir bas pour votre taverne.'
+      - ''
+      - '&7Prix: &a14 &9KGolds+'
+      - '&eClic-gauche pour acheter.'
+    left_click_requirement:
+      requirements:
+        money:
+          type: ">="
+          input: "%azlink_money%"
+          output: "14"
+      deny_commands:
+        - '[message] &cVous n''avez pas assez d''argent.'
+        - '[message] &eVous pouvez créditer votre compte sur le site: &b&nhttps://kginfoservs.com/shop/offers/stripe'
+    left_click_commands:
+    - '[console] azlink money remove %player_name% 14'
+    - '[console] iagive %player_name% workshop_six:tavern_bar_counter_low 1'
+    - '[message] &aVous avez acheté un Comptoir de bar (Bas).'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+    - '[refresh]'
+
+  'tavern_bench':
+    material: itemsadder-workshop_six:tavern_bench
+    slot: 14
+    display_name: '&eBanc de Taverne'
+    lore:
+      - '&7Un banc pour s''asseoir.'
+      - ''
+      - '&7Prix: &a10 &9KGolds+'
+      - '&eClic-gauche pour acheter.'
+    left_click_requirement:
+      requirements:
+        money:
+          type: ">="
+          input: "%azlink_money%"
+          output: "10"
+      deny_commands:
+        - '[message] &cVous n''avez pas assez d''argent.'
+        - '[message] &eVous pouvez créditer votre compte sur le site: &b&nhttps://kginfoservs.com/shop/offers/stripe'
+    left_click_commands:
+    - '[console] azlink money remove %player_name% 10'
+    - '[console] iagive %player_name% workshop_six:tavern_bench 1'
+    - '[message] &aVous avez acheté un Banc de Taverne.'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+    - '[refresh]'
+
+  'tavern_bottles':
+    material: itemsadder-workshop_six:tavern_bottles
+    slot: 15
+    display_name: '&eBouteilles'
+    lore:
+      - '&7Quelques bouteilles pour décorer.'
+      - ''
+      - '&7Prix: &a4 &9KGolds+'
+      - '&eClic-gauche pour acheter.'
+    left_click_requirement:
+      requirements:
+        money:
+          type: ">="
+          input: "%azlink_money%"
+          output: "4"
+      deny_commands:
+        - '[message] &cVous n''avez pas assez d''argent.'
+        - '[message] &eVous pouvez créditer votre compte sur le site: &b&nhttps://kginfoservs.com/shop/offers/stripe'
+    left_click_commands:
+    - '[console] azlink money remove %player_name% 4'
+    - '[console] iagive %player_name% workshop_six:tavern_bottles 1'
+    - '[message] &aVous avez acheté des Bouteilles.'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+    - '[refresh]'
+
+  'tavern_bottle_stack':
+    material: itemsadder-workshop_six:tavern_bottle_stack
+    slot: 16
+    display_name: '&ePile de Bouteilles'
+    lore:
+      - '&7Une pile de bouteilles.'
+      - ''
+      - '&7Prix: &a5 &9KGolds+'
+      - '&eClic-gauche pour acheter.'
+    left_click_requirement:
+      requirements:
+        money:
+          type: ">="
+          input: "%azlink_money%"
+          output: "5"
+      deny_commands:
+        - '[message] &cVous n''avez pas assez d''argent.'
+        - '[message] &eVous pouvez créditer votre compte sur le site: &b&nhttps://kginfoservs.com/shop/offers/stripe'
+    left_click_commands:
+    - '[console] azlink money remove %player_name% 5'
+    - '[console] iagive %player_name% workshop_six:tavern_bottle_stack 1'
+    - '[message] &aVous avez acheté une Pile de Bouteilles.'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+    - '[refresh]'
+
+  'tavern_cabinet':
+    material: itemsadder-workshop_six:tavern_cabinet
+    slot: 19
+    display_name: '&eCabinet de Taverne'
+    lore:
+      - '&7Un cabinet de rangement.'
+      - ''
+      - '&7Prix: &a18 &9KGolds+'
+      - '&eClic-gauche pour acheter.'
+    left_click_requirement:
+      requirements:
+        money:
+          type: ">="
+          input: "%azlink_money%"
+          output: "18"
+      deny_commands:
+        - '[message] &cVous n''avez pas assez d''argent.'
+        - '[message] &eVous pouvez créditer votre compte sur le site: &b&nhttps://kginfoservs.com/shop/offers/stripe'
+    left_click_commands:
+    - '[console] azlink money remove %player_name% 18'
+    - '[console] iagive %player_name% workshop_six:tavern_cabinet 1'
+    - '[message] &aVous avez acheté un Cabinet de Taverne.'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+    - '[refresh]'
+
+  'tavern_cabinet_empty':
+    material: itemsadder-workshop_six:tavern_cabinet_empty
+    slot: 20
+    display_name: '&eCabinet de Taverne (Vide)'
+    lore:
+      - '&7Un cabinet de rangement vide.'
+      - ''
+      - '&7Prix: &a15 &9KGolds+'
+      - '&eClic-gauche pour acheter.'
+    left_click_requirement:
+      requirements:
+        money:
+          type: ">="
+          input: "%azlink_money%"
+          output: "15"
+      deny_commands:
+        - '[message] &cVous n''avez pas assez d''argent.'
+        - '[message] &eVous pouvez créditer votre compte sur le site: &b&nhttps://kginfoservs.com/shop/offers/stripe'
+    left_click_commands:
+    - '[console] azlink money remove %player_name% 15'
+    - '[console] iagive %player_name% workshop_six:tavern_cabinet_empty 1'
+    - '[message] &aVous avez acheté un Cabinet de Taverne (Vide).'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+    - '[refresh]'
+
+  'tavern_keg':
+    material: itemsadder-workshop_six:tavern_keg
+    slot: 21
+    display_name: '&eTonneau'
+    lore:
+      - '&7Un tonneau de bière.'
+      - ''
+      - '&7Prix: &a12 &9KGolds+'
+      - '&eClic-gauche pour acheter.'
+    left_click_requirement:
+      requirements:
+        money:
+          type: ">="
+          input: "%azlink_money%"
+          output: "12"
+      deny_commands:
+        - '[message] &cVous n''avez pas assez d''argent.'
+        - '[message] &eVous pouvez créditer votre compte sur le site: &b&nhttps://kginfoservs.com/shop/offers/stripe'
+    left_click_commands:
+    - '[console] azlink money remove %player_name% 12'
+    - '[console] iagive %player_name% workshop_six:tavern_keg 1'
+    - '[message] &aVous avez acheté un Tonneau.'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+    - '[refresh]'
+
+  'tavern_keg_station':
+    material: itemsadder-workshop_six:tavern_keg_station
+    slot: 22
+    display_name: '&eStation de Tonneaux'
+    lore:
+      - '&7Pour servir la bière.'
+      - ''
+      - '&7Prix: &a20 &9KGolds+'
+      - '&eClic-gauche pour acheter.'
+    left_click_requirement:
+      requirements:
+        money:
+          type: ">="
+          input: "%azlink_money%"
+          output: "20"
+      deny_commands:
+        - '[message] &cVous n''avez pas assez d''argent.'
+        - '[message] &eVous pouvez créditer votre compte sur le site: &b&nhttps://kginfoservs.com/shop/offers/stripe'
+    left_click_commands:
+    - '[console] azlink money remove %player_name% 20'
+    - '[console] iagive %player_name% workshop_six:tavern_keg_station 1'
+    - '[message] &aVous avez acheté une Station de Tonneaux.'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+    - '[refresh]'
+
+  'tavern_long_table':
+    material: itemsadder-workshop_six:tavern_long_table
+    slot: 23
+    display_name: '&eLongue Table'
+    lore:
+      - '&7Une grande table pour les groupes.'
+      - ''
+      - '&7Prix: &a16 &9KGolds+'
+      - '&eClic-gauche pour acheter.'
+    left_click_requirement:
+      requirements:
+        money:
+          type: ">="
+          input: "%azlink_money%"
+          output: "16"
+      deny_commands:
+        - '[message] &cVous n''avez pas assez d''argent.'
+        - '[message] &eVous pouvez créditer votre compte sur le site: &b&nhttps://kginfoservs.com/shop/offers/stripe'
+    left_click_commands:
+    - '[console] azlink money remove %player_name% 16'
+    - '[console] iagive %player_name% workshop_six:tavern_long_table 1'
+    - '[message] &aVous avez acheté une Longue Table.'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+    - '[refresh]'
+
+  'tavern_pint_glass':
+    material: itemsadder-workshop_six:tavern_pint_glass
+    slot: 24
+    display_name: '&eVerre à Pinte'
+    lore:
+      - '&7Un verre pour la bière.'
+      - ''
+      - '&7Prix: &a3 &9KGolds+'
+      - '&eClic-gauche pour acheter.'
+    left_click_requirement:
+      requirements:
+        money:
+          type: ">="
+          input: "%azlink_money%"
+          output: "3"
+      deny_commands:
+        - '[message] &cVous n''avez pas assez d''argent.'
+        - '[message] &eVous pouvez créditer votre compte sur le site: &b&nhttps://kginfoservs.com/shop/offers/stripe'
+    left_click_commands:
+    - '[console] azlink money remove %player_name% 3'
+    - '[console] iagive %player_name% workshop_six:tavern_pint_glass 1'
+    - '[message] &aVous avez acheté un Verre à Pinte.'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+    - '[refresh]'
+
+  'tavern_shelf':
+    material: itemsadder-workshop_six:tavern_shelf
+    slot: 25
+    display_name: '&eÉtagère de Taverne'
+    lore:
+      - '&7Pour ranger vos bouteilles.'
+      - ''
+      - '&7Prix: &a12 &9KGolds+'
+      - '&eClic-gauche pour acheter.'
+    left_click_requirement:
+      requirements:
+        money:
+          type: ">="
+          input: "%azlink_money%"
+          output: "12"
+      deny_commands:
+        - '[message] &cVous n''avez pas assez d''argent.'
+        - '[message] &eVous pouvez créditer votre compte sur le site: &b&nhttps://kginfoservs.com/shop/offers/stripe'
+    left_click_commands:
+    - '[console] azlink money remove %player_name% 12'
+    - '[console] iagive %player_name% workshop_six:tavern_shelf 1'
+    - '[message] &aVous avez acheté une Étagère de Taverne.'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+    - '[refresh]'
+
+  'tavern_stool':
+    material: itemsadder-workshop_six:tavern_stool
+    slot: 10
+    display_name: '&eTabouret de Taverne'
+    lore:
+      - '&7Un tabouret classique pour votre bar.'
+      - ''
+      - '&7Prix: &a8 &9KGolds+'
+      - '&eClic-gauche pour acheter.'
+    left_click_requirement:
+      requirements:
+        money:
+          type: ">="
+          input: "%azlink_money%"
+          output: "8"
+      deny_commands:
+        - '[message] &cVous n''avez pas assez d''argent.'
+        - '[message] &eVous pouvez créditer votre compte sur le site: &b&nhttps://kginfoservs.com/shop/offers/stripe'
+    left_click_commands:
+    - '[console] azlink money remove %player_name% 8'
+    - '[console] iagive %player_name% workshop_six:tavern_stool 1'
+    - '[message] &aVous avez acheté un Tabouret de Taverne.'
+    - '[sound] ENTITY_PLAYER_LEVELUP'
+    - '[refresh]'
+
+  'close_menu':
+    material: BARRIER
+    slot: 53
+    display_name: '&c&lFermer'
+    left_click_commands:
+    - '[close]'

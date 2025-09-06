@@ -1,0 +1,718 @@
+menu_title: '&8 &e&lScenes NPCs'
+open_command:
+  - snpc
+size: 54
+open_requirement:
+  requirements:
+    mythic_permission:
+      type: has permission
+      permission: scenes.use
+      deny_commands:
+        - '[message] &cYou do not have permission to open this menu!'
+        - '[sound] BLOCK_ANVIL_LAND'
+items:
+  blacksmith1:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 0
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Blacksmith 1'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_blacksmith_1'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  blacksmith2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 1
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Blacksmith 2'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_blacksmith_2'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  blacksmith3:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 2
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Blacksmith 3'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_blacksmith_3'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  blacksmith4:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 3
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Blacksmith 4'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_blacksmith_4'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  blacksmith5:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 4
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Blacksmith 5'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_blacksmith_5_interactive'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  townsfolk_1:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 5
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'townsfolk 1'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_1'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  townsfolk_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 6
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'townsfolk 2'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_2'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  townsfolk_3:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 7
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'townsfolk 3'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_3'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  townsfolk_4:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 8
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'townsfolk 4'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_4'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  townsfolk_5_pose_1:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 9
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'townsfolk 5 pose 1'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_5_pose_1'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  townsfolk_5_pose_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 10
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'townsfolk 5 pose 2'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_5_pose_2'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  townsfolk_5_pose_3:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 11
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'townsfolk 5 pose 3'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_5_pose_3'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  townsfolk_5_pose_4:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 12
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'townsfolk 5 pose 4'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_5_pose_4'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  townsfolk_5_pose_5:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 13
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'townsfolk 5 pose 5'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_5_pose_5'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  townsfolk_5_pose_6:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 14
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'townsfolk 5 pose 6'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_5_pose_6'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  townsfolk_5_pose_7:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 15
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'townsfolk 5 pose 7'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_5_pose_7'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  townsfolk_sweeper:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 16
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'townsfolk sweeper'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_sweeper'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  townsfolk_cook:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 17
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'townsfolk cook'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_cook'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  townsfolk_handler:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 18
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'townsfolk handler'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_handler'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  townsfolk_handler_provider:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 19
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'townsfolk handler provider'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_handler_provider'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  townsfolk_handler_stock:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 20
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'townsfolk handler stock'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_townsfolk_handler_stock'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  miner_block:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 21
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Miner block'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_miner_block'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  miner_slab:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 22
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Miner Slab'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_miner_slab'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  miner_wall:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 23
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Miner wall'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_miner_wall'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  miner_sleep:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 24
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Miner sleep'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_miner_sleep'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  miner_walk1:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 25
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Miner walk from pin mine1 to pin mine2'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_miner_walk1'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  miner_walk2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 26
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Miner walk from pin mine3 to pin mine4'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_miner_walk2'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  miner_walk3:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 27
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Miner walk from pin mine4 to pin mine6'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_miner_walk3'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  miner_interactive:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 28
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Miner Interactive'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_miner_interactive'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  miner_undead:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 29
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Miner Undead'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_miner_undead'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  farmer_ground:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 30
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Farmer Plowing'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_farmer_ground'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  farmer_cutter:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 31
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Farmer Cutter'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_farmer_cutter'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  farmer_seeds:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 32
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Farmer Seeds'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_farmer_seeds'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  farmer_picker:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 33
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Farmer Picker'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_farmer_picker'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'  
+  farmer_watering:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 34
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Farmer watering'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_farmer_watering'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  farmer_watering_heavy:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 35
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Farmer watering heavy'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_farmer_watering_heavy'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'  
+  farmer_walk:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 36
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Farmer walk from pin farm1 to farm2'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_farmer_walk'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  farmer_walk2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 36
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Farmer walk from pin farm3 to farm4'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_farmer_walk2'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  farmer_walk3:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 37
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Farmer walk from pin farm5 to farm6'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_farmer_walk3'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  lumberjack_log:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 38
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'lumberjack cutting log'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_lumberjack_log'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  lumberjack_cut:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 39
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'lumberjack cutting tree'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_lumberjack_cut'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  lumberjack_saw:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 40
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'lumberjacks saw'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_lumberjack_saw'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  lumberjack_walk:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 41
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'lumberjack walk from pin lumberjack1 to lumberjack2'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_lumberjack_walk'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  lumberjack_walk2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 42
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'lumberjack walk from pin lumberjack3 to lumberjack4'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_lumberjack_walk2'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  lumberjack_walk3:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 43
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'lumberjack walk from pin lumberjack5 to lumberjack6'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_lumberjack_walk3'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  lumberjack_interactive:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 44
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'lumberjack interactive'
+    lore:
+      - '&7Click to place this npc'
+    left_click_commands:
+      - '[player] mm mobs spawn scene_lumberjack_interactive'
+      - '[message] &aYou have placed an NPC'
+      - '[close]'
+  goback:
+    material: texture-76ebaa41d1d405eb6b60845bb9ac724af70e85eac8a96a5544b9e23ad6c96c62
+    slot: 53
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Go back'
+    lore:
+      - '&7Click to go back'
+    left_click_commands:
+      - '[openguimenu] scenes_spawner'
+      - '[close]'
+#06d54b3fffc32b7e2281000f77268b91

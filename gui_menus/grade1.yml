@@ -1,0 +1,107 @@
+menu_title: ':offset_-32::grade_menu1:' #':offset_-16::blank_menu:'
+open_command: "grades"
+register_command: true
+size: 54
+items:
+  paysan:
+    material: "PAPER"
+    model_data: "10199"
+    slots: 
+    - 0-2
+    - 9-11
+    display_name: '&#8BC34A&lPaysan'
+    lore:
+      - '&7Le premier grade accessible'
+      - '&7Débloque la gestion de ville'
+      - ''
+      - '&#FFC107Conditions requises:'
+      - '&8 ∎ &fTemps de jeu: 5 heures'
+      - '&8 ∎ &fMonnaie: 1000 KGolds'
+      - '&8 ∎ &fPoints de quête: 2'
+      - ''
+    
+  citoyen:
+    material: "PAPER" 
+    model_data: "10199"
+    slots: 
+    - 27-29
+    - 36-38
+    display_name: '&#4CAF50&lCitoyen'
+    lore:
+      - '&7Accès à la boutique exclusive'
+      - '&7et aux enchères'
+      - ''
+      - '&#FFC107Conditions requises:'
+      - '&8 ∎ &fTemps de jeu: 20 heures'
+      - '&8 ∎ &fMonnaie: 5000 KGolds'
+      - '&8 ∎ &fPoints de quête: 6'
+      - ''
+
+  ecuyer:
+    material: "PAPER"
+    model_data: "10199"
+    slots: 
+    - 30-32
+    - 39-41
+    display_name: '&#9C27B0&lÉcuyer'
+    lore:
+      - '&7Accès au wiki du serveur'
+      - '&7et guides exclusifs'
+      - ''
+      - '&#FFC107Conditions requises:'
+      - '&8 ∎ &fTemps de jeu: 40 heures'
+      - '&8 ∎ &fMonnaie: 7500 KGolds'
+      - '&8 ∎ &fPoints de quête: 8'
+      - ''
+
+  chevalier:
+    material: "PAPER"
+    model_data: "10199" 
+    slots: 
+    - 3-5
+    - 12-14
+    display_name: '&#2196F3&lChevalier'
+    lore:
+      - '&7Accès aux informations personnelles'
+      - '&7et statistiques avancées'
+      - ''
+      - '&#FFC107Conditions requises:'
+      - '&8 ∎ &fTemps de jeu: 60 heures'
+      - '&8 ∎ &fMonnaie: 10000 KGolds'
+      - '&8 ∎ &fPoints de quête: 10'
+      - ''
+
+
+  seigneur:
+    material: "PAPER"
+    model_data: "10199"
+    slots: 
+    - 6-8
+    - 15-17
+    display_name: '&#FF5722&lSeigneur'
+    lore:
+      - '&7Accès aux quêtes spéciales'
+      - '&7et récompenses uniques'
+      - ''
+      - '&#FFC107Conditions requises:'
+      - '&8 ∎ &fTemps de jeu: 100 heures'
+      - '&8 ∎ &fMonnaie: 15000 KGolds'
+      - '&8 ∎ &fPoints de quête: 15'
+      - ''
+
+  baron:
+    material: "PAPER"
+    model_data: "10199"
+    slots: 
+    - 33-35
+    - 42-44
+    display_name: '&#E91E63&lBaron'
+    lore:
+      - '&7Accès au téléporteur du spawn'
+      - '&7et commandes VIP'
+      - ''
+      - '&#FFC107Conditions requises:'
+      - '&8 ∎ &fTemps de jeu: 120 heures'
+      - '&8 ∎ &fMonnaie: 20000 KGolds'
+      - '&8 ∎ &fPoints de quête: 20'
+      - ''

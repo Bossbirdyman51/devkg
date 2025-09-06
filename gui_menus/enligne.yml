@@ -1,0 +1,57 @@
+menu_title: '&cPunish menu'
+open_command: punish
+size: 9
+open_requirement:
+  requirements:
+    permission:
+      type: has permission
+      permission: menu.open.punish
+      deny_commands:
+           - '[message] You dont have permission to open menu: punish'
+items:
+  #'1':
+  #  material: barrier
+  #  slot: 0
+  #  display_name: '&cMute a player'
+  #  lore:
+  #      - '&aYou will be prompted to type the player name'
+  #      - '&ato mute after selecting this option'
+  #  left_click_commands:
+  #      - '[player] mute <-p &6Select player to &c&lmute>'
+  #      - '[close]'
+  #  right_click_commands:
+  #      - '[player] mute <-p &6Select player to &c&lmute>'
+  #      - '[close]'
+  'test':
+    material: barrier
+    slot: 0
+    display_name: '&cListe de joueurs en ligne'
+    left_click_commands:
+        - '[player] something <-p pick a player>'
+        - '[close]'
+  '2':
+    material: barrier
+    slot: 4
+    display_name: '&aKick a player'
+    lore:
+        - '&aYou will be prompted to type the player name'
+        - '&ato kick after selecting this option'
+    left_click_commands:
+        - '[player] kick <-a &c&lkick &3&lwho?>'
+        - '[close]'
+    right_click_commands:
+        - '[player] kick <-a &c&lkick &3&lwho?>'
+        - '[close]'
+  '3':
+    material: barrier
+    slot: 8
+    display_name: '&aBan a player'
+    lore:
+        - '&aYou will be prompted to type the player name'
+        - '&ato ban by clicking here'
+    left_click_commands:
+        - '[player] ban <&6Type the name of the player you want to &c&lban>'
+        - '[close]'
+    right_click_commands:
+        - '[player] ban <&6Type the name of the player you want to &c&lban>'
+        - '[close]'

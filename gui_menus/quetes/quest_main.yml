@@ -1,0 +1,58 @@
+size: 54
+menu_title: ':offset_-15::journal_quete:'
+items:
+  "main_quest":
+    material: "PAPER"
+    model_data: "10199"
+    display_name: "Quête Principal"
+    slots:
+      - 17
+    left_click_commands:
+      - '[openguimenu] quest_main'
+      #- '[console] execute at %player_name% run playsound item.book.page_turn master %player_name%'
+  "secondary_quest":
+    material: "PAPER"
+    model_data: "10199"
+    display_name: "Quêtes Secondaire"
+    slots:
+      - 35
+    left_click_commands:
+      - '[openguimenu] quest_secondary'
+      #- '[console] execute at %player_name% run playsound item.book.page_turn master %player_name%'
+  "retour":
+    material: "PAPER"
+    model_data: "10199"
+    display_name: "Retour au menu"
+    slots:
+      - 53
+    left_click_commands:
+      - '[openguimenu] main_menu'
+      #- '[console] execute at %player_name% run playsound item.book.page_turn master %player_name%'
+  "main":
+    material: "PAPER"
+    model_data: "10199"
+    display_name: "Accueil"
+    slots:
+      - 8
+    left_click_commands:
+      - '[openguimenu] quest_main_menu'
+      #- '[console] execute at %player_name% run playsound item.book.page_turn master %player_name%'
+  "daily":
+    material: "PAPER"
+    model_data: "10199"
+    display_name: "Quête Journalière"
+    slots:
+      - 26
+    left_click_commands:
+      - '[openguimenu] quest_daily'
+      #- '[console] execute at %player_name% run playsound item.book.page_turn master %player_name%'
+
+  "tuto":
+    material: "BOOK"
+    model_data: "10199"
+    display_name: "Tutoriel"
+    slots:
+      - 1
+    left_click_commands:
+      - '[openguimenu] quest_daily'
+      #- '[console] execute at %player_name% run playsound item.book.page_turn master %player_name%'

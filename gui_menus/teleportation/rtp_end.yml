@@ -1,0 +1,372 @@
+menu_title: ':offset_-8::rtp_menu_end:'
+register_command: true
+size: 54
+items:
+  overworld_icon:
+    priority: 0
+    slot: 19    
+    amount: 1
+    material: itemsadder-teleportation_hub:overworld_icon
+
+  overworld_icon2:
+    priority: 0
+    slot: 9
+    amount: 1
+    material: AIR
+    left_click_commands:
+      - '[console] dm open rtp_overworld %player_name%'
+  overworld_icon3:
+    priority: 0
+    slot: 10
+    amount: 1
+    material: AIR
+    left_click_commands:
+      - '[console] dm open rtp_overworld %player_name%'
+  overworld_icon4:
+    priority: 0
+    slot: 11
+    amount: 1
+    material: AIR
+    left_click_commands:
+      - '[console] dm open rtp_overworld %player_name%'
+  
+  nether_icon:
+    priority: 0
+    slot: 11
+    amount: 1
+    mmaterial: AIR
+    left_click_commands:
+      - '[console] dm open rtp_nether %player_name%'
+  nether_icon2:
+    priority: 0
+    slot: 12
+    amount: 1
+    material: AIR
+    left_click_commands:
+      - '[console] dm open rtp_nether %player_name%'
+  nether_icon3:
+    priority: 0
+    slot: 13
+    amount: 1
+    material: AIR
+    left_click_commands:
+      - '[console] dm open rtp_nether %player_name%'
+  nether_icon4:
+    priority: 0
+    slot: 22
+    amount: 1
+    material: AIR
+    left_click_commands:
+      - '[console] dm open rtp_nether %player_name%'
+  nether_icon5:
+    priority: 0
+    slot: 23
+    amount: 1
+    material: itemsadder-teleportation_hub:nether_icon
+
+  end_icon2:
+    priority: 0
+    slot: 25
+    amount: 1
+    material: AIR
+  end_icon3:
+    priority: 0
+    slot: 15
+    amount: 1
+    material: AIR
+  end_icon4:
+    priority: 0
+    slot: 16
+    amount: 1
+    material: AIR
+  end_icon5:
+    priority: 0
+    slot: 17
+    amount: 1
+    material: AIR
+  end_icon:
+    priority: 0
+    slot: 26
+    amount: 1
+    material: itemsadder-teleportation_hub:end_icon
+
+  location_1:
+    priority: 0
+    slot: 28
+    amount: 1
+    material: itemsadder-teleportation_hub:rtp_pin
+    view_requirement:
+      requirements:
+        ulocked:
+          type: has permission
+          permission: rtp.distance.end.max.5000
+    display_name: "&fTeleport"
+    lore:
+      - ''
+      - '&#A5ACB8ᴅɪѕᴛᴀɴᴄᴇ: 5000 x 5000'
+      - '&#A5ACB8ʀᴇᴄʜᴀʀɢᴇ: 20 min'
+      - '&#A5ACB8ᴊᴏᴜᴇᴜʀѕ: %server_online_world%'
+      - ''
+      - ' &#58A527→ ᴄʟɪᴄ ᴘᴏᴜʀ ᴛéʟéᴘᴏʀᴛᴇʀ'
+    left_click_commands:
+      - '[console] lp user %player_name% permission settemp betterrtp.group.overworld_distance_10000 15s true'
+      - '[message] &#cf3932Téléportation en cours.'
+      - '[refresh]'
+      - '[player] betterrtp <delay=40>'
+      - '[close]'
+
+  unlockable_location_1:
+    priority: 10
+    slot: 28
+    amount: 1
+    material: itemsadder-teleportation_hub:rtp_lock
+    display_name: "&fDéverrouiller"
+    lore:
+      - ''
+      - " &#A5ACB8ʙᴇѕᴏɪɴ:"
+      - '  &#A5ACB8• ᴀʀɢᴇɴᴛ:&#58A527 $5,000,000'
+      - ''
+      - ' &#A5ACB8ᴅéᴠᴇʀʀᴏᴜɪʟʟᴇ:'
+      - '  &#A5ACB8• ᴅɪѕᴛᴀɴᴄᴇ:&#58A527 5000 x 5000'
+      - '  &#A5ACB8• ʀᴇᴄʜᴀʀɢᴇ:&#58A527 20 min'
+      - ''
+      - ' &#58A527→ ᴄʟɪᴄ ᴘᴏᴜʀ ᴅéᴠᴇʀʀᴏᴜɪʟʟᴇʀ'
+    view_requirement:
+      requirements:
+        eco:
+          type: has money
+          amount: 5000000
+    left_click_commands:
+      - '[givepermission] rtp.distance.end.max.5000'
+      - '[takemoney] 500000'
+      - '[message] &#cf3932Vous pouvez maintenant téléporter jusqu''à 5,000 blocks'
+      - '[refresh]'
+
+  locked_location_1:
+    priority: 15
+    slot: 28
+    amount: 1
+    material: itemsadder-teleportation_hub:rtp_lock
+    display_name: "&#cf3932Verrouillé"
+    lore:
+      - ''
+      - " &#A5ACB8ʙᴇѕᴏɪɴ:"
+      - '  &#A5ACB8• ᴀʀɢᴇɴᴛ:&#cf3932 $5,000,000'
+      - ''
+      - ' &#A5ACB8ᴅéᴠᴇʀʀᴏᴜɪʟʟᴇ:'
+      - '  &#A5ACB8• ᴅɪѕᴛᴀɴᴄᴇ:&#cf3932 5000 x 5000'
+      - '  &#A5ACB8• ʀᴇᴄʜᴀʀɢᴇ:&#cf3932 20 min'
+    left_click_commands:
+      - '[message] &#cf3932Vous avez besoin de $5,000,000 pour acheter ce niveau.'
+
+  location_2:
+    priority: 0
+    slot: 30
+    amount: 1
+    material: itemsadder-teleportation_hub:rtp_pin
+    display_name: "&fTeleport"
+    lore:
+      - ''
+      - '&#A5ACB8ᴅɪѕᴛᴀɴᴄᴇ: 10000 x 10000'
+      - '&#A5ACB8ʀᴇᴄʜᴀʀɢᴇ: 15 min'
+      - '&#A5ACB8ᴊᴏᴜᴇᴜʀѕ: %server_online_world%'
+      - ''
+      - ' &#58A527→ ᴄʟɪᴄ ᴘᴏᴜʀ ᴛéʟéᴘᴏʀᴛᴇʀ'
+    view_requirement:
+      requirements:
+        ulocked:
+          type: has permission
+          permission: rtp.distance.end.max.10000
+    left_click_commands:
+      - '[console] lp user %player_name% permission settemp betterrtp.group.overworld_distance_10000 15s true'
+      - '[message] &#cf3932Téléportation en cours.'
+      - '[refresh]'
+      - '[player] betterrtp <delay=40>'
+      - '[close]'
+
+  unloackable_location_2:
+    priority: 10
+    slot: 30
+    amount: 1
+    material: itemsadder-teleportation_hub:rtp_lock
+    display_name: "&fDéverrouiller"
+    lore:
+      - ''
+      - " &#A5ACB8ʙᴇѕᴏɪɴ:"
+      - '  &#A5ACB8• ᴀʀɢᴇɴᴛ:&#58A527 $10,000,000'
+      - ''
+      - ' &#A5ACB8ᴅéᴠᴇʀʀᴏᴜɪʟʟᴇ:'
+      - '  &#A5ACB8• ᴅɪѕᴛᴀɴᴄᴇ:&#58A527 10k x 10k'
+      - '  &#A5ACB8• ʀᴇᴄʜᴀʀɢᴇ:&#58A527 15 min'
+      - ''
+      - ' &#58A527→ ᴄʟɪᴄ ᴘᴏᴜʀ ᴅéᴠᴇʀʀᴏᴜɪʟʟᴇʀ'
+    view_requirement:
+      requirements:
+        eco:
+          type: has money
+          amount: 10000000
+    left_click_commands:
+      - '[givepermission] rtp.distance.end.max.10000'
+      - '[takemoney] 10000000'
+      - '[message] &#cf3932Vous pouvez maintenant téléporter jusqu''à 10,000 blocks'
+
+  locked_location_2:
+    priority: 15
+    slot: 30
+    amount: 1
+    material: itemsadder-teleportation_hub:rtp_lock
+    display_name: "&#cf3932Verrouillé"
+    lore:
+      - ''
+      - " &#A5ACB8ʙᴇѕᴏɪɴ:"
+      - '  &#A5ACB8• ᴀʀɢᴇɴᴛ:&#cf3932 $10,000,000'
+      - ''
+      - ' &#A5ACB8ᴅéᴠᴇʀʀᴏᴜɪʟʟᴇ:'
+      - '  &#A5ACB8• ᴅɪѕᴛᴀɴᴄᴇ:&#cf3932 10k x 10k'
+      - '  &#A5ACB8• ʀᴇᴄʜᴀʀɢᴇ:&#cf3932 15 min'
+    left_click_commands:
+      - '[message] &#cf3932Vous avez besoin de $10,000,000 pour acheter ce niveau.'
+
+
+  location_3:
+    priority: 0
+    slot: 32
+    amount: 1
+    material: itemsadder-teleportation_hub:rtp_pin
+    display_name: "&fTeleport"
+    lore:
+      - ''
+      - '&#A5ACB8ᴅɪѕᴛᴀɴᴄᴇ: 25000 x 25000'
+      - '&#A5ACB8ʀᴇᴄʜᴀʀɢᴇ: 10 min'
+      - '&#A5ACB8ᴊᴏᴜᴇᴜʀѕ: %server_online_world%'
+      - ''
+      - ' &#58A527→ ᴄʟɪᴄ ᴘᴏᴜʀ ᴛéʟéᴘᴏʀᴛᴇʀ'
+    view_requirement:
+      requirements:
+        ulocked:
+          type: has permission
+          permission: rtp.distance.end.max.15000
+    left_click_commands:
+      - '[console] lp user %player_name% permission settemp betterrtp.group.overworld_distance_15000 true 10s'
+      - '[message] &#cf3932Téléportation en cours.'
+      - '[refresh]'
+      - '[player] betterrtp <delay=40>'
+      - '[close]'
+
+  unloackable_location_3:
+    priority: 10
+    slot: 32
+    amount: 1
+    material: itemsadder-teleportation_hub:rtp_lock
+    display_name: "&fDéverrouiller"
+    lore:
+      - ''
+      - " &#A5ACB8ʙᴇѕᴏɪɴ:"
+      - '  &#A5ACB8• ᴀʀɢᴇɴᴛ:&#58A527 $20,000,000'
+      - ''
+      - ' &#A5ACB8ᴅéᴠᴇʀʀᴏᴜɪʟʟᴇ:'
+      - '  &#A5ACB8• ᴅɪѕᴛᴀɴᴄᴇ:&#58A527 25k x 25k'
+      - '  &#A5ACB8• ʀᴇᴄʜᴀʀɢᴇ:&#58A527 10 min'
+      - ''
+      - ' &#58A527→ ᴄʟɪᴄ ᴘᴏᴜʀ ᴅéᴠᴇʀʀᴏᴜɪʟʟᴇʀ'
+    view_requirement:
+      requirements:
+        eco:
+          type: has money
+          amount: 20000000
+    left_click_commands:
+      - '[givepermission] rtp.distance.end.max.15000'
+      - '[takemoney] 20000000'
+      - '[message] &#cf3932Vous pouvez maintenant téléporter jusqu''à 15,000 blocks'
+
+
+
+  locked_location_3:
+    priority: 15
+    slot: 32
+    amount: 1
+    material: itemsadder-teleportation_hub:rtp_lock
+    display_name: "&#cf3932Verrouillé"
+    lore:
+      - ''
+      - " &#A5ACB8ʙᴇѕᴏɪɴ:"
+      - ' &#A5ACB8• ᴀʀɢᴇɴᴛ:&#cf3932 $20,000,000'
+      - ''
+      - ' &#A5ACB8ᴅéᴠᴇʀʀᴏᴜɪʟʟᴇ:'
+      - '  &#A5ACB8• ᴅɪѕᴛᴀɴᴄᴇ:&#cf3932 25k x 25k'
+      - '  &#A5ACB8• ʀᴇᴄʜᴀʀɢᴇ:&#cf3932 10 min'
+    left_click_commands:
+      - '[message] &#cf3932Vous avez besoin de $20,000,000 pour acheter ce niveau.'
+
+  location_4:
+    priority: 0
+    slot: 34
+    amount: 1
+    material: itemsadder-teleportation_hub:rtp_pin
+    display_name: "&fTeleport"
+    lore:
+      - ''
+      - '&#A5ACB8ᴅɪѕᴛᴀɴᴄᴇ: 35000 x 35000'
+      - '&#A5ACB8ʀᴇᴄʜᴀʀɢᴇ: 10 min'
+      - '&#A5ACB8ᴊᴏᴜᴇᴜʀѕ: %server_online_world%'
+      - ''
+      - ' &#58A527→ ᴄʟɪᴄ ᴘᴏᴜʀ ᴛéʟéᴘᴏʀᴛᴇʀ'
+    view_requirement:
+      requirements:
+        ulocked:
+          type: has permission
+          permission: rtp.distance.end.max.25000
+    left_click_commands:
+      - '[console] lp user %player_name% permission settemp betterrtp.group.overworld_distance_25000 true 10s'
+      - '[message] &#cf3932Téléportation en cours.'
+      - '[refresh]'
+      - '[player] betterrtp <delay=40>'
+      - '[close]'
+
+  unloackable_location_4:
+    priority: 10
+    slot: 34
+    amount: 1
+    material: itemsadder-teleportation_hub:rtp_lock
+    display_name: "&fDéverrouiller"
+    lore:
+      - ''
+      - " &#A5ACB8ʙᴇѕᴏɪɴ:"
+      - '  &#A5ACB8• ᴀʀɢᴇɴᴛ:&#58A527 $30,000,000'
+      - ''
+      - ' &#A5ACB8ᴅéᴠᴇʀʀᴏᴜɪʟʟᴇ:'
+      - '  &#A5ACB8• ᴅɪѕᴛᴀɴᴄᴇ:&#58A527 35k x 35k'
+      - '  &#A5ACB8• ʀᴇᴄʜᴀʀɢᴇ:&#58A527 10 min'
+      - ''
+      - ' &#58A527→ ᴄʟɪᴄ ᴘᴏᴜʀ ᴅéᴠᴇʀʀᴏᴜɪʟʟᴇʀ'
+    view_requirement:
+      requirements:
+        eco:
+          type: has money
+          amount: 30000000
+    left_click_commands:
+      - '[givepermission] rtp.distance.end.max.25000'
+      - '[takemoney] 30000000'
+      - '[message] &#cf3932Vous pouvez maintenant téléporter jusqu''à 25,000 blocks'
+
+
+  locked_location_4:
+    priority: 15
+    slot: 34
+    amount: 1
+    material: itemsadder-teleportation_hub:rtp_lock
+    display_name: "&#cf3932Verrouillé"
+    lore:
+      - ''
+      - " &#A5ACB8ʙᴇѕᴏɪɴ:"
+      - '  &#A5ACB8• ᴀʀɢᴇɴᴛ:&#cf3932 $30,000,000'
+      - ''
+      - ' &#A5ACB8ᴅéᴠᴇʀʀᴏᴜɪʟʟᴇ:'
+      - '  &#A5ACB8• ᴅɪѕᴛᴀɴᴄᴇ:&#cf3932 35k x 35k'
+      - '  &#A5ACB8• ʀᴇᴄʜᴀʀɢᴇ:&#cf3932 10 min'
+    left_click_commands:
+      - '[message] &#cf3932Vous avez besoin de $30,000,000 pour acheter ce niveau.'
+
+  
+    
+  

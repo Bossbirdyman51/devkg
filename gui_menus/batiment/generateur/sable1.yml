@@ -1,0 +1,737 @@
+menu_title: '&8⚒ &3Générateur de Sable'
+size: 54
+
+items:
+  border:
+    material: BLACK_STAINED_GLASS_PANE
+    display_name: "&7•"
+    slots:
+      - 0-3
+      - 5-8
+      - 9
+      - 13
+      - 17
+      - 18
+      - 22
+      - 26
+      - 27
+      - 31
+      - 35
+      - 36
+      - 40
+      - 44
+      - 45-53
+
+  points_display:
+    material: EXPERIENCE_BOTTLE
+    slot: 4
+    display_name: '&bPoints'
+    lore:
+      - '&7Points de Ville: &f%kg_ville_point%'
+      - '&7Points Personnels: &f%kg_ville_point_perso%'
+    update: true
+
+  # SAND SECTION - LEFT SIDE (VILLE)
+  sand_ville_1:
+    material: SAND
+    slot: 10
+    amount: 1
+    display_name: '&f1 Stack &7de Sable (Points de Ville)'
+    lore:
+      - "&7Coût: &b50 &7points de ville"
+      - "&7Quantité: &f64 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "50"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "1"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% sand 64'
+      - '[console] bq gp add ville.%kg_ville_id% -50'
+      - '[refresh]'
+
+  sand_ville_2:
+    material: SAND
+    slot: 11
+    amount: 5
+    display_name: '&f5 Stacks &7de Sable (Points de Ville)'
+    lore:
+      - "&7Coût: &b250 &7points de ville"
+      - "&7Quantité: &f320 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "250"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "5"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% sand 320'
+      - '[console] bq gp add ville.%kg_ville_id% -250'
+      - '[refresh]'
+
+  sand_ville_3:
+    material: SAND
+    slot: 12
+    amount: 10
+    display_name: '&f10 Stacks &7de Sable (Points de Ville)'
+    lore:
+      - "&7Coût: &b500 &7points de ville"
+      - "&7Quantité: &f640 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "500"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "10"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% sand 640'
+      - '[console] bq gp add ville.%kg_ville_id% -500'
+      - '[refresh]'
+
+  # SAND SECTION - RIGHT SIDE (PERSO)
+  sand_perso_1:
+    material: SAND
+    slot: 14
+    amount: 1
+    display_name: '&f1 Stack &7de Sable (Points Personnels)'
+    lore:
+      - "&7Coût: &b50 &7points personnels"
+      - "&7Quantité: &f64 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "50"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "1"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% sand 64'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -50'
+      - '[refresh]'
+
+  sand_perso_2:
+    material: SAND
+    slot: 15
+    amount: 5
+    display_name: '&f5 Stacks &7de Sable (Points Personnels)'
+    lore:
+      - "&7Coût: &b250 &7points personnels"
+      - "&7Quantité: &f320 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "250"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "5"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% sand 320'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -250'
+      - '[refresh]'
+
+  sand_perso_3:
+    material: SAND
+    slot: 16
+    amount: 10
+    display_name: '&f10 Stacks &7de Sable (Points Personnels)'
+    lore:
+      - "&7Coût: &b500 &7points personnels"
+      - "&7Quantité: &f640 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "500"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "10"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% sand 640'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -500'
+      - '[refresh]'
+
+  # RED SAND SECTION - LEFT SIDE (VILLE)
+  red_sand_ville_1:
+    material: RED_SAND
+    slot: 19
+    amount: 1
+    display_name: '&f1 Stack &7de Sable Rouge (Points de Ville)'
+    lore:
+      - "&7Coût: &b50 &7points de ville"
+      - "&7Quantité: &f64 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "50"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "1"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% red_sand 64'
+      - '[console] bq gp add ville.%kg_ville_id% -50'
+      - '[refresh]'
+
+  red_sand_ville_2:
+    material: RED_SAND
+    slot: 20
+    amount: 5
+    display_name: '&f5 Stacks &7de Sable Rouge (Points de Ville)'
+    lore:
+      - "&7Coût: &b250 &7points de ville"
+      - "&7Quantité: &f320 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "250"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "5"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% red_sand 320'
+      - '[console] bq gp add ville.%kg_ville_id% -250'
+      - '[refresh]'
+
+  red_sand_ville_3:
+    material: RED_SAND
+    slot: 21
+    amount: 10
+    display_name: '&f10 Stacks &7de Sable Rouge (Points de Ville)'
+    lore:
+      - "&7Coût: &b500 &7points de ville"
+      - "&7Quantité: &f640 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "500"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "10"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% red_sand 640'
+      - '[console] bq gp add ville.%kg_ville_id% -500'
+      - '[refresh]'
+
+  # RED SAND SECTION - RIGHT SIDE (PERSO)
+  red_sand_perso_1:
+    material: RED_SAND
+    slot: 23
+    amount: 1
+    display_name: '&f1 Stack &7de Sable Rouge (Points Personnels)'
+    lore:
+      - "&7Coût: &b50 &7points personnels"
+      - "&7Quantité: &f64 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "50"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "1"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% red_sand 64'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -50'
+      - '[refresh]'
+
+  red_sand_perso_2:
+    material: RED_SAND
+    slot: 24
+    amount: 5
+    display_name: '&f5 Stacks &7de Sable Rouge (Points Personnels)'
+    lore:
+      - "&7Coût: &b250 &7points personnels"
+      - "&7Quantité: &f320 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "250"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "5"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% red_sand 320'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -250'
+      - '[refresh]'
+
+  red_sand_perso_3:
+    material: RED_SAND
+    slot: 25
+    amount: 10
+    display_name: '&f10 Stacks &7de Sable Rouge (Points Personnels)'
+    lore:
+      - "&7Coût: &b500 &7points personnels"
+      - "&7Quantité: &f640 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "500"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "10"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% red_sand 640'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -500'
+      - '[refresh]'
+
+  # SANDSTONE SECTION - LEFT SIDE (VILLE)
+  sandstone_ville_1:
+    material: SANDSTONE
+    slot: 28
+    amount: 1
+    display_name: '&f1 Stack &7de Grès (Points de Ville)'
+    lore:
+      - "&7Coût: &b90 &7points de ville"
+      - "&7Quantité: &f64 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "90"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "1"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% sandstone 64'
+      - '[console] bq gp add ville.%kg_ville_id% -90'
+      - '[refresh]'
+
+  sandstone_ville_2:
+    material: SANDSTONE
+    slot: 29
+    amount: 5
+    display_name: '&f5 Stacks &7de Grès (Points de Ville)'
+    lore:
+      - "&7Coût: &b450 &7points de ville"
+      - "&7Quantité: &f320 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "450"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "5"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% sandstone 320'
+      - '[console] bq gp add ville.%kg_ville_id% -450'
+      - '[refresh]'
+
+  sandstone_ville_3:
+    material: SANDSTONE
+    slot: 30
+    amount: 10
+    display_name: '&f10 Stacks &7de Grès (Points de Ville)'
+    lore:
+      - "&7Coût: &b900 &7points de ville"
+      - "&7Quantité: &f640 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "900"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "10"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% sandstone 640'
+      - '[console] bq gp add ville.%kg_ville_id% -900'
+      - '[refresh]'
+
+  # SANDSTONE SECTION - RIGHT SIDE (PERSO)
+  sandstone_perso_1:
+    material: SANDSTONE
+    slot: 32
+    amount: 1
+    display_name: '&f1 Stack &7de Grès (Points Personnels)'
+    lore:
+      - "&7Coût: &b90 &7points personnels"
+      - "&7Quantité: &f64 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "90"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "1"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% sandstone 64'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -90'
+      - '[refresh]'
+
+  sandstone_perso_2:
+    material: SANDSTONE
+    slot: 33
+    amount: 5
+    display_name: '&f5 Stacks &7de Grès (Points Personnels)'
+    lore:
+      - "&7Coût: &b450 &7points personnels"
+      - "&7Quantité: &f320 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "450"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "5"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% sandstone 320'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -450'
+      - '[refresh]'
+
+  sandstone_perso_3:
+    material: SANDSTONE
+    slot: 34
+    amount: 10
+    display_name: '&f10 Stacks &7de Grès (Points Personnels)'
+    lore:
+      - "&7Coût: &b900 &7points personnels"
+      - "&7Quantité: &f640 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "900"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "10"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% sandstone 640'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -900'
+      - '[refresh]'
+
+  # RED SANDSTONE SECTION - LEFT SIDE (VILLE)
+  red_sandstone_ville_1:
+    material: RED_SANDSTONE
+    slot: 37
+    amount: 1
+    display_name: '&f1 Stack &7de Grès Rouge (Points de Ville)'
+    lore:
+      - "&7Coût: &b90 &7points de ville"
+      - "&7Quantité: &f64 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "90"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "1"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% red_sandstone 64'
+      - '[console] bq gp add ville.%kg_ville_id% -90'
+      - '[refresh]'
+
+  red_sandstone_ville_2:
+    material: RED_SANDSTONE
+    slot: 38
+    amount: 5
+    display_name: '&f5 Stacks &7de Grès Rouge (Points de Ville)'
+    lore:
+      - "&7Coût: &b450 &7points de ville"
+      - "&7Quantité: &f320 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "450"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "5"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% red_sandstone 320'
+      - '[console] bq gp add ville.%kg_ville_id% -450'
+      - '[refresh]'
+
+  red_sandstone_ville_3:
+    material: RED_SANDSTONE
+    slot: 39
+    amount: 10
+    display_name: '&f10 Stacks &7de Grès Rouge (Points de Ville)'
+    lore:
+      - "&7Coût: &b900 &7points de ville"
+      - "&7Quantité: &f640 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "900"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "10"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% red_sandstone 640'
+      - '[console] bq gp add ville.%kg_ville_id% -900'
+      - '[refresh]'
+
+  # RED SANDSTONE SECTION - RIGHT SIDE (PERSO)
+  red_sandstone_perso_1:
+    material: RED_SANDSTONE
+    slot: 41
+    amount: 1
+    display_name: '&f1 Stack &7de Grès Rouge (Points Personnels)'
+    lore:
+      - "&7Coût: &b90 &7points personnels"
+      - "&7Quantité: &f64 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "90"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "1"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% red_sandstone 64'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -90'
+      - '[refresh]'
+
+  red_sandstone_perso_2:
+    material: RED_SANDSTONE
+    slot: 42
+    amount: 5
+    display_name: '&f5 Stacks &7de Grès Rouge (Points Personnels)'
+    lore:
+      - "&7Coût: &b450 &7points personnels"
+      - "&7Quantité: &f320 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "450"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "5"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% red_sandstone 320'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -450'
+      - '[refresh]'
+
+  red_sandstone_perso_3:
+    material: RED_SANDSTONE
+    slot: 43
+    amount: 10
+    display_name: '&f10 Stacks &7de Grès Rouge (Points Personnels)'
+    lore:
+      - "&7Coût: &b900 &7points personnels"
+      - "&7Quantité: &f640 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "900"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "10"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% red_sandstone 640'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -900'
+      - '[refresh]'
+

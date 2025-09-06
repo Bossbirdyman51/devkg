@@ -1,0 +1,91 @@
+menu_title: 'Voyage Rapide'
+size: 18
+items:
+  20:
+    material: "hdb-30558"
+    slot: 1
+    display_name: '&#E1D40F&lVendeur Fermier'
+    lore:
+      - '&#E4B02DBesoin de graines ?'
+      - '&#E4B02DBesoin de vendre des cultures ?'
+      - ''
+      - '&#94E42DCoûts : &#E4582D5 Kgolds'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: has money
+          amount: 5
+      deny_commands:
+        - '[message] &cPas assez d''argent &#94E42DMontant requis: &#E4B02D5Kgolds !'
+        - '[close]'
+        - '[sound] entity_villager_no 1 1'
+    left_click_commands:
+      - '[console] warp fermier %player_name%'
+      - '[console] eco take %player_name% 5'
+      - '[close]'
+  30:
+    material: "hdb-20759"
+    slot: 4
+    display_name: '&#AB2D17Vendeur Nourriture'
+    lore:
+      - '&#E4B02DBesoin de nourriture ?'
+      - '&#E4B02DBesoin de vendre de la nourriture ?'
+      - ''
+      - '&#94E42DCoûts : &#E4582D5 Kgolds'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: has money
+          amount: 5
+      deny_commands:
+        - '[message] &cPas assez d''argent &#94E42DMontant requis: &#E4B02D5Kgolds !'
+        - '[close]'
+        - '[sound] entity_villager_no 1 1'
+    left_click_commands:
+      - '[console] warp nourriture %player_name%'
+      - '[console] eco take %player_name% 5'
+      - '[close]'
+  33:
+    material: "hdb-29949"
+    slot: 13
+    display_name: '&#1774AB&lVendeur de Pierres / Meubles'
+    lore:
+      - '&#E4B02DBesoin d''acheter ou de vendre ses minerais ?'
+      - '&#E4B02DBesoin d''acheter de nouveau meuble ?'
+      - ''
+      - '&#94E42DCoûts : &#E4582D5 Kgolds'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: has money
+          amount: 5
+      deny_commands:
+        - '[message] &cPas assez d''argent &#94E42DMontant requis: &#E4B02D5Kgolds !'
+        - '[close]'
+        - '[sound] entity_villager_no 1 1'
+    left_click_commands:
+      - '[console] warp mineur %player_name%'
+      - '[console] eco take %player_name% 5'
+      - '[close]'
+  32:
+    material: "hdb-20565"
+    slot: 8
+    display_name: '&#36AB17&lVendeur de Bois / Meubles'
+    lore:
+      - '&#E4B02DBesoin d''acheter ou de vendre son bois ?'
+      - '&#E4B02DBesoin d''acheter de nouveau meuble ?'
+      - ''
+      - '&#94E42DCoûts : &#E4582D5 Kgolds'
+    left_click_requirement:
+      requirements:
+        has_money:
+          type: has money
+          amount: 5
+      deny_commands:
+        - '[message] &cPas assez d''argent &#94E42DMontant requis: &#E4B02D5Kgolds !'
+        - '[close]'
+        - '[sound] entity_villager_no 1 1'
+    left_click_commands:
+      - '[console] warp bucheron %player_name%'
+      - '[console] eco take %player_name% 5'
+      - '[close]'

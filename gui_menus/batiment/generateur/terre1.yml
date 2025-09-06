@@ -1,0 +1,735 @@
+menu_title: '&8⚒ &3Générateur de Terre'
+size: 54
+
+items:
+  border:
+    material: BLACK_STAINED_GLASS_PANE
+    display_name: "&7•"
+    slots:
+      - 0-3
+      - 5-8
+      - 9
+      - 13
+      - 17
+      - 18
+      - 22
+      - 26
+      - 27
+      - 31
+      - 35
+      - 36
+      - 40
+      - 44
+      - 45-53
+
+  points_display:
+    material: EXPERIENCE_BOTTLE
+    slot: 4
+    display_name: '&bPoints'
+    lore:
+      - '&7Points de Ville: &f%kg_ville_point%'
+      - '&7Points Personnels: &f%kg_ville_point_perso%'
+    update: true
+
+  # DIRT SECTION - LEFT SIDE (VILLE)
+  dirt_ville_1:
+    material: DIRT
+    slot: 10
+    amount: 1
+    display_name: '&f1 Stack &7de Terre (Points de Ville)'
+    lore:
+      - "&7Coût: &b50 &7points de ville"
+      - "&7Quantité: &f64 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "50"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "1"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% dirt 64'
+      - '[console] bq gp add ville.%kg_ville_id% -50'
+      - '[refresh]'
+
+  dirt_ville_2:
+    material: DIRT
+    slot: 11
+    amount: 5
+    display_name: '&f5 Stacks &7de Terre (Points de Ville)'
+    lore:
+      - "&7Coût: &b250 &7points de ville"
+      - "&7Quantité: &f320 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "250"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "5"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% dirt 320'
+      - '[console] bq gp add ville.%kg_ville_id% -250'
+      - '[refresh]'
+
+  dirt_ville_3:
+    material: DIRT
+    slot: 12
+    amount: 10
+    display_name: '&f10 Stacks &7de Terre (Points de Ville)'
+    lore:
+      - "&7Coût: &b500 &7points de ville"
+      - "&7Quantité: &f640 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "500"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "10"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% dirt 640'
+      - '[console] bq gp add ville.%kg_ville_id% -500'
+      - '[refresh]'
+
+  # DIRT SECTION - RIGHT SIDE (PERSO)
+  dirt_perso_1:
+    material: DIRT
+    slot: 14
+    amount: 1
+    display_name: '&f1 Stack &7de Terre (Points Personnels)'
+    lore:
+      - "&7Coût: &b50 &7points personnels"
+      - "&7Quantité: &f64 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "50"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "1"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% dirt 64'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -50'
+      - '[refresh]'
+
+  dirt_perso_2:
+    material: DIRT
+    slot: 15
+    amount: 5
+    display_name: '&f5 Stacks &7de Terre (Points Personnels)'
+    lore:
+      - "&7Coût: &b250 &7points personnels"
+      - "&7Quantité: &f320 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "250"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "5"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% dirt 320'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -250'
+      - '[refresh]'
+
+  dirt_perso_3:
+    material: DIRT
+    slot: 16
+    amount: 10
+    display_name: '&f10 Stacks &7de Terre (Points Personnels)'
+    lore:
+      - "&7Coût: &b500 &7points personnels"
+      - "&7Quantité: &f640 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "500"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "10"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% dirt 640'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -500'
+      - '[refresh]'
+
+  # ROOTED DIRT SECTION - LEFT SIDE (VILLE)
+  rooted_dirt_ville_1:
+    material: ROOTED_DIRT
+    slot: 19
+    amount: 1
+    display_name: '&f1 Stack &7de Terre Enracinée (Points de Ville)'
+    lore:
+      - "&7Coût: &b90 &7points de ville"
+      - "&7Quantité: &f64 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "90"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "1"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% rooted_dirt 64'
+      - '[console] bq gp add ville.%kg_ville_id% -90'
+      - '[refresh]'
+
+  rooted_dirt_ville_2:
+    material: ROOTED_DIRT
+    slot: 20
+    amount: 5
+    display_name: '&f5 Stacks &7de Terre Enracinée (Points de Ville)'
+    lore:
+      - "&7Coût: &b450 &7points de ville"
+      - "&7Quantité: &f320 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "450"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "5"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% rooted_dirt 320'
+      - '[console] bq gp add ville.%kg_ville_id% -450'
+      - '[refresh]'
+
+  rooted_dirt_ville_3:
+    material: ROOTED_DIRT
+    slot: 21
+    amount: 10
+    display_name: '&f10 Stacks &7de Terre Enracinée (Points de Ville)'
+    lore:
+      - "&7Coût: &b900 &7points de ville"
+      - "&7Quantité: &f640 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "900"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "10"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% rooted_dirt 640'
+      - '[console] bq gp add ville.%kg_ville_id% -900'
+      - '[refresh]'
+
+  # ROOTED DIRT SECTION - RIGHT SIDE (PERSO)
+  rooted_dirt_perso_1:
+    material: ROOTED_DIRT
+    slot: 23
+    amount: 1
+    display_name: '&f1 Stack &7de Terre Enracinée (Points Personnels)'
+    lore:
+      - "&7Coût: &b90 &7points personnels"
+      - "&7Quantité: &f64 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "90"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "1"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% rooted_dirt 64'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -90'
+      - '[refresh]'
+
+  rooted_dirt_perso_2:
+    material: ROOTED_DIRT
+    slot: 24
+    amount: 5
+    display_name: '&f5 Stacks &7de Terre Enracinée (Points Personnels)'
+    lore:
+      - "&7Coût: &b450 &7points personnels"
+      - "&7Quantité: &f320 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "450"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "5"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% rooted_dirt 320'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -450'
+      - '[refresh]'
+
+  rooted_dirt_perso_3:
+    material: ROOTED_DIRT
+    slot: 25
+    amount: 10
+    display_name: '&f10 Stacks &7de Terre Enracinée (Points Personnels)'
+    lore:
+      - "&7Coût: &b900 &7points personnels"
+      - "&7Quantité: &f640 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "900"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "10"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% rooted_dirt 640'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -900'
+      - '[refresh]'
+
+  # MUD SECTION - LEFT SIDE (VILLE)
+  mud_ville_1:
+    material: MUD
+    slot: 28
+    amount: 1
+    display_name: '&f1 Stack &7de Boue (Points de Ville)'
+    lore:
+      - "&7Coût: &b100 &7points de ville"
+      - "&7Quantité: &f64 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "100"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "1"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% mud 64'
+      - '[console] bq gp add ville.%kg_ville_id% -100'
+      - '[refresh]'
+
+  mud_ville_2:
+    material: MUD
+    slot: 29
+    amount: 5
+    display_name: '&f5 Stacks &7de Boue (Points de Ville)'
+    lore:
+      - "&7Coût: &b500 &7points de ville"
+      - "&7Quantité: &f320 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "500"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "5"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% mud 320'
+      - '[console] bq gp add ville.%kg_ville_id% -500'
+      - '[refresh]'
+
+  mud_ville_3:
+    material: MUD
+    slot: 30
+    amount: 10
+    display_name: '&f10 Stacks &7de Boue (Points de Ville)'
+    lore:
+      - "&7Coût: &b1000 &7points de ville"
+      - "&7Quantité: &f640 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "1000"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "10"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% mud 640'
+      - '[console] bq gp add ville.%kg_ville_id% -1000'
+      - '[refresh]'
+
+  # MUD SECTION - RIGHT SIDE (PERSO)
+  mud_perso_1:
+    material: MUD
+    slot: 32
+    amount: 1
+    display_name: '&f1 Stack &7de Boue (Points Personnels)'
+    lore:
+      - "&7Coût: &b100 &7points personnels"
+      - "&7Quantité: &f64 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "100"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "1"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% mud 64'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -100'
+      - '[refresh]'
+
+  mud_perso_2:
+    material: MUD
+    slot: 33
+    amount: 5
+    display_name: '&f5 Stacks &7de Boue (Points Personnels)'
+    lore:
+      - "&7Coût: &b500 &7points personnels"
+      - "&7Quantité: &f320 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "500"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "5"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% mud 320'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -500'
+      - '[refresh]'
+
+  mud_perso_3:
+    material: MUD
+    slot: 34
+    amount: 10
+    display_name: '&f10 Stacks &7de Boue (Points Personnels)'
+    lore:
+      - "&7Coût: &b1000 &7points personnels"
+      - "&7Quantité: &f640 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "1000"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "10"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% mud 640'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -1000'
+      - '[refresh]'
+
+  packed_mud_ville_1:
+    material: PACKED_MUD
+    slot: 37
+    amount: 1
+    display_name: '&f1 Stack &7de Boue Compactée (Points de Ville)'
+    lore:
+      - "&7Coût: &b120 &7points de ville"
+      - "&7Quantité: &f64 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "120"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "1"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% packed_mud 64'
+      - '[console] bq gp add ville.%kg_ville_id% -120'
+      - '[refresh]'
+
+  packed_mud_ville_2:
+    material: PACKED_MUD
+    slot: 38
+    amount: 5
+    display_name: '&f5 Stacks &7de Boue Compactée (Points de Ville)'
+    lore:
+      - "&7Coût: &b600 &7points de ville"
+      - "&7Quantité: &f320 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "600"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "5"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% packed_mud 320'
+      - '[console] bq gp add ville.%kg_ville_id% -600'
+      - '[refresh]'
+
+  packed_mud_ville_3:
+    material: PACKED_MUD
+    slot: 39
+    amount: 10
+    display_name: '&f10 Stacks &7de Boue Compactée (Points de Ville)'
+    lore:
+      - "&7Coût: &b1200 &7points de ville"
+      - "&7Quantité: &f640 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "1200"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "10"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% packed_mud 640'
+      - '[console] bq gp add ville.%kg_ville_id% -1200'
+      - '[refresh]'
+
+  # PACKED MUD SECTION - RIGHT SIDE (PERSO)
+  packed_mud_perso_1:
+    material: PACKED_MUD
+    slot: 41
+    amount: 1
+    display_name: '&f1 Stack &7de Boue Compactée (Points Personnels)'
+    lore:
+      - "&7Coût: &b120 &7points personnels"
+      - "&7Quantité: &f64 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "120"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "1"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% packed_mud 64'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -120'
+      - '[refresh]'
+
+  packed_mud_perso_2:
+    material: PACKED_MUD
+    slot: 42
+    amount: 5
+    display_name: '&f5 Stacks &7de Boue Compactée (Points Personnels)'
+    lore:
+      - "&7Coût: &b600 &7points personnels"
+      - "&7Quantité: &f320 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "600"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "5"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% packed_mud 320'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -600'
+      - '[refresh]'
+
+  packed_mud_perso_3:
+    material: PACKED_MUD
+    slot: 43
+    amount: 10
+    display_name: '&f10 Stacks &7de Boue Compactée (Points Personnels)'
+    lore:
+      - "&7Coût: &b1200 &7points personnels"
+      - "&7Quantité: &f640 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "1200"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "10"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% packed_mud 640'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -1200'
+      - '[refresh]'

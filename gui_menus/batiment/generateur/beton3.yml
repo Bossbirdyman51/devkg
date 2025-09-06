@@ -1,0 +1,167 @@
+menu_title: '&8⚒ &3Générateur de Béton (3/4)'
+size: 54
+
+items:
+  border:
+    material: BLACK_STAINED_GLASS_PANE
+    display_name: "&7•"
+    slots:
+      - 0-3
+      - 5-8
+      - 9
+      - 13
+      - 17
+      - 18
+      - 22
+      - 26
+      - 27
+      - 31
+      - 35
+      - 36
+      - 40
+      - 44
+      - 45-53
+
+  points_display:
+    material: EXPERIENCE_BOTTLE
+    slot: 4
+    display_name: '&bPoints'
+    lore:
+      - '&7Points de Ville: &f%kg_ville_point%'
+      - '&7Points Personnels: &f%kg_ville_point_perso%'
+    update: true
+
+  # Béton Gris Clair - Côté Ville
+  light_gray_ville:
+    material: LIGHT_GRAY_CONCRETE
+    slot: 10
+    amount: 1
+    display_name: '&f1 Stack &7de Béton Gris Clair (Points de Ville)'
+    lore:
+      - "&7Coût: &b150 &7points de ville"
+      - "&7Quantité: &f64 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "150"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "1"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% light_gray_concrete 64'
+      - '[console] bq gp add ville.%kg_ville_id% -150'
+      - '[refresh]'
+
+  # Béton Cyan - Côté Ville
+  cyan_ville:
+    material: CYAN_CONCRETE
+    slot: 11
+    amount: 1
+    display_name: '&f1 Stack &7de Béton Cyan (Points de Ville)'
+    lore:
+      - "&7Coût: &b150 &7points de ville"
+      - "&7Quantité: &f64 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "150"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "1"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% cyan_concrete 64'
+      - '[console] bq gp add ville.%kg_ville_id% -150'
+      - '[refresh]'
+
+  # Béton Violet - Côté Ville
+  purple_ville:
+    material: PURPLE_CONCRETE
+    slot: 12
+    amount: 1
+    display_name: '&f1 Stack &7de Béton Violet (Points de Ville)'
+    lore:
+      - "&7Coût: &b150 &7points de ville"
+      - "&7Quantité: &f64 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "150"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "1"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% purple_concrete 64'
+      - '[console] bq gp add ville.%kg_ville_id% -150'
+      - '[refresh]'
+
+  # Béton Bleu - Côté Ville
+  blue_ville:
+    material: BLUE_CONCRETE
+    slot: 14
+    amount: 1
+    display_name: '&f1 Stack &7de Béton Bleu (Points de Ville)'
+    lore:
+      - "&7Coût: &b150 &7points de ville"
+      - "&7Quantité: &f64 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "150"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "1"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% blue_concrete 64'
+      - '[console] bq gp add ville.%kg_ville_id% -150'
+      - '[refresh]'
+
+  # Pagination
+  previous_page:
+    material: ARROW
+    slot: 48
+    display_name: '&7&lPage précédente'
+    left_click_commands:
+      - '[openguimenu] generateur_beton2'
+
+  next_page:
+    material: ARROW
+    slot: 50
+    display_name: '&7&lPage suivante'
+    left_click_commands:
+      - '[openguimenu] generateur_beton4'

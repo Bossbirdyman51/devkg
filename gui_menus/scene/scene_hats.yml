@@ -1,0 +1,88 @@
+menu_title: '&8 &e&lScenes NPC Hats'
+open_command:
+  - sceneshats
+size: 54
+open_requirement:
+  requirements:
+    mythic_permission:
+      type: has permission
+      permission: scenes.use
+      deny_commands:
+        - '[message] &cYou do not have permission to open this menu!'
+        - '[sound] BLOCK_ANVIL_LAND'
+items:
+  santa_hat:
+    material: texture-eeffba9338e8b5fa618cc46fade0c14a4dc2540a21e912313b66e2872fd9b
+    slot: 0
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Santa Hat'
+    lore:
+      - '&7Click to apply this hat!'
+    left_click_commands:
+      - '[player] mm test cast hat1'
+      - '[message] &aYou have changed the Hat!'
+      - '[close]'
+  ear_muffs:
+    material: texture-a03bd00421729cd635cd3b48243430ad47cf707018a5916ff59549d5ecd6f879
+    slot: 1
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Winter Ear Muffs'
+    lore:
+      - '&7Click to apply this Ear Muffs!'
+    left_click_commands:
+      - '[player] mm test cast hat2'
+      - '[message] &aYou have changed the Hat!'
+      - '[close]'
+  remove:
+    material: texture-441f4edbc68c9061355242bd73effc9299a3252b9f11e82b5f1ec7b3b6ac0
+    slot: 53
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Delete'
+    lore:
+      - '&7Click to Delete this Scene'
+    left_click_commands:
+      - '[player] mm test cast deletenpc'
+      - '[message] &aScene Deleted!'
+      - '[close]'
+  resetcosmetics:
+    material: texture-94c28ffb9063e63037c7c9c3a99975333254946ddfa0018996151740a5c66842
+    slot: 52
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Reset Cosmetics'
+    lore:
+      - '&7Click to Remove the cosmetics'
+    left_click_commands:
+      - '[player] mm test cast reset_cosmetics'
+      - '[message] &aScene Deleted!'
+      - '[close]'
+  goback:
+    material: texture-76ebaa41d1d405eb6b60845bb9ac724af70e85eac8a96a5544b9e23ad6c96c62
+    slot: 51
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Go back'
+    lore:
+      - '&7Click to go back'
+    left_click_commands:
+      - '[openguimenu] cosmetics'
+      - '[close]'
+#06d54b3fffc32b7e2281000f77268b91

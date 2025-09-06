@@ -1,0 +1,746 @@
+menu_title: '&8⚒ &3Générateur de Pierre'
+size: 54
+
+items:
+  border:
+    material: BLACK_STAINED_GLASS_PANE
+    display_name: "&7•"
+    slots:
+      - 0-3
+      - 5-8
+      - 9
+      - 13
+      - 17
+      - 18
+      - 22
+      - 26
+      - 27
+      - 31
+      - 35
+      - 36
+      - 40
+      - 44
+      - 45-53
+
+  points_display:
+    material: EXPERIENCE_BOTTLE
+    slot: 4
+    display_name: '&bPoints'
+    lore:
+      - '&7Points de Ville: &f%kg_ville_point%'
+      - '&7Points Personnels: &f%kg_ville_point_perso%'
+    update: true
+
+  # DIORITE SECTION - LEFT SIDE (VILLE)
+  diorite_ville_1:
+    material: DIORITE
+    slot: 10
+    amount: 1
+    display_name: '&f1 Stack &7de Diorite (Points de Ville)'
+    lore:
+      - "&7Coût: &b100 &7points de ville"
+      - "&7Quantité: &f64 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "100"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "1"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% diorite 64'
+      - '[console] bq gp add ville.%kg_ville_id% -100'
+      - '[refresh]'
+
+  diorite_ville_2:
+    material: DIORITE
+    slot: 11
+    amount: 5
+    display_name: '&f5 Stacks &7de Diorite (Points de Ville)'
+    lore:
+      - "&7Coût: &b500 &7points de ville"
+      - "&7Quantité: &f320 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "500"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "5"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% diorite 320'
+      - '[console] bq gp add ville.%kg_ville_id% -500'
+      - '[refresh]'
+
+  diorite_ville_3:
+    material: DIORITE
+    slot: 12
+    amount: 10
+    display_name: '&f10 Stacks &7de Diorite (Points de Ville)'
+    lore:
+      - "&7Coût: &b1000 &7points de ville"
+      - "&7Quantité: &f640 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "1000"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "10"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% diorite 640'
+      - '[console] bq gp add ville.%kg_ville_id% -1000'
+      - '[refresh]'
+
+  # DIORITE SECTION - RIGHT SIDE (PERSO)
+  diorite_perso_1:
+    material: DIORITE
+    slot: 14
+    amount: 1
+    display_name: '&f1 Stack &7de Diorite (Points Personnels)'
+    lore:
+      - "&7Coût: &b100 &7points personnels"
+      - "&7Quantité: &f64 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "100"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "1"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% diorite 64'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -100'
+      - '[refresh]'
+
+  diorite_perso_2:
+    material: DIORITE
+    slot: 15
+    amount: 5
+    display_name: '&f5 Stacks &7de Diorite (Points Personnels)'
+    lore:
+      - "&7Coût: &b500 &7points personnels"
+      - "&7Quantité: &f320 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "500"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "5"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% diorite 320'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -500'
+      - '[refresh]'
+
+  diorite_perso_3:
+    material: DIORITE
+    slot: 16
+    amount: 10
+    display_name: '&f10 Stacks &7de Diorite (Points Personnels)'
+    lore:
+      - "&7Coût: &b1000 &7points personnels"
+      - "&7Quantité: &f640 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "1000"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "10"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% diorite 640'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -1000'
+      - '[refresh]'
+
+  # TUFF SECTION - LEFT SIDE (VILLE)
+  tuff_ville_1:
+    material: TUFF
+    slot: 19
+    amount: 1
+    display_name: '&f1 Stack &7de Tuff (Points de Ville)'
+    lore:
+      - "&7Coût: &b125 &7points de ville"
+      - "&7Quantité: &f64 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "125"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "1"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% tuff 64'
+      - '[console] bq gp add ville.%kg_ville_id% -125'
+      - '[refresh]'
+
+  tuff_ville_2:
+    material: TUFF
+    slot: 20
+    amount: 5
+    display_name: '&f5 Stacks &7de Tuff (Points de Ville)'
+    lore:
+      - "&7Coût: &b625 &7points de ville"
+      - "&7Quantité: &f320 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "625"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "5"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% tuff 320'
+      - '[console] bq gp add ville.%kg_ville_id% -625'
+      - '[refresh]'
+
+  tuff_ville_3:
+    material: TUFF
+    slot: 21
+    amount: 10
+    display_name: '&f10 Stacks &7de Tuff (Points de Ville)'
+    lore:
+      - "&7Coût: &b1250 &7points de ville"
+      - "&7Quantité: &f640 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "1250"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "10"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% tuff 640'
+      - '[console] bq gp add ville.%kg_ville_id% -1250'
+      - '[refresh]'
+
+  # TUFF SECTION - RIGHT SIDE (PERSO)
+  tuff_perso_1:
+    material: TUFF
+    slot: 23
+    amount: 1
+    display_name: '&f1 Stack &7de Tuff (Points Personnels)'
+    lore:
+      - "&7Coût: &b125 &7points personnels"
+      - "&7Quantité: &f64 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "125"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "1"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% tuff 64'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -125'
+      - '[refresh]'
+
+  tuff_perso_2:
+    material: TUFF
+    slot: 24
+    amount: 5
+    display_name: '&f5 Stacks &7de Tuff (Points Personnels)'
+    lore:
+      - "&7Coût: &b625 &7points personnels"
+      - "&7Quantité: &f320 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "625"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "5"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% tuff 320'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -625'
+      - '[refresh]'
+
+  tuff_perso_3:
+    material: TUFF
+    slot: 25
+    amount: 10
+    display_name: '&f10 Stacks &7de Tuff (Points Personnels)'
+    lore:
+      - "&7Coût: &b1250 &7points personnels"
+      - "&7Quantité: &f640 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "1250"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "10"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% tuff 640'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -1250'
+      - '[refresh]'
+
+  # DEEPSLATE SECTION - LEFT SIDE (VILLE)
+  deepslate_ville_1:
+    material: DEEPSLATE
+    slot: 28
+    amount: 1
+    display_name: '&f1 Stack &7de Deepslate (Points de Ville)'
+    lore:
+      - "&7Coût: &b150 &7points de ville"
+      - "&7Quantité: &f64 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "150"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "1"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% deepslate 64'
+      - '[console] bq gp add ville.%kg_ville_id% -150'
+      - '[refresh]'
+
+  deepslate_ville_2:
+    material: DEEPSLATE
+    slot: 29
+    amount: 5
+    display_name: '&f5 Stacks &7de Deepslate (Points de Ville)'
+    lore:
+      - "&7Coût: &b750 &7points de ville"
+      - "&7Quantité: &f320 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "750"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "5"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% deepslate 320'
+      - '[console] bq gp add ville.%kg_ville_id% -750'
+      - '[refresh]'
+
+  deepslate_ville_3:
+    material: DEEPSLATE
+    slot: 30
+    amount: 10
+    display_name: '&f10 Stacks &7de Deepslate (Points de Ville)'
+    lore:
+      - "&7Coût: &b1500 &7points de ville"
+      - "&7Quantité: &f640 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "1500"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "10"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% deepslate 640'
+      - '[console] bq gp add ville.%kg_ville_id% -1500'
+      - '[refresh]'
+
+  # DEEPSLATE SECTION - RIGHT SIDE (PERSO)
+  deepslate_perso_1:
+    material: DEEPSLATE
+    slot: 32
+    amount: 1
+    display_name: '&f1 Stack &7de Deepslate (Points Personnels)'
+    lore:
+      - "&7Coût: &b150 &7points personnels"
+      - "&7Quantité: &f64 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "150"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "1"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% deepslate 64'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -150'
+      - '[refresh]'
+
+  deepslate_perso_2:
+    material: DEEPSLATE
+    slot: 33
+    amount: 5
+    display_name: '&f5 Stacks &7de Deepslate (Points Personnels)'
+    lore:
+      - "&7Coût: &b750 &7points personnels"
+      - "&7Quantité: &f320 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "750"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "5"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% deepslate 320'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -750'
+      - '[refresh]'
+
+  deepslate_perso_3:
+    material: DEEPSLATE
+    slot: 34
+    amount: 10
+    display_name: '&f10 Stacks &7de Deepslate (Points Personnels)'
+    lore:
+      - "&7Coût: &b1500 &7points personnels"
+      - "&7Quantité: &f640 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "1500"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "10"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% deepslate 640'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -1500'
+      - '[refresh]'
+
+  # COBBLED DEEPSLATE SECTION - LEFT SIDE (VILLE)
+  cobbled_deepslate_ville_1:
+    material: COBBLED_DEEPSLATE
+    slot: 37
+    amount: 1
+    display_name: '&f1 Stack &7de Deepslate Taillée (Points de Ville)'
+    lore:
+      - "&7Coût: &b150 &7points de ville"
+      - "&7Quantité: &f64 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "150"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "1"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% cobbled_deepslate 64'
+      - '[console] bq gp add ville.%kg_ville_id% -150'
+      - '[refresh]'
+
+  cobbled_deepslate_ville_2:
+    material: COBBLED_DEEPSLATE
+    slot: 38
+    amount: 5
+    display_name: '&f5 Stacks &7de Deepslate Taillée (Points de Ville)'
+    lore:
+      - "&7Coût: &b750 &7points de ville"
+      - "&7Quantité: &f320 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "750"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "5"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% cobbled_deepslate 320'
+      - '[console] bq gp add ville.%kg_ville_id% -750'
+      - '[refresh]'
+
+  cobbled_deepslate_ville_3:
+    material: COBBLED_DEEPSLATE
+    slot: 39
+    amount: 10
+    display_name: '&f10 Stacks &7de Deepslate Taillée (Points de Ville)'
+    lore:
+      - "&7Coût: &b1500 &7points de ville"
+      - "&7Quantité: &f640 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point%"
+          output: "1500"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "10"
+      deny_commands:
+      - '[message] &c✖ &7Points de ville insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% cobbled_deepslate 640'
+      - '[console] bq gp add ville.%kg_ville_id% -1500'
+      - '[refresh]'
+
+  # COBBLED DEEPSLATE SECTION - RIGHT SIDE (PERSO)
+  cobbled_deepslate_perso_1:
+    material: COBBLED_DEEPSLATE
+    slot: 41
+    amount: 1
+    display_name: '&f1 Stack &7de Deepslate Taillée (Points Personnels)'
+    lore:
+      - "&7Coût: &b150 &7points personnels"
+      - "&7Quantité: &f64 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "150"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "1"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% cobbled_deepslate 64'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -150'
+      - '[refresh]'
+
+  cobbled_deepslate_perso_2:
+    material: COBBLED_DEEPSLATE
+    slot: 42
+    amount: 5
+    display_name: '&f5 Stacks &7de Deepslate Taillée (Points Personnels)'
+    lore:
+      - "&7Coût: &b750 &7points personnels"
+      - "&7Quantité: &f320 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "750"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "5"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% cobbled_deepslate 320'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -750'
+      - '[refresh]'
+
+  cobbled_deepslate_perso_3:
+    material: COBBLED_DEEPSLATE
+    slot: 43
+    amount: 10
+    display_name: '&f10 Stacks &7de Deepslate Taillée (Points Personnels)'
+    lore:
+      - "&7Coût: &b1500 &7points personnels"
+      - "&7Quantité: &f640 blocs"
+      - ""
+      - "&7Cliquez pour obtenir"
+    item_flags:
+      - hide_enchants
+    left_click_requirement:
+      requirements:
+        energy_check:
+          type: ">="
+          input: "%kg_ville_point_perso%"
+          output: "1500"
+        inventory_check:
+          type: ">="
+          input: "%player_empty_slots%"
+          output: "10"
+      deny_commands:
+      - '[message] &c✖ &7Points personnels insuffisants ou inventaire plein!'
+    left_click_commands:
+      - '[console] give %player_name% cobbled_deepslate 640'
+      - '[console] bq point %player_name% add ville.%kg_ville_id% -1500'
+      - '[refresh]'
+
+  previous_page:
+    material: ARROW
+    slot: 48
+    display_name: '&7« &fPage précédente'
+    lore:
+      - "&7Cliquez pour voir"
+      - "&7la page précédente"
+    left_click_commands:
+      - '[openguimenu] generateur_pierre'

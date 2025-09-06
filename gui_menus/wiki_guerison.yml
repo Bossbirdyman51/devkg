@@ -1,0 +1,30 @@
+menu_title: "&2&l&2Wiki Guérison" #:offset_-38::menu_test:
+size: 54
+#register_command: true
+items:
+  0:
+    material: "WRITTEN_BOOK"
+    display_name: "&2Comment regagnons nous de la vie ?"
+    lore:
+      - "&2Dormir dans un Lit"
+      - "&2Avoir un &bHôpital"
+      - "&2Utiliser une &bPotion de Soin"
+      - "&2Utiliser un &bSort de Soin &6Mage Uniquement"
+    slots:
+      - 0
+  2:
+    material: "WRITABLE_BOOK"
+    display_name: "&2est ce pareil dans le monde ressources ?"
+    lore:
+      - "&6Regénération de Vie Active dans le monde Ressources"
+      - "&2dormir ou manger permet la guérison"
+    slots:
+      - 2
+  53:
+    material: "ARROW"
+    display_name: "Revenir au Menu"
+    left_click_commands:
+      - '[openguimenu] wiki'
+    slots:
+      - 53
+  

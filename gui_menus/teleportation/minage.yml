@@ -1,0 +1,77 @@
+menu_title: ':offset_-9:&f%img_minage%'
+open_command:
+- minage
+- mine
+size: 54
+items:
+  'minage':
+    material: PAPER
+    model_data: 10199
+    slots: 
+    - 0-3
+    - 9-12
+    - 18-21
+    - 27-30
+    - 36-39
+    display_name: '&#BDBDBD&lMonde Minage Classique'
+    lore:
+    - ''
+    - '&#6E6E6E&l» &#FFFFFFCaractéristiques du Monde'
+    - ''
+    - '&#9E9E9E▪ &#AAAAAARessources : &#FFFFFFVanilla &#AAAAAAet &#55FFFFCustom'
+    - '&#9E9E9E▪ &#AAAAAAMonstres : &#FF5555Présents'
+    - '&#9E9E9E▪ &#AAAAAARéinitialisation : &#FFFFFFToutes les 2 semaines'
+    - '&#9E9E9E▪ &#AAAAAAProchain Reset : &#55FFFF%javascript_countdown%'
+    - ''
+    - '&#6E6E6E&l» &#FFFFFFDescription'
+    - '&#9E9E9E▪ &#AAAAAAExplorez un monde de survie classique,'
+    - '&#9E9E9E▪ &#AAAAAAenrichi de nouveaux minerais et défis.'
+    - ''
+    left_click_commands:
+    #- '[console] bq event %player_name% Tutoriel.step3'
+    - '[console] warp minage %player_name%'
+  'custom':
+    material: PAPER
+    model_data: 10199
+    slots:
+    - 5-8
+    - 14-17
+    - 23-26
+    - 32-35
+    - 41-44
+    display_name: '&#4169E1&lZone de Minage Paisible'
+    lore:
+    - ''
+    - '&#87CEEB&l» &#FFFFFFCaractéristiques de la Zone'
+    - ''
+    - '&#FFFFFF+ En cours'
+    - '&#FFFFFF+ En cours'
+    - ''
+    #left_click_commands:
+    #- '[console] warp minage_custom %player_name%'
+  'rtp_overworld':
+    material: PAPER
+    model_data: 10199
+    slots: 
+    - 46-47
+    display_name: '&#55AE3A&l&nAller au Minage Classique&r'
+    lore:
+    - '&#FFFFFFCliquez pour une téléportation'
+    - '&#FFFFFFaléatoire dans ce monde.'
+    - ''
+    - '&#A9A9A9&o(Accès gratuit pour tous)'
+    left_click_commands:
+    #- '[console] bq event %player_name% Tutoriel.step3'
+    - '[console] warp minage %player_name%'
+  'custom_world_access':
+    material: PAPER
+    model_data: 10199
+    slots:
+    - 50-51
+    display_name: '&#4682B4&l&nAller à la Zone Paisible&r'
+    lore:
+    - '&#FFFFFF+ En cours'
+    - '&#FFFFFF+ En cours'
+    - ''
+    #left_click_commands:
+    #- '[console] warp minage_custom %player_name%'

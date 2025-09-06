@@ -1,0 +1,107 @@
+menu_title: '&6&lVotre Réputation' #':offset_-16::blank_menu:'
+open_command: "rep"
+size: 28
+items:
+  0:
+    material: "BLACK_STAINED_GLASS_PANE"
+    display_name: "."
+    slots:
+      - 2
+      - 1
+      - 10
+      - 11
+      - 12
+      - 13
+      - 14
+      - 19
+      - 21
+      - 25
+      - 26
+      - 6
+      - 8
+      - 7
+      - 6
+      - 15
+      - 16
+      - 23
+  60:
+    material: "chain"
+    display_name: "."
+    slots:
+      - 0
+      - 8
+      - 9
+      - 18
+      - 26
+      - 17
+  01:
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGQ2ODJiZWIwYmEyZWIwMDkzZmM2YmM2OWI1N2U3YWJhNzU2NzM4NWNmNmRjNGZhNTE5Y2JkYTAyZmMzNzIzMyJ9fX0="
+    slot: 4
+    display_name: '&fRéputation Barbare : %betonquest_main:point.rep_barbare.amount%'
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: false
+  12:
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDY5NTM5NDI0NTk5ZDk0ODdlZDEwMzFmYTZhYWNmY2YxOTczNThiOGYxODhkNjJmN2ExODU1ZWZhZmQyNGYxOSJ9fX0="
+    slot: 3
+    display_name: '&5Réputation RudeVal : %betonquest_main:point.rep_rudeval.amount%'
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: false
+  2:
+    material: NETHERITE_PICKAXE
+    slot: 19
+    lore:
+     - ""
+    display_name: 'Réputation Mineur : %betonquest_main:point.rep_mineur.amount%'
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: false
+  3:
+    material: NETHERITE_AXE
+    slot: 21
+    lore:
+     - ""
+    display_name: 'Réputation Bûcheron : %betonquest_main:point.rep_bucheron.amount%'
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: false
+  4:
+    material: NETHERITE_HOE
+    slot: 23
+    lore:
+     - ""
+    display_name: 'Réputation Fermier : %betonquest_main:point.rep_fermier.amount%'
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: false
+  7:
+    material: POTION
+    slot: 25
+    lore:
+     - ""
+    display_name: 'Réputation Tavernier : %betonquest_main:point.rep_tavernier.amount%'
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: false
+  5:
+    material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTQ0OGZiNzBlNGJkMGQ5YmE3ZDk5YWEwMzAxOTVkNGVhY2NjZDE1MDZjYzc1M2QzYWJkMmI3ZjI2Y2FkYzcwMyJ9fX0="
+    slot: 5
+    display_name: '&3Réputation Aexelion : %betonquest_main:point.rep_aexelion.amount%'
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    unbreakable: false
+    update: false

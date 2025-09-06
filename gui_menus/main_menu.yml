@@ -1,0 +1,337 @@
+menu_title: ':offset_-32::main_menu:' #':offset_-16::blank_menu:'
+open_command: "menus"
+register_command: true
+size: 54
+items:
+  3:
+    material: "hdb-14958"
+    slot: 50
+    display_name: '&#FFC107&lNotre Discord'
+    lore:
+     - '&#8BC34A&lhttps://discord.gg/UxxdkDy'
+    left_click_commands:
+      - '[message] Voici le lien &#8BC34Ahttps://discord.gg/UxxdkDy'
+      - '[close]'
+  4:
+    material: "hdb-33381"
+    slot: 49
+    display_name: '&#FFC107&lNotre Site'
+    lore:
+      - '&#8BC34A&lhttps://kginfoservs.com'
+    left_click_commands:
+      - '[message] &#8BC34A&lhttps://kginfoservs.com'
+      - '[close]'
+  5:
+    material: "hdb-50526"
+    slot: 48
+    display_name: '&#2196F3Twitch TV'
+    lore:
+      - '&#2196F3Stream de : &#FF9800Bossbirdyman'
+      - '&#2196F3https://twitch.tv/bossbirdyman'
+    left_click_commands:
+      - '[message] &#2196F3&lhttps://twitch.tv/bossbirdyman'
+      - '[close]'
+  8:
+    material: "PAPER"
+    model_data: "10003"
+    display_name: '&#FF9800Quitter'
+    left_click_commands:
+      - '[close]'
+    slot: 53
+  minijeux:
+    material: "hdb-4105"
+    display_name: '&#FF9800Serveur MiniJeux'
+    lore:
+    - '&#FF9800---------------------------------'
+    - '&#FF9800Clic Gauche pour se téléporter au serveur MiniJeux'
+    - '&#FF9800---------------------------------'
+    left_click_commands:
+      - '[connect] minijeux'
+    slot: 51
+  creatif:
+    material: "hdb-59302"
+    display_name: '&#FF9800Serveur Créatif'
+    lore:
+    - '&#FF9800---------------------------------'
+    - '&#FF9800Clic Gauche pour se téléporter au serveur Créatif'
+    - '&#FF9800---------------------------------'
+    left_click_commands:
+      - '[connect] creatif'
+    slot: 52 
+  10:
+    material: "PAPER"
+    model_data: 10320
+    slot: 21
+    display_name: '&#66C322Bûcheron'
+    lore: 
+      #- '&2Clic pour voir ton arbre de compétence'
+      - ''
+      - ''
+      - '&7Bien que cela puisse être une tâche ennuyeuse,'
+      - '&7le bûcheron est essentiel pour obtenir des'
+      - '&7matériaux utilisés pour l''artisanat et le'
+      - '&7commerce.'
+      - ''
+      - '&#0FEDD5Progression'
+      - ''
+      - '&#8BC34A&bLevel actuel: &#4CAF50%mmocore_profession_bucheron% &#8BC34A[&#FF9800%mmocore_profession_percent_bucheron%%&#8BC34A]'
+      - ''
+      - '&e&lSources D''Exp:'
+      - '&8 ∎ &fTout les arbres'
+      - '&8 ∎ &fCraft en Bois'
+  19:
+    material: "PAPER"
+    model_data: "10323"
+    slot: 22
+    display_name: '&#7B9795Mineur'
+    lore: 
+      #- '&2Clic pour voir ton arbre de compétence'
+      - ''
+      - ''
+      - '&7L''exploitation minière libère des minerais'
+      - '&7rares et des matières premières.'
+      - '&7Ceci est vital pour votre montée en'
+      - '&7puissance et en force. Miner fréquemment'
+      - '&7pour des drops, uniques et rares!'
+      - ''
+      - '&#0FEDD5Progression'
+      - ''
+      - '&#8BC34A&bLevel actuel: &#4CAF50%mmocore_profession_mineur% &#8BC34A[&#FF9800%mmocore_profession_percent_mineur%%&#8BC34A]'
+      - ''
+      - '&e&lSources D''Exp:'
+      - '&8 ∎ &7Stone'
+      - '&8 ∎ &fTous Minerais'
+  #16:
+  #  material: "OAK_DOOR"
+  #  slot: 16
+  #  display_name: '&#66C322Porte Custom'
+  #  view_requirement:
+  #  left_click_commands:
+  #    - '[player] bdm'
+  #11:
+  #  material: "CRAFTING_TABLE"
+  #  slot: 40
+  #  display_name: '&#66C322Craft Custom ( Bedrock )'
+  #  view_requirement:
+  #    requirements:
+  #      perm:
+  #        type: has permission
+  #        permission: bedrock
+  #  left_click_commands:
+  #    - '[console] mi stations open vagabond %player_name%'
+  #12:
+  #  material: "ORANGE_STAINED_GLASS_PANE"
+  #  display_name: "."
+  #  slots:
+  #    - 12
+  #    - 13
+  #    - 14
+  #    - 23
+  #    - 21
+  #    - 30
+  #    - 32
+  #    - 41
+  #    - 39
+  22:
+    material: "PAPER"
+    model_data: "10199"
+    display_name: '&#FFC107&lInfo Perso'
+    lore:
+      - '&#8BC34APseudo: &#4CAF50%player_name%'
+      - '&#2196F3Rang: &#FF9800%vault_rank%'
+      - ''
+      #- '&#0FEDD5 ∎ Classe ∎ '
+      #- '&#FF69B4Classe: &#34A8FF%mmocore_class%'
+      #- '&#4CAF50Niveau: &#8BC34A%mmocore_level%'
+      #- '&#FF9800Progression: &#2196F3%mmocore_level_percent%%'
+      #- ''
+      - '&#F5EB19 ∎ Argent ∎ '
+      - '&#34A8FFArgent: &#FFC107%xconomy_balance%'
+      - ''
+      - '&#8BC34A∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎'
+      - ''
+      - '&#FF5722 ∎ Grade ∎'
+      - '&#FFA726Parle au PNJ Grade du Spawn'
+      - '&#FF9800pour augmenter ton grade!'
+      - ''
+      #- '&e&lClic pour voir ta classe'
+      #- '&e&lClic pour ajouter des points de compétence'
+      #- '&e&lClic pour configurer tes compétences'
+    #left_click_commands:
+    #  - '[player] mzabi'
+    #  - '[close]'
+    slots: 
+    - 3-5
+    - 12-14
+  11:
+    material: "PAPER"
+    model_data: "10199"
+    slots: 
+    - 6-8
+    - 15-17
+    display_name: '&#66C322Quêtes'
+    lore:
+      - '&#0FEDD5 ∎ Toutes les quêtes ∎ '
+      - '&#FF69B4 ∎ Histoire: %betonquest_Menu:point.histoire.amount%/%betonquest_Menu:globalpoint.histoire.amount%'
+      - '&#8BC34A ∎ Journalière: %betonquest_Menu:point.journaliere.amount%'
+      - '&#8BC34A    ∎ Total: X'
+      - '&#03A9F4 ∎ Secondaire: %betonquest_Menu:point.secondaire.amount%/%betonquest_Menu:globalpoint.secondaire.amount%' 
+    #view_requirement:
+    #  requirements:
+    #    perm:
+    #      type: has permission
+    #      permission: bedrock
+    left_click_commands:
+      - '[console] execute at %player_name% run playsound item.book.page_turn master %player_name%'
+      - '[player] quetes'
+  #parametre:
+  #  material: "hdb-60066"
+  #  display_name: '&#0FEDD5Paramètres'
+  #  lore:
+  #    - '&#0FEDD5 ∎ Modifier l''interface ∎ '
+  #    - '∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎∎'
+  #  slot: 31
+  #  left_click_commands:
+  #    - '[openguimenu] parametre'
+  #25:
+  #  material: "hdb-7961"
+  #  display_name: '&3&lRetour au spawn'
+  #  left_click_commands:
+  #    - '[player] spawn'
+  #  slot: 25
+  28:
+    material: "PAPER"
+    model_data: "10321"
+    slot: 23
+    display_name: '&#4DBB19Fermier'
+    lore:
+      #- '&#DCED0FClic pour voir ton arbre de compétence'
+      - ''
+      - ''
+      - '&#5C6C6AAvec pleins de nouvelles recette consommables,'
+      - '&#5C6C6Avous devrez rester au top des cultures pour'
+      - '&#5C6C6Aobtenir les meilleurs recettes.'
+      - ''
+      - '&#0FEDD5Progression'
+      - ''
+      - '&#8BC34A&bLevel actuel: &#4CAF50%mmocore_profession_fermier% &#8BC34A[&#FF9800%mmocore_profession_percent_fermier%%&#8BC34A]'
+      - ''
+      - '&#FF69B4&e&lSources D''Exp:'
+      - '&#8BC34A ∎ &#4CAF50Toutes les cultures'
+      - ''
+  34:
+    material: "PAPER"
+    model_data: "10199"
+    display_name: '&#ff9900Gestion de Ville'
+    lore:
+      - '&#0099ffOuvrir votre gestion de ville'
+    left_click_commands:
+      - '[player] ville menu'
+      - '[close]'
+    right_click_commands:
+      - '[player] ville menu'
+      - '[close]'
+    slots: 
+    - 0-2
+    - 9-11
+  boutique:
+    material: "PAPER"
+    model_data: "10199"
+    display_name: '&#ff9900Boutique'
+    lore:
+      - '&#0099ffBoutique en ligne'
+      - '&#0099ffhttps://kginfoservs.com/shop'
+    left_click_commands:
+      - '[message] Voici le lien &#8BC34Ahttps://kginfoservs.com/shop'
+      - '[close]'
+    right_click_commands:
+      - '[message] Voici le lien &#8BC34Ahttps://kginfoservs.com/shop'
+      - '[close]'
+    slots: 
+    - 27-29
+    - 36-38
+  wiki:
+    material: "PAPER"
+    model_data: "10199"
+    display_name: '&#ff9900Wiki'
+    lore:
+      - '&#0099ffBesoin d''aide ?'
+      - '&#0099ffConsultez notre Wiki'
+      - '&#0099ffhttps://docs.kginfoservs.com'
+    left_click_commands:
+      - '[message] Voici le lien &#8BC34Ahttps://docs.kginfoservs.com'
+      - '[close]'
+    right_click_commands:
+      - '[message] Voici le lien &#8BC34Ahttps://docs.kginfoservs.com'
+      - '[close]'
+    slots: 
+    - 30-32
+    - 39-41
+  portal:
+    material: "PAPER"
+    model_data: "10199"
+    display_name: '&#ff9900Téléportation'
+    lore:
+      - '&#0099ffClic Gauche pour ouvrir le menu de TP'
+    left_click_commands:
+      - '[player] tpa'
+      - '[close]'
+    slots: 
+    - 33-35
+    - 42-44
+  #37:
+  #  material: "ANVIL"
+  #  slot: 37
+  #  display_name: '&2Forgeron'
+  #  lore:
+  #    #- '&2Clic pour voir ton arbre de compétence'
+  #    - ''
+  #    - '&eProgression'
+  #    - '&2Niveau : &6%mmocore_profession_forgeron%'
+  #    - '&2Progression Lvl Up: &6%mmocore_profession_percent_forgeron%'
+  #    - ''
+  #51:
+  #  material: "CHEST"
+  #  slot: 51
+  #  display_name: '&2Protection'
+  #  lore:
+  #    - '&7Coffre / Porte / Entonnoir ( Hooper ) Portillon etc..'
+  #  left_click_commands:
+  #    - '[openguimenu] protection'
+  #49:
+  #  #material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmJjMTI4NGQyNzM2ODhhOTYxM2JmZmIxMzE3MWUzN2I4MmYwZDMzYmUwZjljMmZkZTE3YjdiZWM5ZTI1ZjQifX19"
+  #  material: BOOK #stick
+  #  nbt_int: #CustomModelData:30
+  #  display_name: '&2Journal de Quêtes'
+  #  slot: 49
+  #  lore:
+  #    - '&2Ouvrir votre journal de quête'
+  #  left_click_commands:
+  #    - '[player] journal'
+  #47:
+  #  #material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmJjMTI4NGQyNzM2ODhhOTYxM2JmZmIxMzE3MWUzN2I4MmYwZDMzYmUwZjljMmZkZTE3YjdiZWM5ZTI1ZjQifX19"
+  #  material: ENCHANTED_BOOK #stick
+  #  nbt_int: #CustomModelData:30
+  #  display_name: '&2Liste des enchantements'
+  #  slot: 47
+  #  lore:
+  #    - '&2Voir la liste des enchantements'
+  #  left_click_commands:
+  #    - '[player] ecoenchants gui'
+  #47:
+  #  slot: 47
+  #  material: "basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGE0NTRjNWI0YWFhMzgyYWE1YjdkZDU5NjdiMzliMTNjOTdkNTJlYmFkN2FmMTYyYWY1ZjE0NmMyOTEwMDk4ZSJ9fX0"
+  #  display_name: "&2Réputation"
+  #  left_click_commands:
+  #    - '[player] rep'
+  #53:
+  #  material: "hdb-18669"
+  #  slot: 51
+  #  display_name: '&2&lCraft Custom'
+  #  item_flags:
+  #    - hide_enchants
+  #    - hide_attributes
+  #  unbreakable: false
+  #  update: false
+  #  left_click_commands:
+  #    - '[player] ia'

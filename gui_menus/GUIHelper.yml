@@ -1,0 +1,165 @@
+gui_menus:
+  GUIHelper:
+    items:
+      '0':
+        material: SNOW_BLOCK
+        slot: 0
+      '1':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 1
+      '2':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 2
+      '3':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 3
+      '4':
+        material: SPRUCE_LOG
+        slot: 4
+      '5':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 5
+      '6':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 6
+      '7':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 7
+      '8':
+        material: BEDROCK
+        slot: 8
+      '9':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 9
+      '10':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 10
+      '11':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 11
+      '12':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 12
+      '13':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 13
+      '14':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 14
+      '15':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 15
+      '16':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 16
+      '17':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 17
+      '18':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 18
+      '19':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 19
+      '20':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 20
+      '21':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 21
+      '22':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 22
+      '23':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 23
+      '24':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 24
+      '25':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 25
+      '26':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 26
+      '27':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 27
+      '28':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 28
+      '29':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 29
+      '30':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 30
+      '31':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 31
+      '32':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 32
+      '33':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 33
+      '34':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 34
+      '35':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 35
+      '36':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 36
+      '37':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 37
+      '38':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 38
+      '39':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 39
+      '40':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 40
+      '41':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 41
+      '42':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 42
+      '43':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 43
+      '44':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 44
+      '45':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 45
+      '46':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 46
+      '47':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 47
+      '48':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 48
+      '49':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 49
+      '50':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 50
+      '51':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 51
+      '52':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 52
+      '53':
+        material: BLACK_STAINED_GLASS_PANE
+        slot: 53

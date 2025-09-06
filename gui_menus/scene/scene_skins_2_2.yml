@@ -1,0 +1,808 @@
+menu_title: '&8 &e&lScenes NPC 2 Skins'
+open_command:
+  - scenesskin22
+size: 54
+open_requirement:
+  requirements:
+    mythic_permission:
+      type: has permission
+      permission: scenes.use
+      denycommands:
+        - '[message] &cYou do not have permission to open this menu!'
+        - '[sound] BLOCK_ANVIL_LAND'
+items:
+  skin1_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 0
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 1'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin1_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin2_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 1
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 2'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin2_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin3_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 2
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 3'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin3_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin4_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 3
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 4'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin4_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin5_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 4
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 5'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin5_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin6_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 5
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 6'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin6_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin7_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 6
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 7'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin7_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin8_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 7
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 8'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin8_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin9_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 8
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 9'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin9_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin10_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 9
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 10'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin10_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin11_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 10
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 11'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin11_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin12_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 11
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 12'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin12_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin13_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 12
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 13'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin13_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin14_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 13
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 14'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin14_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin15_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 14
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 15'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin15_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin16_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 15
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 16'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin16_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin17_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 16
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 17'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin17_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin18_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 17
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 18'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin18_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin19_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 18
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 19'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin19_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin20_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 19
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 20'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin20_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin21_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 20
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 21'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin21_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin22_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 21
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 22'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin22_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin23_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 22
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 23'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin23_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin24_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 23
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 24'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin24_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin25_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 24
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 25'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin25_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin26_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 25
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 26'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin26_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin27_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 26
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 27'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin27_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin28_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 27
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 28'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin28_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin29_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 28
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 29'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin29_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin30_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 29
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 30'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin30_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin31_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 30
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 31'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin31_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin32_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 31
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 32'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin32_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin33_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 32
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 33'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin33_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin34_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 33
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 34'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin34_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin35_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 34
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 35'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin35_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin36_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 35
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 36'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin36_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin37_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 36
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 37'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin37_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin38_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 37
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 38'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin38_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin39_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 38
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 39'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin39_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin40_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 39
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 40'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin40_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin41_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 40
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 41'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin41_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin42_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 41
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 42'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin42_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin43_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 42
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 43'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin43_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin44_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 43
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 44'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin44_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin45_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 44
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 45'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin45_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin46_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 45
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 46'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin46_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin47_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 46
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 47'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin47_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin48_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 47
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 48'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin48_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin49_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 48
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 49'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin49_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  skin50_2:
+    material: texture-1711dbc26fcf2b3f6e2c184e1af2ca4c3f2929b46731e5219cb698c195839ab9
+    slot: 49
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Skin 50'
+    lore:
+      - '&7Click to apply this Skin!'
+    left_click_commands:
+      - '[player] mm test cast skin50_2'
+      - '[message] &aYou have changed the Skin!'
+      - '[close]'
+  page2:
+    material: texture-8399e5da82ef7765fd5e472f3147ed118d981887730ea7bb80d7a1bed98d5ba
+    slot: 51
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Next Page'
+    lore:
+      - '&7Next page'
+    left_click_commands:
+      - '[openguimenu] scene_skins_2_2_2'
+      - '[close]'
+  remove:
+    material: texture-441f4edbc68c9061355242bd73effc9299a3252b9f11e82b5f1ec7b3b6ac0
+    slot: 53
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Delete'
+    lore:
+      - '&7Click to Delete this Scene'
+    left_cick_commands:
+      - '[player] mm test cast deletenpc'
+      - '[message] &aScene Deleted!'
+      - '[close]'
+  gback:
+    material: texture-76ebaa41d1d405eb6b60845bb9ac724af70e85eac8a96a5544b9e23ad6c96c62
+    slot: 52
+    priority: 1
+    update: true
+    item_flags:
+      - hide_enchants
+      - hide_attributes
+    display_name: 'Go back'
+    lore:
+      - '&7Click to go back'
+    left_click_commands:
+      - '[openguimenu] scene_edit'
+      - '[close]'
+
+#06d54b3fffc32b7e2281000f77268b91

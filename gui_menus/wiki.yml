@@ -1,0 +1,113 @@
+menu_title: "&#D133FFWiki :offset_-35::menu_test:" #:offset_-38::menu_test:
+open_command: 
+  - help
+  - wiki
+  - tuto
+  - aide
+size: 54
+#register_command: true
+items:
+  0:
+    material: "LECTERN"
+    display_name: "&#D133FFLes Villes"
+    #lore:
+    #  - .
+    left_click_commands:
+      - '[openguimenu] wiki_ville'
+    slots:
+      - 41
+      - 42
+      - 39
+      - 20
+      - 21
+  1:
+    material: "BOOK"
+    display_name: "&#D133FFComment recupérer de la vie ?"
+    lore:
+      - .
+    slots:
+      - 1
+  2:
+    material: "WRITABLE_BOOK"
+    display_name: "&#D133FFComment déposer de l'argent en banque ?"
+    lore:
+      - "&2Faite /cv banque"
+    slots:
+      - 2
+  3:
+    material: "WRITABLE_BOOK"
+    display_name: "&#D133FFquel sont les commandes accessibles sur le serveur ?"
+    lore:
+      - "&2 /backpack -permet davoir acces a son sac a dos"
+      - "&2 /craft pour avoir acces a une table de craft"
+      - "&2 /cv -permet davoir acces au menu civ"
+      - "&2 /cv accept -permet daccepter les demandes"
+      - "&2 /cv banque -pour avoir acces de deposer ou retirer de largent"
+      - "&2 /journal -permet davoir acces au journal des quetes"
+      - "&2 /msg (nom du joueur) -permet denvoyer un message privé a une personne"
+      - "&2 /pay -permet de payer un joueur"
+      - "&2 /profile -permet davoir acces a son profil"
+      - "&2 /quetes -permet de voir ses quetes" 
+      - "&2 /spawn -permet de retourner a la ville de sa faction"
+      - "&2 /tpr -pour teleportation a un lieu aléatoire"
+    slots:
+      - 3
+  4:
+    material: "WRITABLE_BOOK"
+    display_name: "&#D133FFComment faire pour avoir des KGOLD ?"
+    lore:
+      - "&2tuer des monstres"
+      - "&2recolter des ressources pour les vendres"
+      - "&2completer des quetes"
+      - "&2tuer dautres joueurs"
+      - "&2utiliser des batiments de ventes automatique"
+    slots:
+      - 4
+  5:
+    material: "WRITABLE_BOOK"
+    display_name: "&#D133FFqui aller voir pour faire des quetes ?"
+    lore:
+      - "&2le mineur"
+      - "&2le fermier"
+      - "&2le bucheron"
+      - "&2le tavernier"
+      - "&2PNJ d events"
+      - "&2le guide pour la classe"
+    slots:
+      - 5
+  6:
+    material: "WRITABLE_BOOK"
+    display_name: "&#D133FFcomment peut-on se téléporter ?"
+    lore:
+      - "&2le menu civ permet de se téléporter en selectionnant la perle de lender dans le menu"
+    slots:
+      - 6
+  7:
+    material: "WRITABLE_BOOK"
+    display_name: "&#D133FFque veux dire le menu ?"
+    lore:
+      - "&2la buche de bois represente la ville dans laquelle vous etes"
+      - "&2le lit bleu represente votre ville"
+      - "&2le lit rouge represente la liste de toutes les villes"
+      - "&2lépée represente les alliances entre villes"
+      - "&2le plan represente tout vos batiment acheté qui sont placé dans un coffre virtuel pour utilisation futur"
+      - "&2lémeraude represente le amgasin"
+      - "&2la baniere represente les nations"
+      - "&2le bloc de brique represente la regions"
+      - "&2la pancarte represente la liste des joueurs connectés"
+      - "&2la boite a musique represente le classement"
+      - "&2la boussole represente la revendication territolriale"
+      - "&2l oeil de lender represente la téléportation"
+      - "&2létiquette represente les canaux de discussions"
+      - "&2le livre represente le choix de language"
+    slots:
+      - 7
+  53:
+    material: "ARROW"
+    display_name: "&#D133FFRevenir au Menu"
+    left_click_commands:
+      - '[console] warp aexelion %player_name%'
+      - '[close]'
+    slots:
+      - 53
+  

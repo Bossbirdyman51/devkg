@@ -1,0 +1,28 @@
+menu_title: ":offset_-14: :navigateur_minage:"
+size: 54
+items:
+  0:
+    material: "PAPER"
+    model_data: 10199
+    display_name: "Sortie de Ville <- Monde Précédent"
+    slot: 47
+    left_click_commands:
+      - '[openguimenu] navigateur '
+  1:
+    material: "PAPER"
+    model_data: 10199
+    display_name: "Se téléporter en monde &2Ressources"
+    slots:
+      - 21-23
+      - 30-32
+      - 39-41
+    left_click_commands:
+      - '[connect] minage_survie_001'
+      - '[close]'
+  24:
+    material: "PAPER"
+    model_data: 10199
+    display_name: 'Monde Suivant -> Monde Nether'
+    slot: 51
+    left_click_commands:
+      - '[openguimenu] navigateur_nether'

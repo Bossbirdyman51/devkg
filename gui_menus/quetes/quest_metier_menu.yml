@@ -1,0 +1,76 @@
+size: 54
+menu_title: ':offset_-15::journal_quete:'
+
+items:
+  "separation":
+    material: "BLACK_STAINED_GLASS_PANE"
+    display_name: "."
+    slots:
+      - 1
+      - 10
+      - 19
+      - 37
+      - 46
+  "main_quest":
+    material: "BOOK"
+    display_name: "Quête Principal"
+    slots:
+      - 9
+    left_click_commands:
+      - '[openguimenu] quest_main'
+  "secondary_quest":
+    material: "BOOK"
+    display_name: "Quêtes Secondaire"
+    slots:
+      - 18
+    left_click_commands:
+      - '[openguimenu] quest_secondary'
+  "metier_quest":
+    material: "BOOK"
+    display_name: "Quêtes de Métier"
+    slots:
+      - 27
+    left_click_commands:
+      - '[openguimenu] quest_metier_menu'
+  "main":
+    material: "BOOK"
+    display_name: "Accueil"
+    slots:
+      - 0
+    left_click_commands:
+      - '[openguimenu] quest_main_menu'
+  "daily":
+    material: "BOOK"
+    display_name: "Quête Journalière"
+    slots:
+      - 36
+    left_click_commands:
+      - '[openguimenu] quest_daily'
+
+  "fermier_quest":
+    material: "DIAMOND_HOE"
+    display_name: "Quêtes du Fermier"
+    slots:
+      - 23
+    lore:
+      - "&6Progression : %betonquest_Magasin-fermier:point.rep.amount%/1"
+    left_click_commands:
+      - '[openguimenu] quest_metier_fermier'
+  "mineur_quest":
+    material: "DIAMOND_PICKAXE"
+    display_name: "Quêtes du Mineur"
+    slots:
+      - 21
+    lore:
+      - "&6Progression : %betonquest_Magasin-mineur:point.rep.amount%/1"
+    left_click_commands:
+      - '[openguimenu] quest_metier_mineur'
+  "bucheron_quest":
+    material: "DIAMOND_AXE"
+    display_name: "Quêtes du Bûcheron"
+    slots:
+      - 25
+    lore:
+      - "&6Progression : %betonquest_Magasin-bucheron:point.rep.amount%/1"
+    left_click_commands:
+      - '[openguimenu] quest_metier_bucheron'

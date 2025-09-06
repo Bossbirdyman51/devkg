@@ -1,0 +1,101 @@
+menu_title: "&2&l&2Wiki" #:offset_-38::menu_test:
+open_command: 
+  - wikiville
+size: 54
+#register_command: true
+items:
+  0:
+    material: "WRITTEN_BOOK"
+    display_name: "&#D133FFComment créer une ville ?"
+    lore:
+      - "&2Il faut avoir une salle du conseil"
+      - "&2Et avoir acheter le bloc de ville"
+      - ""
+      - "&bPrix Total:&61000Kgolds"
+    slots:
+      - 0
+  1:
+    material: "WRITABLE_BOOK"
+    display_name: "&#D133FFquel type de ville que jai acces ?"
+    lore:
+      - "&2colonie"
+      - "&2hamlet"
+      - "&2village"
+      - "&2comune"
+    slots:
+      - 1
+  2:
+    material: "WRITABLE_BOOK"
+    display_name: "&#D133FFCoût d'une colonie ?"
+    lore:
+      - "&2500 kgold"
+    slots:
+      - 2
+  3:
+    material: "WRITABLE_BOOK"
+    display_name: "&#D133FFCoût d'une salle du conseil ?"
+    lore:
+      - "&25000 kgold"
+    slots:
+      - 3
+  4:
+    material: "WRITABLE_BOOK"
+    display_name: "&#D133FFCoût d'une ambassade ?"
+    lore:
+      - "&2800 kgold"
+    slots:
+      - 4
+  5:
+    material: "WRITABLE_BOOK"
+    display_name: "&#D133FFZone protégée de la ville ?"
+    lore:
+      - "&281x81x1001 pour la &6colonie"
+      - "&2201x201x1001 pour le &66hamlet"
+      - "&2301x301x1001 pour le &6village"
+      - "&2401x401x1001 pour la &6commune"
+    slots:
+      - 5
+  6:
+    material: "WRITABLE_BOOK"
+    display_name: "&#D133FFComment acheter une ville ?"
+    lore:
+      - "&2Ouvrir votre &6Menus pour Civs"
+      - "&2Aller dans le magasin pour ensuite appuyer sur"
+      - "la GLOWSTONE puis sur la colonie"
+      - "et pour terminer sur l'émeraude pour acheter"
+      - "------------------------------------------------"
+      - "&2Une fois acheter tenez dans la main votre bloc"
+      - "&2puis écrivez &6/cv town &bNOM"
+    slots:
+      - 6
+  7:
+    material: "WRITABLE_BOOK"
+    display_name: "&#D133FFComment changer le nom de ma ville ?"
+    lore:
+      - "&2Faite /cv town (nom de ville)"
+    slots:
+      - 7
+  8:
+    material: "WRITABLE_BOOK"
+    display_name: "&#D133FFComment aggrandir la population de ma ville ?"
+    lore:
+      - "&2batir des logements ou un auberge / caserne"
+      - "&2 la construction dune auberge vous empeches de creer une caserne et vis versa"
+    slots:
+      - 8
+  9:
+    material: "WRITABLE_BOOK"
+    display_name: "&#D133FFComment avoir des résidents dans ma ville ?"
+    lore:
+      - "&2batir des baraques"
+      - "&2acceuillir des joueurs"
+    slots:
+      - 9
+  53:
+    material: "ARROW"
+    display_name: "&#D133FFRevenir au Menu"
+    left_click_commands:
+      - '[openguimenu] wiki'
+    slots:
+      - 53
+  
