@@ -2,11 +2,11 @@
 
 # obj2_1c: kgcomplete obj_1
 objectives:
-  
-  obj_1: mobkill CHICKEN 20 events:t1
-  obj_2: mobkill COW 20 events:t2
-  obj_3: mobkill SHEEP 20 events:t3
-  obj_4: mobkill PIG 20 events:t4
+
+  obj_1: mobkill %constant.obj1% %constant.qte1% events:t1
+  obj_2: mobkill %constant.obj2% %constant.qte2% events:t2
+  obj_3: mobkill %constant.obj3% %constant.qte3% events:t3
+  obj_4: mobkill %constant.obj4% %constant.qte4% events:t4
 
 
 

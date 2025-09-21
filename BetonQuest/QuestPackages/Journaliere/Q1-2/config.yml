@@ -1,8 +1,6 @@
 constants:
   
-  
-  t_title: Tuer des zombies
-  t_obj1: Tuer 5 Zombies
+  obj: SKELETON
   td_obj1: Terminé
   t_reward: '&6+50 KGolds'
   

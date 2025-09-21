@@ -4,10 +4,10 @@
 objectives:
   
   
-  obj_1: block STONE -64 events:t1
-  obj_2: block STONE -128 events:t2
-  obj_3: block STONE -192 events:t3
-  obj_4: block STONE -256 events:t4
+  obj_1: block %constant.obj% -64 events:t1
+  obj_2: block %constant.obj% -128 events:t2
+  obj_3: block %constant.obj% -192 events:t3
+  obj_4: block %constant.obj% -256 events:t4
 
 
 

@@ -1,5 +1,11 @@
 constants:
   
+  obj: COD
+
+  qte1: '10'
+  qte2: '20'
+  qte3: '30'
+  qte4: '40'
   
   td_obj1: Terminé
   t_reward: '&6+50 KGolds'
