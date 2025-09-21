@@ -1,0 +1,268 @@
+# Fichier de configuration pour les textes des quêtes.
+# C'est ici que vous définirez tous les titres et objectifs.
+
+quests:
+  Tutoriel:
+    title: "<dark_purple>Tutoriel"
+    steps:
+      text:
+      '1': # Les étapes simples sans objectifs complexes peuvent rester des listes de strings
+        - "Parler au <white>"
+        - "et regarder la <yellow>Cinématique"
+      '2':
+        text:
+        - "Se rendre en monde <yellow>Minage"
+        - "Prendre le Portail au <yellow>/spawn"
+      '3':      
+        objectives:
+          - id: "obj2_1" # Doit correspondre à l'ID de l'objectif dans BetonQuest
+            inprogress: "Casser <yellow>%betonquest_Tutoriel:objective.obj2_1.absoluteamount%/3 Bois"
+            completed: "Casser <green>3/3 Bois <white>✔"
+          - id: "obj2_2"
+            inprogress: "Casser <yellow>%betonquest_Tutoriel:objective.obj2_2.absoluteamount%/10 Roches"
+            completed: "Casser <green>10/10 Roches <white>✔"
+      '4':
+        text:
+        - "Revenir au <yellow>spawn"
+        - "Execute la commande <yellow>/spawn"
+      '5':
+        text:
+        - "Placer votre <yellow>feu de camp"
+        - "Dans le monde <yellow>Survie"
+      '6':
+        text:
+          - "Trouver tous les vendeurs"
+        objectives:
+          - id: "obj5_1"
+            inprogress: "<yellow>- Mineur"
+            completed: "<green>- Mineur <white>✔"
+          - id: "obj5_2"
+            inprogress: "<yellow>- Fermier"
+            completed: "<green>- Fermier <white>✔"
+          - id: "obj5_3"
+            inprogress: "<yellow>- Boucher"
+            completed: "<green>- Boucher <white>✔"
+          - id: "obj5_4"
+            inprogress: "<yellow>- Bûcheron"
+            completed: "<green>- Bûcheron <white>✔"
+      '7':
+        text:
+        - "Vous avez terminé le <dark_purple>Tutoriel"
+        - "Vous pouvez maintenant commencer à jouer !"
+  Histoire-Alcool-Q1:
+    title: "<dark_purple>Initiation à l'Alcool"
+    finished_text: |
+      <green>Mission accomplie !</green>
+      Vous avez aidé le tavernier.
+      Le temps est de 3 ans pour
+      cette boisson !
+      ( 20 mins = 1 an )
+      Une fois terminée, utiliser la table
+      de sellage pour seller votre boisson
+      <yellow>Va récupérer le livre de 
+      Recette d'alcool auprès du tavernier !</yellow>
+    steps:
+      '1':      
+        objectives:
+          - id: "obj_1" # Doit correspondre à l'ID de l'objectif dans BetonQuest
+            inprogress: "Crafter %betonquest_Histoire-Alcool-Q1:objective.obj_1.amount%/1 Montre"
+            completed: "Crafter <green>1/1 Montre <white>✔"
+          - id: "obj_2"
+            inprogress: "Crafter %betonquest_Histoire-Alcool-Q1:objective.obj_2.amount%/3 Fioles en verre"
+            completed: "Crafter <green>3/3 Fioles en verre <white>✔"
+          - id: "obj_3"
+            inprogress: "Récolter %betonquest_Histoire-Alcool-Q1:objective.obj_3.absoluteamount%/12 Blés"
+            completed: "Récolter <green>12/12 Blés <white>✔"
+          - id: "obj_4"
+            inprogress: "Crafter %betonquest_Histoire-Alcool-Q1:objective.obj_4.amount%/64 Planches en bois"
+            completed: "Crafter <green>64/64 Planches en bois <white>✔"
+          - id: "obj_5"
+            inprogress: "Crafter %betonquest_Histoire-Alcool-Q1:objective.obj_5.amount%/1 Sceau"
+            completed: "Crafter <green>1/1 Sceau d'eau <white>✔"
+      '2':
+        objectives:
+          - id: "obj_2_1" # Doit correspondre à l'ID de l'objectif dans BetonQuest
+            inprogress: "Crafter %betonquest_Histoire-Alcool-Q1:objective.obj_2_1.amount%/1 <yellow>Chaudron"
+            completed: "Crafter <green>1/1 Chaudron <white>✔"
+          - id: "obj_2_2"
+            inprogress: "Crafter %betonquest_Histoire-Alcool-Q1:objective.obj_2_2.amount%/1 <yellow>Alambic"
+            completed: "Crafter <green>1/1 Alambic <white>✔"
+          - id: "obj_2_3"
+            inprogress: "Crafter %betonquest_Histoire-Alcool-Q1:objective.obj_2_3.amount%/1 <yellow>Baril"
+            completed: "Crafter <green>1/1 Baril <white>✔"
+          - id: "obj_2_4"
+            inprogress: "Crafter %betonquest_Histoire-Alcool-Q1:objective.obj_2_4.amount%/1 <yellow>Feu de camp"
+            completed: "Crafter <green>1/1 Feu de camp <white>✔"
+      '3':
+        text:
+        - "Placer votre feu de camp" 
+        - "sous le Chaudron"
+        objectives:
+          - id: "obj_3_1" # Doit correspondre à l'ID de l'objectif dans BetonQuest
+            inprogress: "Placer %betonquest_Histoire-Alcool-Q1:objective.obj_3_1.amount%/1 Chaudron"
+            completed: "Placer <green>1/1 Chaudron <white>✔"
+          - id: "obj_3_2"
+            inprogress: "Placer %betonquest_Histoire-Alcool-Q1:objective.obj_3_2.amount%/1 Alambic"
+            completed: "Placer <green>1/1 Alambic <white>✔"
+          - id: "obj_3_3"
+            inprogress: "Placer %betonquest_Histoire-Alcool-Q1:objective.obj_3_3.amount%/1 Baril"
+            completed: "Placer <green>1/1 Baril <white>✔"
+          - id: "obj_3_4"
+            inprogress: "Placer %betonquest_Histoire-Alcool-Q1:objective.obj_3_4.amount%/1 Feu de camp"
+            completed: "Placer <green>1/1 Feu de camp <white>✔"
+      '4':
+        text:
+        - "Remplir le Chaudron d'eau" 
+        objectives:
+          - id: "obj_4_1" # Doit correspondre à l'ID de l'objectif dans BetonQuest
+            inprogress: "Poser %betonquest_Histoire-Alcool-Q1:point.ble.amount%/6 Blés dans le Chaudron"
+            completed: "Poser <green>1/1 Chaudron <white>✔"
+          - id: "obj_4_2"
+            inprogress: "Utiliser votre Montre sur le chaudron"
+            completed: "Utiliser <green>1/1 Montre sur le chaudron <white>✔"
+      '5':
+        text:
+        - "Attendre <yellow>8 Minutes"
+        - "pour que la cuisson soit terminée"
+        - "Cliquer avec votre montre pour"
+        - "vérifier la cuisson"
+        - "Récupérer le résultat dans le Chaudron"
+        - "et le placer dans le Baril"
+      '6':
+        text:
+        - "Poser 3 Fioles dans le Baril"
+        - "Le temps est de 3 ans pour"
+        - "cette boisson !"
+        - "( 20 mins = 1 an )"
+        - "Une fois terminée, utiliser la table"
+        - "de sellage pour seller votre boisson"
+        
+
+  Journaliere-Q1:
+    title: "<dark_purple>Tuer des Zombies"
+    finished_text: |
+      <green>Mission accomplie !</green>
+      Vous avez aidé le vieux bûcheron.
+    steps:
+      1:
+        text:
+        - "Tuer %betonquest_Journaliere-Q1:objective.obj_1.amount%/5 Zombies"
+      2:
+        text:
+        - "Tuer %betonquest_Journaliere-Q1:objective.obj_2.amount%/20 Zombies"
+      3:
+        text:
+        - "Tuer %betonquest_Journaliere-Q1:objective.obj_3.amount%/50 Zombies"
+      4:
+        text:
+        - "Tuer %betonquest_Journaliere-Q1:objective.obj_4.amount%/100 Zombies"
+  Journaliere-Q1-2:
+    title: "<dark_purple>Tuer des Squelettes"
+    steps:
+      1:
+        text:
+        - "Tuer %betonquest_Journaliere-Q1-2:objective.obj_1.amount%/5 Squelettes"
+      2:
+        text:
+        - "Tuer %betonquest_Journaliere-Q1-2:objective.obj_2.amount%/20 Squelettes"
+      3:
+        text:
+        - "Tuer %betonquest_Journaliere-Q1-2:objective.obj_3.amount%/50 Squelettes"
+      4:
+        text:
+        - "Tuer %betonquest_Journaliere-Q1-2:objective.obj_4.amount%/100 Squelettes"
+  Journaliere-Q1-3:
+    title: "<dark_purple>Tuer des Araignées"
+    steps:
+      1:
+        text:
+        - "Tuer %betonquest_Journaliere-Q1-3:objective.obj_1.amount%/5 Araignées"
+      2:
+        text:
+        - "Tuer %betonquest_Journaliere-Q1-3:objective.obj_2.amount%/20 Araignées"
+      3:
+        text:
+        - "Tuer %betonquest_Journaliere-Q1-3:objective.obj_3.amount%/50 Araignées"
+      4:
+        text:
+        - "Tuer %betonquest_Journaliere-Q1-3:objective.obj_4.amount%/100 Araignées"
+    
+  Journaliere-Q2:
+    title: "<dark_purple>De la pierre !"
+    steps:
+      1:
+        text:
+        - "Casser %betonquest_Journaliere-Q2:objective.obj_1.absoluteamount%/64 Pierre"
+      2:
+        text:
+        - "Casser %betonquest_Journaliere-Q2:objective.obj_2.absoluteamount%/128 Pierre"
+      3:
+        text:
+        - "Casser %betonquest_Journaliere-Q2:objective.obj_3.absoluteamount%/192 Pierre"
+      4:
+        text:
+        - "Casser %betonquest_Journaliere-Q2:objective.obj_4.absoluteamount%/256 Pierre"
+  Journaliere-Q3:
+    title: "<dark_purple>Du blé pour le village !"
+    steps:
+      1:
+        text:
+        - "Casser %betonquest_Journaliere-Q3:objective.obj_1.absoluteamount%/64 Blés"
+      2:
+        text:
+        - "Casser %betonquest_Journaliere-Q3:objective.obj_2.absoluteamount%/128 Blés"
+      3:
+        text:
+        - "Casser %betonquest_Journaliere-Q3:objective.obj_3.absoluteamount%/192 Blés"
+      4:
+        text:
+        - "Casser %betonquest_Journaliere-Q3:objective.obj_4.absoluteamount%/256 Blés"
+  Journaliere-Q4:
+    title: "<dark_purple>Besoin de fer !"
+    steps:
+      1:
+        text:
+        - "Casser %betonquest_Journaliere-Q4:objective.obj_1.absoluteamount%/64 Minerais de fer"
+      2:
+        text:
+        - "Casser %betonquest_Journaliere-Q4:objective.obj_2.absoluteamount%/128 Minerais de fer"
+      3:
+        text:
+        - "Casser %betonquest_Journaliere-Q4:objective.obj_3.absoluteamount%/192 Minerais de fer"
+      4:
+        text:
+        - "Casser %betonquest_Journaliere-Q4:objective.obj_4.absoluteamount%/256 Minerais de fer"
+  Journaliere-Q5:
+    title: "<dark_purple>Elle est ou la poulette ?"
+    steps:
+      1:
+        text:
+        - "Tuer %betonquest_Journaliere-Q5:objective.obj_1.absoluteamount%/20 Poules"
+      2:
+        text:
+        - "Tuer %betonquest_Journaliere-Q5:objective.obj_2.absoluteamount%/20 Vaches"
+      3:
+        text:
+        - "Tuer %betonquest_Journaliere-Q5:objective.obj_3.absoluteamount%/20 Moutons"
+      4:
+        text:
+        - "Tuer %betonquest_Journaliere-Q5:objective.obj_4.absoluteamount%/20 Cochons"
+  Journaliere-Q6:
+      title: "<dark_purple>C'est pas faux, la morue !"
+      steps:
+        1:
+          text:
+          - "Péchez %betonquest_Journaliere-Q6:objective.obj_1.absoluteamount%/10 morues."
+          - "J'en ai marre des navets !"
+        2:
+          text:
+          - "Continuez ! %betonquest_Journaliere-Q6:objective.obj_2.absoluteamount%/20 morues !"
+          - "On va faire un festin."
+        3:
+          text:
+          - "%betonquest_Journaliere-Q6:objective.obj_3.absoluteamount%/30 morues !"
+          - "C'est comme le sanglier, mais mouillé."
+        4:
+          text:
+          - "Dernière ! %betonquest_Journaliere-Q6:objective.obj_4.absoluteamount%/40 morues !"
+          - "Mission accomplie !"
