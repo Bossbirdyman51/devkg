@@ -186,6 +186,21 @@ quests:
       4:
         text:
         - "Tuer %betonquest_Journaliere-Q1-3:objective.obj_4.amount%/100 Araignées"
+  Journaliere-Q1-3-2:
+    title: "<dark_purple>Tuer des Sorcières"
+    steps:
+      1:
+        text:
+        - "Tuer %betonquest_Journaliere-Q1-3:objective.obj_1.amount%/5 Sorcières"
+      2:
+        text:
+        - "Tuer %betonquest_Journaliere-Q1-3:objective.obj_2.amount%/20 Sorcières"
+      3:
+        text:
+        - "Tuer %betonquest_Journaliere-Q1-3:objective.obj_3.amount%/50 Sorcières"
+      4:
+        text:
+        - "Tuer %betonquest_Journaliere-Q1-3:objective.obj_4.amount%/100 Sorcières"
     
   Journaliere-Q2:
     title: "<dark_purple>De la pierre !"
