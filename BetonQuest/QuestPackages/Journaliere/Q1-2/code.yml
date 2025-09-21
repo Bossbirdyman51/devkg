@@ -1,0 +1,13 @@
+
+
+# obj2_1c: kgcomplete obj_1
+objectives:
+  
+  
+  obj_1: mobkill SKELETON 5 events:t1
+  obj_2: mobkill SKELETON 20 events:t2
+  obj_3: mobkill SKELETON 50 events:t3
+  obj_4: mobkill SKELETON 100 events:t4
+
+
+

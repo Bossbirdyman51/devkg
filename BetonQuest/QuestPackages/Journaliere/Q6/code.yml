@@ -1,0 +1,13 @@
+
+
+# obj2_1c: kgcomplete obj_1
+objectives:
+
+  obj_1: "fish COD 10 events:t1"
+  obj_2: "fish COD 20 events:t2"
+  obj_3: "fish COD 30 events:t3"
+  obj_4: "fish COD 40 events:t4"
+
+
+items:
+  COD: simple COD

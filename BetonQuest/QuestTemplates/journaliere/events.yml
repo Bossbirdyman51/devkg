@@ -1,0 +1,25 @@
+events:
+  
+  t1: folder nextStep,QuestMenu.p_journaliere,money1,obj2,exp_reward,notify
+  t2: folder nextStep,QuestMenu.p_journaliere,money2,obj3,exp_reward,notify
+  t3: folder nextStep,QuestMenu.p_journaliere,money3,obj4,exp_reward,notify
+  t4: folder money4,QuestMenu.p_journaliere,finishQuest,done,exp_reward # Fin de la quete, on donne l'argent et on termine la quete
+
+
+  notify: "notify &2✅ Étape terminée ! \\n &2Passons à la suivante !   io:title sound:ENTITY_PLAYER_LEVELUP"
+  
+
+  d_step_done: folder finishQuest,done,reward
+  # r1: folder money1
+  money1: money +%constant.money%
+  money2: money +%constant.money2%
+  money3: money +%constant.money3%
+  money4: money +%constant.money4%
+  exp_reward: command experience add %player% 5 points
+  
+  
+  start: folder activeQuest,obj1 delay:20 unit:ticks period:1
+  obj1: objective start obj_1
+  obj2: objective start obj_2
+  obj3: objective start obj_3
+  obj4: objective start obj_4

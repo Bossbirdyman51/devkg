@@ -1,0 +1,6 @@
+main_language: fr
+package:
+  version: 3.0.0-QUEST-11 # Don't change this! The plugin's automatic quest updater handles it.
+
+
+

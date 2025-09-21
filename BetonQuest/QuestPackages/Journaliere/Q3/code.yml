@@ -1,0 +1,12 @@
+
+
+objectives:
+  
+  
+  obj_1: block WHEAT[age=7] -64 events:t1
+  obj_2: block WHEAT[age=7] -128 events:t2
+  obj_3: block WHEAT[age=7] -192 events:t3
+  obj_4: block WHEAT[age=7] -256 events:t4
+
+
+

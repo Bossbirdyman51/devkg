@@ -1,0 +1,12 @@
+
+# obj2_1c: kgcomplete obj_1
+objectives:
+  
+  
+  obj_1: mobkill ZOMBIE 5 events:t1
+  obj_2: mobkill ZOMBIE 20 events:t2
+  obj_3: mobkill ZOMBIE 50 events:t3
+  obj_4: mobkill ZOMBIE 100 events:t4
+
+
+

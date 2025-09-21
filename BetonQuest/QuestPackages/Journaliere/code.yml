@@ -1,0 +1,17 @@
+events:
+
+
+  reset: command kgquetes purgepackage Journaliere
+  give: "folder Journaliere-Q1.start,Journaliere-Q1-2.start,Journaliere-Q1-3.start,Journaliere-Q2.start,Journaliere-Q3.start,Journaliere-Q4.start,Journaliere-Q5.start,Journaliere-Q6.start conditions:!inprogress"
+
+  #give: "pickrandom 20~Journaliere-Q1.start,20~Journaliere-Q1-2.start,20~Journaliere-Q1-3.start,20~Journaliere-Q2.start,20~Journaliere-Q3.start,20~Journaliere-Q4.start,20~Journaliere-Q5.start,20~Journaliere-Q6.start amount:3 conditions:!inprogress"
+  start: folder give,inprogress conditions:!inprogress
+  inprogress: tag add en_cours
+  test: runforAll events:give
+
+conditions:
+  inprogress: "tag en_cours"
+  
+objectives:
+
+  login: login events:start global persistent
