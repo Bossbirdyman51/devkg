@@ -232,6 +232,21 @@ quests:
       4:
         text:
         - "Casser %betonquest_Journaliere-Q3:objective.obj_4.absoluteamount%/256 Blés"
+  Journaliere-Q3-2:
+    title: "<dark_purple>De la citrouille pour le village !"
+    steps:
+      1:
+        text:
+        - "Casser %betonquest_Journaliere-Q3:objective.obj_1.absoluteamount%/64 Citrouille"
+      2:
+        text:
+        - "Casser %betonquest_Journaliere-Q3:objective.obj_2.absoluteamount%/128 Citrouille"
+      3:
+        text:
+        - "Casser %betonquest_Journaliere-Q3:objective.obj_3.absoluteamount%/192 Citrouille"
+      4:
+        text:
+        - "Casser %betonquest_Journaliere-Q3:objective.obj_4.absoluteamount%/256 Citrouille"
   Journaliere-Q4:
     title: "<dark_purple>Besoin de fer !"
     steps:
