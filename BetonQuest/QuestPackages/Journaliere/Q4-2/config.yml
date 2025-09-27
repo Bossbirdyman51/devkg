@@ -1,0 +1,20 @@
+constants:
+  
+  
+  obj: 'REDSTONE_ORE|DEEPSLATE_REDSTONE_ORE'
+  td_obj1: Terminé
+  t_reward: '&6+50 KGolds'
+  
+  qte1: '64'
+  qte2: '128'
+  qte3: '192'
+  qte4: '256'
+
+  money: '10'
+  money2: '20'
+  money3: '50'
+  money4: '100'
+  custom_reward: ''
+
+
+

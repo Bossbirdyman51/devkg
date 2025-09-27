@@ -307,6 +307,66 @@ quests:
       4:
         text:
         - "Casser %betonquest_Journaliere-Q4:objective.obj_4.absoluteamount%/256 Minerais de fer"
+  Journaliere-Q4-1:
+    title: "<dark_purple>Besoin d'or !"
+    steps:
+      1:
+        text:
+        - "Casser %betonquest_Journaliere-Q4-1:objective.obj_1.absoluteamount%/64 Minerais d'or"
+      2:
+        text:
+        - "Casser %betonquest_Journaliere-Q4-1:objective.obj_2.absoluteamount%/128 Minerais d'or"
+      3:
+        text:
+        - "Casser %betonquest_Journaliere-Q4-1:objective.obj_3.absoluteamount%/192 Minerais d'or"
+      4:
+        text:
+        - "Casser %betonquest_Journaliere-Q4-1:objective.obj_4.absoluteamount%/256 Minerais d'or"
+  Journaliere-Q4-2:
+    title: "<dark_purple>Besoin de redstone !"
+    steps:
+      1:
+        text:
+        - "Casser %betonquest_Journaliere-Q4-2:objective.obj_1.absoluteamount%/64 Minerais de redstone"
+      2:
+        text:
+        - "Casser %betonquest_Journaliere-Q4-2:objective.obj_2.absoluteamount%/128 Minerais de redstone"
+      3:
+        text:
+        - "Casser %betonquest_Journaliere-Q4-2:objective.obj_3.absoluteamount%/192 Minerais de redstone"
+      4:
+        text:
+        - "Casser %betonquest_Journaliere-Q4-2:objective.obj_4.absoluteamount%/256 Minerais de redstone"
+  Journaliere-Q4-3:
+    title: "<dark_purple>Besoin de lapis !"
+    steps:
+      1:
+        text:
+        - "Casser %betonquest_Journaliere-Q4-3:objective.obj_1.absoluteamount%/64 Minerais de lapis lazuli"
+      2:
+        text:
+        - "Casser %betonquest_Journaliere-Q4-3:objective.obj_2.absoluteamount%/128 Minerais de lapis lazuli"
+      3:
+        text:
+        - "Casser %betonquest_Journaliere-Q4-3:objective.obj_3.absoluteamount%/192 Minerais de lapis lazuli"
+      4:
+        text:
+        - "Casser %betonquest_Journaliere-Q4-3:objective.obj_4.absoluteamount%/256 Minerais de lapis lazuli"
+  Journaliere-Q4-4:
+    title: "<dark_purple>Besoin de diamant !"
+    steps:
+      1:
+        text:
+        - "Casser %betonquest_Journaliere-Q4-3:objective.obj_1.absoluteamount%/64 Minerais de diamants"
+      2:
+        text:
+        - "Casser %betonquest_Journaliere-Q4-3:objective.obj_2.absoluteamount%/128 Minerais de diamants"
+      3:
+        text:
+        - "Casser %betonquest_Journaliere-Q4-3:objective.obj_3.absoluteamount%/192 Minerais de diamants"
+      4:
+        text:
+        - "Casser %betonquest_Journaliere-Q4-3:objective.obj_4.absoluteamount%/256 Minerais de diamants"
   Journaliere-Q5:
     title: "<dark_purple>Elle est ou la poulette ?"
     steps:

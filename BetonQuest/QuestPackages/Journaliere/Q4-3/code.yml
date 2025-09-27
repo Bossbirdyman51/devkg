@@ -1,0 +1,12 @@
+
+
+objectives:
+
+
+  obj_1: block %constant.obj% -%constant.qte1% events:t1
+  obj_2: block %constant.obj% -%constant.qte2% events:t2
+  obj_3: block %constant.obj% -%constant.qte3% events:t3
+  obj_4: block %constant.obj% -%constant.qte4% events:t4
+
+
+
