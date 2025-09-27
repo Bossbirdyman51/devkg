@@ -1,10 +1,14 @@
 constants:
   
-  obj: CUSTOM_SPIDER
-  t_title: Tuer des araignées
-  t_obj1: Tuer 5 Araignées
+  
+  obj: POTATOES[age=7]
   td_obj1: Terminé
   t_reward: '&6+50 KGolds'
+
+  qte1: '64'
+  qte2: '128'
+  qte3: '192'
+  qte4: '256'
   
   money: '10'
   money2: '20'

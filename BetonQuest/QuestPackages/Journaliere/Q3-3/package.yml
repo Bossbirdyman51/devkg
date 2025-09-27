@@ -1,0 +1,31 @@
+package:
+  enabled: true
+  templates:
+  - global
+  - trackedQuest
+  - journaliere
+  version: 3.0.0-QUEST-12 # Don't change this! The plugin's automatic quest updater handles it.
+main_language: fr
+
+
+# events: #Cela permet d'afficher la suite de la step quand l'objectif 1 est terminé et / ou l'objectif 2 pour modifier ligne par ligne le suivis de quête 
+# En remplacant le nom obj2_2 par le nom de l'objectif
+#  obj2_1c: kg_complete_objective:Tutorial.obj2_1
+#  obj2_2c: kg_complete_objective:Tutorial.obj2_2
+
+
+constants:
+  packageName: Q3
+
+questParameters:
+  questName: # Nom de la quête
+    fr-FR: Tueur de Zombie
+  questDesc: # Texte de Fin de Quêtes Ou début de Quête si elle est en status Blocked donc appearQuest et pas Activequest
+    fr-FR: |
+      Terminé
+  questCategory: Journalière
+  questReward: # Section Récompense assigné dans le Menu Multiligne
+    fr-FR: |
+      <gradient:#084CFB:#ADF3FD>50Kgolds
+# npcs:
+#  24: "Tutoriel"

@@ -1,6 +1,6 @@
 constants:
   
-  obj: ZOMBIE
+  obj: CUSTOM_ZOMBIE
   td_obj1: Terminé
   t_reward: '&6+50 KGolds'
   
