@@ -186,22 +186,22 @@ quests:
       4:
         text:
         - "Tuer %betonquest_Journaliere-Q1-3:objective.obj_4.amount%/100 Araignées"
-  Journaliere-Q1-3-2:
+  Journaliere-Q1-4:
     title: "<dark_purple>Tuer des Sorcières"
     steps:
       1:
         text:
-        - "Tuer %betonquest_Journaliere-Q1-3:objective.obj_1.amount%/5 Sorcières"
+        - "Tuer %betonquest_Journaliere-Q1-4:objective.obj_1.amount%/5 Sorcières"
       2:
         text:
-        - "Tuer %betonquest_Journaliere-Q1-3:objective.obj_2.amount%/20 Sorcières"
+        - "Tuer %betonquest_Journaliere-Q1-4:objective.obj_2.amount%/20 Sorcières"
       3:
         text:
-        - "Tuer %betonquest_Journaliere-Q1-3:objective.obj_3.amount%/50 Sorcières"
+        - "Tuer %betonquest_Journaliere-Q1-4:objective.obj_3.amount%/50 Sorcières"
       4:
         text:
-        - "Tuer %betonquest_Journaliere-Q1-3:objective.obj_4.amount%/100 Sorcières"
-    
+        - "Tuer %betonquest_Journaliere-Q1-4:objective.obj_4.amount%/100 Sorcières"
+
   Journaliere-Q2:
     title: "<dark_purple>De la pierre !"
     steps:
@@ -237,16 +237,61 @@ quests:
     steps:
       1:
         text:
-        - "Casser %betonquest_Journaliere-Q3:objective.obj_1.absoluteamount%/64 Citrouille"
+        - "Casser %betonquest_Journaliere-Q3-2:objective.obj_1.absoluteamount%/64 Citrouille"
       2:
         text:
-        - "Casser %betonquest_Journaliere-Q3:objective.obj_2.absoluteamount%/128 Citrouille"
+        - "Casser %betonquest_Journaliere-Q3-2:objective.obj_2.absoluteamount%/128 Citrouille"
       3:
         text:
-        - "Casser %betonquest_Journaliere-Q3:objective.obj_3.absoluteamount%/192 Citrouille"
+        - "Casser %betonquest_Journaliere-Q3-2:objective.obj_3.absoluteamount%/192 Citrouille"
       4:
         text:
-        - "Casser %betonquest_Journaliere-Q3:objective.obj_4.absoluteamount%/256 Citrouille"
+        - "Casser %betonquest_Journaliere-Q3-2:objective.obj_4.absoluteamount%/256 Citrouille"
+  Journaliere-Q3-3:
+    title: "<dark_purple>Un besoin de carottes !"
+    steps:
+      1:
+        text:
+        - "Casser %betonquest_Journaliere-Q3-3:objective.obj_1.absoluteamount%/64 Carottes"
+      2:
+        text:
+        - "Casser %betonquest_Journaliere-Q3-3:objective.obj_2.absoluteamount%/128 Carottes"
+      3:
+        text:
+        - "Casser %betonquest_Journaliere-Q3-3:objective.obj_3.absoluteamount%/192 Carottes"
+      4:
+        text:
+        - "Casser %betonquest_Journaliere-Q3-3:objective.obj_4.absoluteamount%/256 Carottes"
+  Journaliere-Q3-4:
+    title: "<dark_purple>Un besoin de Patates !"
+    steps:
+      1:
+        text:
+        - "Casser %betonquest_Journaliere-Q3-4:objective.obj_1.absoluteamount%/64 Patates"
+      2:
+        text:
+        - "Casser %betonquest_Journaliere-Q3-4:objective.obj_2.absoluteamount%/128 Patates"
+      3:
+        text:
+        - "Casser %betonquest_Journaliere-Q3-4:objective.obj_3.absoluteamount%/192 Patates"
+      4:
+        text:
+        - "Casser %betonquest_Journaliere-Q3-4:objective.obj_4.absoluteamount%/256 Patates"
+  Journaliere-Q3-5:
+    title: "<dark_purple>Un besoin de Betteraves !"
+    steps:
+      1:
+        text:
+        - "Casser %betonquest_Journaliere-Q3-5:objective.obj_1.absoluteamount%/64 Betteraves"
+      2:
+        text:
+        - "Casser %betonquest_Journaliere-Q3-5:objective.obj_2.absoluteamount%/128 Betteraves"
+      3:
+        text:
+        - "Casser %betonquest_Journaliere-Q3-5:objective.obj_3.absoluteamount%/192 Betteraves"
+      4:
+        text:
+        - "Casser %betonquest_Journaliere-Q3-5:objective.obj_4.absoluteamount%/256 Betteraves"
   Journaliere-Q4:
     title: "<dark_purple>Besoin de fer !"
     steps:
