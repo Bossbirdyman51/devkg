@@ -5,10 +5,10 @@ constants:
   td_obj1: Terminé
   t_reward: '&6+50 KGolds'
   
-  qte1: '64'
-  qte2: '128'
-  qte3: '192'
-  qte4: '256'
+  qte1: '15'
+  qte2: '30'
+  qte3: '45'
+  qte4: '60'
 
   money: '10'
   money2: '20'
