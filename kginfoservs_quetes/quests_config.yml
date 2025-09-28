@@ -357,76 +357,91 @@ quests:
     steps:
       1:
         text:
-        - "Casser %betonquest_Journaliere-Q4-3:objective.obj_1.absoluteamount%/64 Minerais de diamants"
+        - "Casser %betonquest_Journaliere-Q4-4:objective.obj_1.absoluteamount%/64 Minerais de diamants"
       2:
         text:
-        - "Casser %betonquest_Journaliere-Q4-3:objective.obj_2.absoluteamount%/128 Minerais de diamants"
+        - "Casser %betonquest_Journaliere-Q4-4:objective.obj_2.absoluteamount%/128 Minerais de diamants"
       3:
         text:
-        - "Casser %betonquest_Journaliere-Q4-3:objective.obj_3.absoluteamount%/192 Minerais de diamants"
+        - "Casser %betonquest_Journaliere-Q4-4:objective.obj_3.absoluteamount%/192 Minerais de diamants"
       4:
         text:
-        - "Casser %betonquest_Journaliere-Q4-3:objective.obj_4.absoluteamount%/256 Minerais de diamants"
+        - "Casser %betonquest_Journaliere-Q4-4:objective.obj_4.absoluteamount%/256 Minerais de diamants"
   Journaliere-Q4-5:
     title: "<dark_purple>Besoin de charbons !"
     steps:
       1:
         text:
-        - "Casser %betonquest_Journaliere-Q4-3:objective.obj_1.absoluteamount%/64 Minerais de charbons"
+        - "Casser %betonquest_Journaliere-Q4-5:objective.obj_1.absoluteamount%/64 Minerais de charbons"
       2:
         text:
-        - "Casser %betonquest_Journaliere-Q4-3:objective.obj_2.absoluteamount%/128 Minerais de charbons"
+        - "Casser %betonquest_Journaliere-Q4-5:objective.obj_2.absoluteamount%/128 Minerais de charbons"
       3:
         text:
-        - "Casser %betonquest_Journaliere-Q4-3:objective.obj_3.absoluteamount%/192 Minerais de charbons"
+        - "Casser %betonquest_Journaliere-Q4-5:objective.obj_3.absoluteamount%/192 Minerais de charbons"
       4:
         text:
-        - "Casser %betonquest_Journaliere-Q4-3:objective.obj_4.absoluteamount%/256 Minerais de charbons"
+        - "Casser %betonquest_Journaliere-Q4-5:objective.obj_4.absoluteamount%/256 Minerais de charbons"
   Journaliere-Q4-6:
     title: "<dark_purple>Besoin de cuivres !"
     steps:
       1:
         text:
-        - "Casser %betonquest_Journaliere-Q4-3:objective.obj_1.absoluteamount%/64 Minerais de cuivres"
+        - "Casser %betonquest_Journaliere-Q4-6:objective.obj_1.absoluteamount%/64 Minerais de cuivres"
       2:
         text:
-        - "Casser %betonquest_Journaliere-Q4-3:objective.obj_2.absoluteamount%/128 Minerais de cuivres"
+        - "Casser %betonquest_Journaliere-Q4-6:objective.obj_2.absoluteamount%/128 Minerais de cuivres"
       3:
         text:
-        - "Casser %betonquest_Journaliere-Q4-3:objective.obj_3.absoluteamount%/192 Minerais de cuivres"
+        - "Casser %betonquest_Journaliere-Q4-6:objective.obj_3.absoluteamount%/192 Minerais de cuivres"
       4:
         text:
-        - "Casser %betonquest_Journaliere-Q4-3:objective.obj_4.absoluteamount%/256 Minerais de cuivres"
+        - "Casser %betonquest_Journaliere-Q4-6:objective.obj_4.absoluteamount%/256 Minerais de cuivres"
   Journaliere-Q4-7:
     title: "<dark_purple>Besoin de quartz !"
     steps:
       1:
         text:
-        - "Casser %betonquest_Journaliere-Q4-3:objective.obj_1.absoluteamount%/64 Minerais de quartz"
+        - "Casser %betonquest_Journaliere-Q4-7:objective.obj_1.absoluteamount%/64 Minerais de quartz"
       2:
         text:
-        - "Casser %betonquest_Journaliere-Q4-3:objective.obj_2.absoluteamount%/128 Minerais de quartz"
+        - "Casser %betonquest_Journaliere-Q4-7:objective.obj_2.absoluteamount%/128 Minerais de quartz"
       3:
         text:
-        - "Casser %betonquest_Journaliere-Q4-3:objective.obj_3.absoluteamount%/192 Minerais de quartz"
+        - "Casser %betonquest_Journaliere-Q4-7:objective.obj_3.absoluteamount%/192 Minerais de quartz"
       4:
         text:
-        - "Casser %betonquest_Journaliere-Q4-3:objective.obj_4.absoluteamount%/256 Minerais de quartz"
+        - "Casser %betonquest_Journaliere-Q4-7:objective.obj_4.absoluteamount%/256 Minerais de quartz"
   Journaliere-Q4-8:
     title: "<dark_purple>Besoin d'émeraudes !"
     steps:
       1:
         text:
-        - "Casser %betonquest_Journaliere-Q4-3:objective.obj_1.absoluteamount%/1 Minerais d'émeraudes"
+        - "Casser %betonquest_Journaliere-Q4-8:objective.obj_1.absoluteamount%/1 Minerais d'émeraudes"
       2:
         text:
-        - "Casser %betonquest_Journaliere-Q4-3:objective.obj_2.absoluteamount%/3 Minerais d'émeraudes"
+        - "Casser %betonquest_Journaliere-Q4-8:objective.obj_2.absoluteamount%/3 Minerais d'émeraudes"
       3:
         text:
-        - "Casser %betonquest_Journaliere-Q4-3:objective.obj_3.absoluteamount%/5 Minerais d'émeraudes"
+        - "Casser %betonquest_Journaliere-Q4-8:objective.obj_3.absoluteamount%/5 Minerais d'émeraudes"
       4:
         text:
-        - "Casser %betonquest_Journaliere-Q4-3:objective.obj_4.absoluteamount%/10 Minerais d'émeraudes"
+        - "Casser %betonquest_Journaliere-Q4-8:objective.obj_4.absoluteamount%/10 Minerais d'émeraudes"
+  Journaliere-Q4-9:
+    title: "<dark_purple>Besoin de bois !"
+    steps:
+      1:
+        text:
+        - "Casser %betonquest_Journaliere-Q4-9:objective.obj_1.absoluteamount%/64 de bois"
+      2:
+        text:
+        - "Casser %betonquest_Journaliere-Q4-9:objective.obj_2.absoluteamount%/128 de bois"
+      3:
+        text:
+        - "Casser %betonquest_Journaliere-Q4-9:objective.obj_3.absoluteamount%/192 de bois"
+      4:
+        text:
+        - "Casser %betonquest_Journaliere-Q4-9:objective.obj_4.absoluteamount%/256 de bois"
   Journaliere-Q5:
     title: "<dark_purple>Elle est ou la poulette ?"
     steps:
