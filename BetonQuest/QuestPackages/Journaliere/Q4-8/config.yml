@@ -1,7 +1,7 @@
 constants:
   
   
-  obj: 'EMERAULD_ORE|DEEPSLATE_EMERAULD_ORE'
+  obj: 'EMERALD_ORE|DEEPSLATE_EMERALD_ORE'
   td_obj1: Terminé
   t_reward: '&6+50 KGolds'
   
